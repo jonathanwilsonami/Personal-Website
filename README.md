@@ -1,4 +1,4 @@
-# My personal website http://jonathanwil.com
+# My personal website https://jonathanwil.com
 
 ## Project setup
 ```
