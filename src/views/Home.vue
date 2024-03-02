@@ -2,8 +2,9 @@
 
   <div class="home">
     <h1>Hello!</h1>
-    <h3>Welcome to my personal website. Currently this site is still in development 
-      but feel free to browse what I have.</h3> 
+    <h3>
+      Welcome to my personal website.
+    </h3> 
   </div>
 </template>
 

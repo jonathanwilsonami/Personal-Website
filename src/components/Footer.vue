@@ -10,7 +10,7 @@
       </li>
       <li>
         <a
-          href="https://www.instagram.com/jonsadventurousjourneys/"
+          href="https://www.instagram.com/jonlovesexploring/"
           target="_blank"
           rel="noopener"
           ><div class="png-container">
@@ -19,7 +19,7 @@
         </a>
       </li>
       <li>
-        <a href="https://github.com/jonwilami323" target="_blank" rel="noopener"
+        <a href="https://github.com/jonathanwilsonami/" target="_blank" rel="noopener"
           ><div class="png-container-git" >
             <img :src="github" alt="github logo?" style="background-color: white; border-radius: 50%;">
           </div>
@@ -27,7 +27,7 @@
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/jonmwilson1/"
+          href="https://www.linkedin.com/in/jonathanwil/"
           target="_blank"
           rel="noopener"
           ><div class="png-container">
@@ -36,7 +36,7 @@
         </a>
       </li>
     </ul>
-    <p>&copy; Jonathan Wilson 2019</p>
+    <p>&copy; Jonathan Wilson 2024</p>
   </div>
 </template>
 
