@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-personalwebsite-dev-85035-authRole",
+      "UnauthRoleArn": "arn:aws:iam::411750981882:role/amplify-personalwebsite-dev-85035-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::411750981882:role/amplify-personalwebsite-dev-85035-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-personalwebsite-dev-85035-deployment",
+      "UnauthRoleName": "amplify-personalwebsite-dev-85035-unauthRole",
+      "StackName": "amplify-personalwebsite-dev-85035",
+      "StackId": "arn:aws:cloudformation:us-east-1:411750981882:stack/amplify-personalwebsite-dev-85035/03672640-d965-11ee-8f2c-12ea8f58de31",
+      "AmplifyAppId": "dd53wsvj94xik"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dd53wsvj94xik",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
