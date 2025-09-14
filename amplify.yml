@@ -3,16 +3,23 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Install Quarto CLI (Linux x86_64) from release tarball
+        # Pick the Quarto version you want
         - QUARTO_VERSION=1.7.32
+        # Download and extract Quarto
         - curl -L -o quarto.tar.gz https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.tar.gz
         - tar -xzf quarto.tar.gz
-        - mv quarto-${QUARTO_VERSION} /opt/quarto
-        - ln -s /opt/quarto/bin/quarto /usr/local/bin/quarto
+        # Install under $HOME (no sudo needed)
+        - mkdir -p $HOME/.local
+        - mv quarto-${QUARTO_VERSION} $HOME/.local/quarto
+        # Make Quarto available on PATH for this phase and future shells
+        - echo 'export PATH="$HOME/.local/quarto/bin:$PATH"' >> ~/.bashrc
+        - export PATH="$HOME/.local/quarto/bin:$PATH"
         - quarto --version
     build:
       commands:
-        # Render the Quarto project (outputs to _site by default)
+        # Ensure PATH in this shell too
+        - export PATH="$HOME/.local/quarto/bin:$PATH"
+        # Render your Quarto site
         - quarto render
   artifacts:
     baseDirectory: _site
