@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Jonathan Wilson"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - projects.qmd
+  page-footer:
+    center:
+      - text: "© 2025 Jonathan Wilson"
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/your-username
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: https://www.linkedin.com/in/your-handle
+      - icon: envelope
+        aria-label: Email
+        href: mailto:you@example.com
+
+format:
+  html:
+    theme: cyborg
+    css: styles.css
+    toc: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
