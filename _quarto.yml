@@ -22,6 +22,19 @@ website:
         aria-label: Email
         href: mailto:jonwilami@gmail.com
 
+  site-url: https://jonathanwil.com
+
+  # GA4 or Tracking ID
+  google-analytics:
+    tracking-id: "G-57REGYTJNR"
+    storage: cookies
+  
+  # Cookie banner that controls GA4 loading
+  cookie-consent:
+    type: express
+    policy-url: /privacy.html
+    prefs-text: "Cookie settings"
+
 format:
   html:
     theme: cyborg
@@ -32,18 +45,7 @@ format:
           <link rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
                 
-site-url: https://jonathanwil.com
 
-# GA4 or Tracking ID
-google-analytics:
-  tracking-id: "G-57REGYTJNR"
-  storage: cookies
-
-# Cookie banner that controls GA4 loading
-cookie-consent:
-  type: express
-  policy-url: /privacy.html
-  prefs-text: "Cookie settings"
 
 
 
