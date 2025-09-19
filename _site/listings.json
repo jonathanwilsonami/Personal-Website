@@ -9,18 +9,6 @@
     ]
   },
   {
-    "listing": "/projects/data-viz/index.html",
-    "items": [
-      "/projects/data-viz/sample.html"
-    ]
-  },
-  {
-    "listing": "/projects/construction/index.html",
-    "items": [
-      "/projects/construction/bathroom-1.html"
-    ]
-  },
-  {
     "listing": "/projects/iot-electronics/index.html",
     "items": []
   },
@@ -29,11 +17,19 @@
     "items": []
   },
   {
-    "listing": "/projects.html",
-    "items": []
+    "listing": "/projects/construction/index.html",
+    "items": [
+      "/projects/construction/bathroom-1.html"
+    ]
   },
   {
-    "listing": "/research/index.html",
+    "listing": "/projects/data-viz/index.html",
+    "items": [
+      "/projects/data-viz/sample.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
     "items": []
   }
 ]

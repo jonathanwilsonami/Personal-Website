@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "Coming soon — publications, working papers, and notes."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
@@ -7,151 +14,11 @@
     "text": "Projects\n  \n  \n    \n     About Me\n  \n  \n    \n     Research\n  \n\n  \n  \n\nWelcome to My Website\nExplore my Projects and About Me pages—this site is still evolving, with some areas complete and others under construction.\nMy vision: I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we build, sense, and connect across cyber-physical infrastructure."
   },
   {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\n\n🤖 Robotics & controls\n\n📈 Optimization (OR) & simulation\n\n🧰 Edge/IoT & cyber-physical systems\n\n🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "CV (PDF)\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nI am, at my core, a builder. I love to create things that make a tangible, positive impact—whether that’s laying tile and framing walls in the physical world, or designing intelligent systems that orchestrate vast amounts of data in the digital one. My “why” is simple but powerful: to unite the physical and digital worlds into systems that think, sense, and act intelligently. I see engineering not just as solving problems, but as designing the “brain” of complex machines, organizations, and infrastructures.\n\n\n\n\nMy journey began in construction. From childhood through my undergrad years, I worked on remodeling homes and heavy civil projects—learning how things fit together, how systems interact, and how effort turns into something you can stand on. One day, while installing moisture sensors for an irrigation system, I had a spark of realization: data and computation could be as powerful a building material as wood, steel, and concrete. That insight set me on a new trajectory.\nI went on to earn a degree in Applied Statistics and Computer Science at BYU, then launched into my career as a software engineer. The mindset I developed in construction—practical, hands-on, iterative—carried over into my technical career. I still think like a builder; I just build with code, data, and systems as much as with tools and materials.\n\n\n\n\nMy first professional chapter was in aerospace, working on satellite software for the Department of Defense. I focused on space situational awareness, developing image processing systems and leveraging optimization models (including vehicle routing problems for satellite scheduling). It gave me a front-row seat to the complexity of large-scale, mission-critical systems.\nLater, I transitioned into cybersecurity, where I applied big-data analytics (at petabyte scale) and machine learning to track down malicious actors across massive networks. This work deepened my passion for intelligent systems—systems that don’t just monitor, but understand, detect, and adapt.\nToday, I’m a systems engineer specializing in data architecture and engineering. I design and build data warehouses for business intelligence, architect pipelines for analytics, and lay the foundation for full data science ecosystems. My role blends engineering precision with systems-level thinking, bridging the gap between raw data and actionable intelligence.\n\n\n\n\nI consider myself a systems-minded engineer, fluent in software engineering, intelligent systems, and cyber-physical integration (IoT, automation, AI/ML). My strongest technical roots are in Linux and Python (with 10 years of professional experience), but I’m deliberately language- and tool-agnostic. For me, technology is a toolkit—I learn what’s needed to build what I envision.\nSome highlights of what I’ve built include:\n\nA full-stack network monitoring application for network engineers and cybersecurity teams.\nA data catalog platform from scratch, including the data crawler backend and search-enabled frontend.\nPrototyped ML models for detecting malicious cyber activities at scale.\nAn Android application using blockchain technologies to support humanitarian assistance.\nIoT-to-mobile applications connecting physical sensors with cloud and mobile platforms.\nCI/CD pipelines and infrastructure-as-code deployments for complex workloads.\nContainerized and Kubernetes-based systems to operationalize image processing and analytics within a cloud native environment.\nData visualization prototypes and mockups for executive and engineering audiences.\nLeadership roles guiding software teams through development, deployment, and production.\nTwo entire homes from the ground up.\nToo many to count construction projects. On the side and as I have time I might do one every month or so.\n\nAt heart, I’m a project-based learner and builder. I’ve been fortunate to work across satellites, cybersecurity, data platforms, and intelligent infrastructure, and every project has sharpened my ability to think across domains.\n\n\n\n\nMy dream is to revolutionize the construction industry and take it into an Industry 4.0/5.0 era, leveraging every available technology—from robotics and IoT to AI and digital twins. I want to bridge the gap between robots that can move and systems that can think. Others build machines and algorithms; I want to design the optimization, orchestration, and simulation frameworks that make them work together at scale.\nUsing operations research, decision intelligence, digital twins, and systems AI, I aim to turn isolated automation into orchestrated, intelligent workflows—optimizing site logistics, safety, and long‑term cost efficiency. My mission is to pioneer systems‑scale intelligence that unites humans, machines, and AI into adaptive, resilient infrastructures—first across construction tech, and then extending to aerospace, industrial operations, and beyond.\n\n\n\n\nI see this as a mission bigger than myself, and one that requires collaboration. If my story resonates with you—whether you’re an engineer, researcher, entrepreneur, or builder in any domain—I invite you to connect with me. Let’s build together, share ideas, and push the boundaries of what’s possible in intelligent, cyber-physical systems."
-  },
-  {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
-    "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\n\n🤖 Robotics & controls\n\n📈 Optimization (OR) & simulation\n\n🧰 Edge/IoT & cyber-physical systems\n\n🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI/ML Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/data-viz/index.html",
-    "href": "projects/data-viz/index.html",
-    "title": "Data Viz Projects",
-    "section": "",
-    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSample Page\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/data-viz/sample.html",
-    "href": "projects/data-viz/sample.html",
-    "title": "Sample Page",
-    "section": "",
-    "text": "One-liner: Interactive ridership analysis with time-of-day patterns, station flows, and anomaly spotting."
-  },
-  {
-    "objectID": "projects/data-viz/sample.html#overview",
-    "href": "projects/data-viz/sample.html#overview",
-    "title": "Sample Page",
-    "section": "Overview",
-    "text": "Overview\nBrief summary of the problem, your approach, and results. Keep it tight—bullets work great:\n\nETL from CSV → Parquet; fast transforms with Polars\nFeature engineering for weekday vs weekend patterns\nAltair charts for linked brushing across time & stations"
-  },
-  {
-    "objectID": "projects/data-viz/sample.html#hero-image-plot",
-    "href": "projects/data-viz/sample.html#hero-image-plot",
-    "title": "Sample Page",
-    "section": "Hero Image / Plot",
-    "text": "Hero Image / Plot"
-  },
-  {
-    "objectID": "projects/data-viz/sample.html#highlights",
-    "href": "projects/data-viz/sample.html#highlights",
-    "title": "Sample Page",
-    "section": "Highlights",
-    "text": "Highlights\n\n35% speed-up vs prior Pandas pipeline\nInteractive flows map shows rush-hour asymmetries\nClean Quarto layout, deployable with AWS Amplify"
-  },
-  {
-    "objectID": "projects/data-viz/sample.html#gallery",
-    "href": "projects/data-viz/sample.html#gallery",
-    "title": "Sample Page",
-    "section": "Gallery",
-    "text": "Gallery"
-  },
-  {
-    "objectID": "projects/data-viz/sample.html#code-snippet-python",
-    "href": "projects/data-viz/sample.html#code-snippet-python",
-    "title": "Sample Page",
-    "section": "Code Snippet (Python)",
-    "text": "Code Snippet (Python)\nimport polars as pl df = pl.read_parquet(“data/metro.parquet”) daily = df.group_by(“date”).agg(pl.col(“rides”).sum()) daily.head()"
-  },
-  {
-    "objectID": "projects/construction/index.html",
-    "href": "projects/construction/index.html",
-    "title": "Construction Projects",
-    "section": "",
-    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Bathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/iot-electronics/index.html",
-    "href": "projects/iot-electronics/index.html",
-    "title": "IoT & Electronics Projects",
-    "section": "",
-    "text": "A collection of IoT & electronics projects.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/ai-ml/index.html",
-    "href": "projects/ai-ml/index.html",
-    "title": "AI/ML Projects",
-    "section": "",
-    "text": "A collection of AI/ML projects.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html",
-    "href": "projects/construction/bathroom-1.html",
-    "title": "First Bathroom Remodel",
-    "section": "",
-    "text": "Summary: First Bathroom Remodel."
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#overview",
-    "href": "projects/construction/bathroom-1.html#overview",
-    "title": "First Bathroom Remodel",
-    "section": "Overview",
-    "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#hero-image-plot",
-    "href": "projects/construction/bathroom-1.html#hero-image-plot",
-    "title": "First Bathroom Remodel",
-    "section": "Hero Image / Plot",
-    "text": "Hero Image / Plot"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#highlights",
-    "href": "projects/construction/bathroom-1.html#highlights",
-    "title": "First Bathroom Remodel",
-    "section": "Highlights",
-    "text": "Highlights\n\n35% speed-up vs prior Pandas pipeline\nInteractive flows map shows rush-hour asymmetries\nClean Quarto layout, deployable with AWS Amplify"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#gallery",
-    "href": "projects/construction/bathroom-1.html#gallery",
-    "title": "First Bathroom Remodel",
-    "section": "Gallery",
-    "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#code-snippet-python",
-    "href": "projects/construction/bathroom-1.html#code-snippet-python",
-    "title": "Bathroom One",
-    "section": "Code Snippet (Python)",
-    "text": "Code Snippet (Python)\nimport polars as pl df = pl.read_parquet(“data/metro.parquet”) daily = df.group_by(“date”).agg(pl.col(“rides”).sum()) daily.head()"
+    "text": "Comprehensive CV (PDF)\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nI am, at my core, a builder. I love to create things that make a tangible, positive impact—whether that’s laying tile and framing walls in the physical world, or designing intelligent systems that orchestrate vast amounts of data in the digital one. My “why” is simple but powerful: to unite the physical and digital worlds into systems that think, sense, and act intelligently. I see engineering not just as solving problems, but as designing the “brain” of complex machines, organizations, and infrastructures.\n\n\n\n\nMy journey began in construction. From childhood through my undergrad years, I worked on remodeling homes and heavy civil projects—learning how things fit together, how systems interact, and how effort turns into something you can stand on. One day, while installing moisture sensors for an irrigation system, I had a spark of realization: data and computation could be as powerful a building material as wood, steel, and concrete. That insight set me on a new trajectory.\nI went on to earn a degree in Applied Statistics and Computer Science at BYU, then launched into my career as a software engineer. The mindset I developed in construction—practical, hands-on, iterative—carried over into my technical career. I still think like a builder; I just build with code, data, and systems as much as with tools and materials.\n\n\n\n\nMy first professional chapter was in aerospace, working on satellite software for the Department of Defense. I focused on space situational awareness, developing image processing systems and leveraging optimization models (including vehicle routing problems for satellite scheduling). It gave me a front-row seat to the complexity of large-scale, mission-critical systems.\nLater, I transitioned into cybersecurity, where I applied big-data analytics (at petabyte scale) and machine learning to track down malicious actors across massive networks. This work deepened my passion for intelligent systems—systems that don’t just monitor, but understand, detect, and adapt.\nToday, I’m a systems engineer specializing in data architecture and engineering. I design and build data warehouses for business intelligence, architect pipelines for analytics, and lay the foundation for full data science ecosystems. My role blends engineering precision with systems-level thinking, bridging the gap between raw data and actionable intelligence.\n\n\n\n\nI consider myself a systems-minded engineer, fluent in software engineering, intelligent systems, and cyber-physical integration (IoT, automation, AI/ML). My strongest technical roots are in Linux and Python (with 10 years of professional experience), but I’m deliberately language- and tool-agnostic. For me, technology is a toolkit—I learn what’s needed to build what I envision.\nSome highlights of what I’ve built include:\n\nA full-stack network monitoring application for network engineers and cybersecurity teams.\nA data catalog platform from scratch, including the data crawler backend and search-enabled frontend.\nPrototyped ML models for detecting malicious cyber activities at scale.\nAn Android application using blockchain technologies to support humanitarian assistance.\nIoT-to-mobile applications connecting physical sensors with cloud and mobile platforms.\nCI/CD pipelines and infrastructure-as-code deployments for complex workloads.\nContainerized and Kubernetes-based systems to operationalize image processing and analytics within a cloud native environment.\nData visualization prototypes and mockups for executive and engineering audiences.\nLeadership roles guiding software teams through development, deployment, and production.\nTwo entire homes from the ground up.\nToo many to count construction projects. On the side and as I have time I might do one every month or so.\n\nAt heart, I’m a project-based learner and builder. I’ve been fortunate to work across satellites, cybersecurity, data platforms, and intelligent infrastructure, and every project has sharpened my ability to think across domains.\n\n\n\n\nMy dream is to revolutionize the construction industry and take it into an Industry 4.0/5.0 era, leveraging every available technology—from robotics and IoT to AI and digital twins. I want to bridge the gap between robots that can move and systems that can think. Others build machines and algorithms; I want to design the optimization, orchestration, and simulation frameworks that make them work together at scale.\nUsing operations research, decision intelligence, digital twins, and systems AI, I aim to turn isolated automation into orchestrated, intelligent workflows—optimizing site logistics, safety, and long‑term cost efficiency. My mission is to pioneer systems‑scale intelligence that unites humans, machines, and AI into adaptive, resilient infrastructures—first across construction tech, and then extending to aerospace, industrial operations, and beyond.\n\n\n\n\nI see this as a mission bigger than myself, and one that requires collaboration. If my story resonates with you—whether you’re an engineer, researcher, entrepreneur, or builder in any domain—I invite you to connect with me. Let’s build together, share ideas, and push the boundaries of what’s possible in intelligent, cyber-physical systems."
   },
   {
     "objectID": "about.html#what-i-am-and-what-drives-me",
@@ -196,10 +63,122 @@
     "text": "I see this as a mission bigger than myself, and one that requires collaboration. If my story resonates with you—whether you’re an engineer, researcher, entrepreneur, or builder in any domain—I invite you to connect with me. Let’s build together, share ideas, and push the boundaries of what’s possible in intelligent, cyber-physical systems."
   },
   {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research & Papers",
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me",
+    "section": "Interests",
+    "text": "Interests\n\n🤖 Robotics & controls\n\n📈 Optimization (OR) & simulation\n\n🧰 Edge/IoT & cyber-physical systems\n\n🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html",
+    "href": "projects/data-viz/sample.html",
+    "title": "Sample Page",
     "section": "",
-    "text": "Coming soon — publications, working papers, and notes.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "One-liner: Interactive ridership analysis with time-of-day patterns, station flows, and anomaly spotting."
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#overview",
+    "href": "projects/data-viz/sample.html#overview",
+    "title": "Sample Page",
+    "section": "Overview",
+    "text": "Overview\nBrief summary of the problem, your approach, and results. Keep it tight—bullets work great:\n\nETL from CSV → Parquet; fast transforms with Polars\nFeature engineering for weekday vs weekend patterns\nAltair charts for linked brushing across time & stations"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#hero-image-plot",
+    "href": "projects/data-viz/sample.html#hero-image-plot",
+    "title": "Sample Page",
+    "section": "Hero Image / Plot",
+    "text": "Hero Image / Plot"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#highlights",
+    "href": "projects/data-viz/sample.html#highlights",
+    "title": "Sample Page",
+    "section": "Highlights",
+    "text": "Highlights\n\n35% speed-up vs prior Pandas pipeline\nInteractive flows map shows rush-hour asymmetries\nClean Quarto layout, deployable with AWS Amplify"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#gallery",
+    "href": "projects/data-viz/sample.html#gallery",
+    "title": "Sample Page",
+    "section": "Gallery",
+    "text": "Gallery"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#code-snippet-python",
+    "href": "projects/data-viz/sample.html#code-snippet-python",
+    "title": "Sample Page",
+    "section": "Code Snippet (Python)",
+    "text": "Code Snippet (Python)\nimport polars as pl df = pl.read_parquet(“data/metro.parquet”) daily = df.group_by(“date”).agg(pl.col(“rides”).sum()) daily.head()"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html",
+    "href": "projects/construction/bathroom-1.html",
+    "title": "First Bathroom Remodel",
+    "section": "",
+    "text": "Summary: First Bathroom Remodel."
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#overview",
+    "href": "projects/construction/bathroom-1.html#overview",
+    "title": "First Bathroom Remodel",
+    "section": "Overview",
+    "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#gallery",
+    "href": "projects/construction/bathroom-1.html#gallery",
+    "title": "First Bathroom Remodel",
+    "section": "Gallery",
+    "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI/ML Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/iot-electronics/index.html",
+    "href": "projects/iot-electronics/index.html",
+    "title": "IoT & Electronics Projects",
+    "section": "",
+    "text": "A collection of IoT & electronics projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/ai-ml/index.html",
+    "href": "projects/ai-ml/index.html",
+    "title": "AI/ML Projects",
+    "section": "",
+    "text": "A collection of AI/ML projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/construction/index.html",
+    "href": "projects/construction/index.html",
+    "title": "Construction Projects",
+    "section": "",
+    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Bathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/data-viz/index.html",
+    "href": "projects/data-viz/index.html",
+    "title": "Data Viz Projects",
+    "section": "",
+    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSample Page\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Coming soon — publications, working papers, and notes."
   }
 ]
