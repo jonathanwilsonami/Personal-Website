@@ -1,0 +1,53 @@
+---
+title: "First Bathroom Remodel"
+date: 2025-09-10
+categories: [Construction - Bathrooms]
+image: /images/projects/construction/bathroom-1/finished-shower-left.jpg   # card image
+website: https://demo.example.com
+repo-url: https://github.com/yourname/metro-explorer
+---
+
+**Summary:** First Bathroom Remodel.
+
+::: {.badges}
+**Work:** Bath tile, floor tile, tub install, bathroom plumbing, vanity install, and trim. 
+:::
+
+## Overview
+
+Brief summary....:
+
+- Item 1
+- Item 2
+- Item 3
+
+## Gallery
+
+
+### Before 
+
+![](/images/projects/construction/bathroom-1/before-1.jpg){fig-alt="before-1"}
+![](/images/projects/construction/bathroom-1/before-2.jpg){fig-alt="before-2"}
+![](/images/projects/construction/bathroom-1/before-left.jpg){fig-alt="before-left"}
+![](/images/projects/construction/bathroom-1/before-right.jpg){fig-alt="before-right"}
+
+### Demo
+
+![](/images/projects/construction/bathroom-1/demo-1.jpg){fig-alt="demo-1"}
+![](/images/projects/construction/bathroom-1/demo-2.jpg){fig-alt="demo-2"}
+
+### In Process 
+
+![](/images/projects/construction/bathroom-1/waterproofing-left.jpg){fig-alt="waterproofing-left"}
+![](/images/projects/construction/bathroom-1/waterproofing-right.jpg){fig-alt="waterproofing-right"}
+![](/images/projects/construction/bathroom-1/first-bath-tile-left.jpg){fig-alt="first-bath-tile-left"}
+![](/images/projects/construction/bathroom-1/first-bath-tile-right.jpg){fig-alt="first-bath-tile-right"}
+![](/images/projects/construction/bathroom-1/floor-tile-underlayment.jpg){fig-alt="floor-tile-underlayment"}
+![](/images/projects/construction/bathroom-1/floor-tile.jpg){fig-alt="floor-tile"}
+
+### After 
+
+![](/images/projects/construction/bathroom-1/finished-shower-left.jpg){fig-alt="finished-shower-left"}
+![](/images/projects/construction/bathroom-1/finished-shower-right.jpg){fig-alt="finished-shower-right"}
+![](/images/projects/construction/bathroom-1/finished-vanity.jpg){fig-alt="finished-vanity"}
+![](/images/projects/construction/bathroom-1/finished-bathroom.jpg){fig-alt="finished-bathroom"}

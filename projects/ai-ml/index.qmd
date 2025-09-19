@@ -1,0 +1,12 @@
+---
+title: "AI/ML Projects"
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+  image-placeholder: /images/placeholder.png
+---
+
+A collection of AI/ML projects.

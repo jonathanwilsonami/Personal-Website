@@ -26,5 +26,131 @@
     "title": "About Me",
     "section": "Interests",
     "text": "Interests\n\n🤖 Robotics & controls\n\n📈 Optimization (OR) & simulation\n\n🧰 Edge/IoT & cyber-physical systems\n\n🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI/ML Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/data-viz/index.html",
+    "href": "projects/data-viz/index.html",
+    "title": "Data Viz Projects",
+    "section": "",
+    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSample Page\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html",
+    "href": "projects/data-viz/sample.html",
+    "title": "Sample Page",
+    "section": "",
+    "text": "One-liner: Interactive ridership analysis with time-of-day patterns, station flows, and anomaly spotting."
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#overview",
+    "href": "projects/data-viz/sample.html#overview",
+    "title": "Sample Page",
+    "section": "Overview",
+    "text": "Overview\nBrief summary of the problem, your approach, and results. Keep it tight—bullets work great:\n\nETL from CSV → Parquet; fast transforms with Polars\nFeature engineering for weekday vs weekend patterns\nAltair charts for linked brushing across time & stations"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#hero-image-plot",
+    "href": "projects/data-viz/sample.html#hero-image-plot",
+    "title": "Sample Page",
+    "section": "Hero Image / Plot",
+    "text": "Hero Image / Plot"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#highlights",
+    "href": "projects/data-viz/sample.html#highlights",
+    "title": "Sample Page",
+    "section": "Highlights",
+    "text": "Highlights\n\n35% speed-up vs prior Pandas pipeline\nInteractive flows map shows rush-hour asymmetries\nClean Quarto layout, deployable with AWS Amplify"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#gallery",
+    "href": "projects/data-viz/sample.html#gallery",
+    "title": "Sample Page",
+    "section": "Gallery",
+    "text": "Gallery"
+  },
+  {
+    "objectID": "projects/data-viz/sample.html#code-snippet-python",
+    "href": "projects/data-viz/sample.html#code-snippet-python",
+    "title": "Sample Page",
+    "section": "Code Snippet (Python)",
+    "text": "Code Snippet (Python)\nimport polars as pl df = pl.read_parquet(“data/metro.parquet”) daily = df.group_by(“date”).agg(pl.col(“rides”).sum()) daily.head()"
+  },
+  {
+    "objectID": "projects/construction/index.html",
+    "href": "projects/construction/index.html",
+    "title": "Construction Projects",
+    "section": "",
+    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Bathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/iot-electronics/index.html",
+    "href": "projects/iot-electronics/index.html",
+    "title": "IoT & Electronics Projects",
+    "section": "",
+    "text": "A collection of IoT & electronics projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/ai-ml/index.html",
+    "href": "projects/ai-ml/index.html",
+    "title": "AI/ML Projects",
+    "section": "",
+    "text": "A collection of AI/ML projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html",
+    "href": "projects/construction/bathroom-1.html",
+    "title": "First Bathroom Remodel",
+    "section": "",
+    "text": "Summary: First Bathroom Remodel."
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#overview",
+    "href": "projects/construction/bathroom-1.html#overview",
+    "title": "First Bathroom Remodel",
+    "section": "Overview",
+    "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#hero-image-plot",
+    "href": "projects/construction/bathroom-1.html#hero-image-plot",
+    "title": "First Bathroom Remodel",
+    "section": "Hero Image / Plot",
+    "text": "Hero Image / Plot"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#highlights",
+    "href": "projects/construction/bathroom-1.html#highlights",
+    "title": "First Bathroom Remodel",
+    "section": "Highlights",
+    "text": "Highlights\n\n35% speed-up vs prior Pandas pipeline\nInteractive flows map shows rush-hour asymmetries\nClean Quarto layout, deployable with AWS Amplify"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#gallery",
+    "href": "projects/construction/bathroom-1.html#gallery",
+    "title": "First Bathroom Remodel",
+    "section": "Gallery",
+    "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#code-snippet-python",
+    "href": "projects/construction/bathroom-1.html#code-snippet-python",
+    "title": "Bathroom One",
+    "section": "Code Snippet (Python)",
+    "text": "Code Snippet (Python)\nimport polars as pl df = pl.read_parquet(“data/metro.parquet”) daily = df.group_by(“date”).agg(pl.col(“rides”).sum()) daily.head()"
   }
 ]

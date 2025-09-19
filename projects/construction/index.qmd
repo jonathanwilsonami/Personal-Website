@@ -1,0 +1,14 @@
+---
+title: "Construction Projects"
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+---
+
+A collection of construction projects.
+
+![](/images/manhole.jpg){width="45%" fig-align="center" fig-alt="Manhole"}
+

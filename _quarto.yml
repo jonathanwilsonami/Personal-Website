@@ -1,14 +1,28 @@
 project:
   type: website
+  resources:
+    - images/**
 
 website:
   title: "Jonathan Wilson"
+  favicon: images/about/favicon.ico
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-      - projects.qmd
+      - text: Projects
+        menu:
+          - text: "All Projects"
+            href: projects/index.qmd
+          - text: "Data Viz"
+            href: projects/data-viz/index.qmd
+          - text: "AI / ML"
+            href: projects/ai-ml/index.qmd
+          - text: "IoT & Electronics"
+            href: projects/iot-electronics/index.qmd
+          - text: "Construction"
+            href: projects/construction/index.qmd
   page-footer:
     center:
       - text: "© 2025 Jonathan Wilson"

@@ -1,0 +1,12 @@
+---
+title: "Data Viz Projects"
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+  image-placeholder: /images/placeholder.png
+---
+
+A collection of visualization projects—dashboards, interactive charts, and storytelling with data.

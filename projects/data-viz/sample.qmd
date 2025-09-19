@@ -1,0 +1,49 @@
+---
+title: "Sample Page"
+date: 2025-09-10
+categories: [Data Viz]
+image: /images/projects/metro/cover.png   # card image
+# Optional quick links that show under the title in listing cards:
+website: https://demo.example.com
+repo-url: https://github.com/yourname/metro-explorer
+---
+
+**One-liner:** Interactive ridership analysis with time-of-day patterns, station flows, and anomaly spotting.
+
+::: {.badges}
+**Stack:** Python, Polars, Altair, Quarto
+:::
+
+## Overview
+
+Brief summary of the problem, your approach, and results. Keep it tight—bullets work great:
+
+- ETL from CSV → Parquet; fast transforms with **Polars**
+- Feature engineering for weekday vs weekend patterns
+- Altair charts for linked brushing across time & stations
+
+## Hero Image / Plot
+
+![](/images/projects/metro/hero.png){fig-alt="Overview dashboard" width="100%"}
+
+## Highlights
+
+- 35% speed-up vs prior Pandas pipeline
+- Interactive flows map shows rush-hour asymmetries
+- Clean Quarto layout, deployable with AWS Amplify
+
+## Gallery
+
+::: {layout="[1,1,1]"}
+![](/images/projects/metro/plot1.png){fig-alt="Daily totals"}
+![](/images/projects/metro/plot2.png){fig-alt="Station flow"}
+![](/images/projects/metro/plot3.png){fig-alt="Anomaly heatmap"}
+:::
+
+## Code Snippet (Python)
+
+```{python}
+import polars as pl
+df = pl.read_parquet("data/metro.parquet")
+daily = df.group_by("date").agg(pl.col("rides").sum())
+daily.head()

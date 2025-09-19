@@ -31,6 +31,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/about/favicon.ico" rel="icon">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -67,6 +70,34 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-57REGYTJNR"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-57REGYTJNR', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":"",
+"website_privacy_policy_url":"/privacy.html"
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
@@ -98,10 +129,33 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About Me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./projects/index.html">
+ <span class="dropdown-text">All Projects</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/data-viz/index.html">
+ <span class="dropdown-text">Data Viz</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/ai-ml/index.html">
+ <span class="dropdown-text">AI / ML</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/iot-electronics/index.html">
+ <span class="dropdown-text">IoT &amp; Electronics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/construction/index.html">
+ <span class="dropdown-text">Construction</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -122,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
-    <img src="images/profile.jpg" class="about-image
+    <img src="images/about/profile.jpg" class="about-image
   rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -256,7 +310,7 @@ Contact
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/jonathanwil\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -595,25 +649,25 @@ Contact
  © 2025 Jonathan Wilson
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/your-username">
+    <a class="nav-link" href="https://github.com/jonathanwilsonami/">
       <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/your-handle">
+    <a class="nav-link" href="https://www.linkedin.com/in/jonathanwil/">
       <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="mailto:you@example.com">
+    <a class="nav-link" href="mailto:jonwilami@gmail.com">
       <i class="bi bi-envelope" role="img" aria-label="Email">
 </i> 
     </a>
   </li>  
 </ul>
-    </div>
+    <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie settings</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

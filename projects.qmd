@@ -1,4 +1,17 @@
 ---
 title: "Projects"
-format: html
+page-layout: full
+image: ../images/manhole.jpg
+title-block-banner: ../images/manhole.jpg
+
+listing:
+  contents:
+    - data-viz
+    - ai-ml
+    - iot-electronics
+    - construction
+  type: grid
+  sort: "date desc"
 ---
+
+Welcome! Explore featured work across **Data Viz**, **AI/ML**, **IoT & Electronics**, and **Construction**.

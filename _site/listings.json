@@ -1,0 +1,35 @@
+[
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/data-viz/index.html",
+      "/projects/ai-ml/index.html",
+      "/projects/iot-electronics/index.html",
+      "/projects/construction/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/data-viz/index.html",
+    "items": [
+      "/projects/data-viz/sample.html"
+    ]
+  },
+  {
+    "listing": "/projects/construction/index.html",
+    "items": [
+      "/projects/construction/bathroom-1.html"
+    ]
+  },
+  {
+    "listing": "/projects/iot-electronics/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/ai-ml/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
+  }
+]
