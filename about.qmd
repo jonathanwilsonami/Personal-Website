@@ -12,8 +12,8 @@ about:
   image-width: 70%
   links:
     - icon: file-earmark-text
-      text: "Résumé (PDF)"
-      href: https://drive.google.com/file/d/1v5u2BQEA69krELmORPT-SBpvGJXmZapx/view?usp=sharing 
+      text: "Comprehensive CV (PDF)"
+      href: https://drive.google.com/file/d/1rMHn8kVOineAp4wR6B04OwObDhQYWoiz/view?usp=sharing 
       target: _blank
       rel: noopener
     - icon: github
@@ -30,9 +30,74 @@ about:
 ---
 
 :::{#hero-heading}
-For most of my early life (from childhood through part of my undergrad) I worked in construction renovating homes and eventually heavy civil. Then one day while installing moisture sensors for an irrigation system I got a spark of inspiration to change my career trajectory to computers and data. I went on to study my undergrad in Applied Statistics and Computer Science at BYU, after which I jumped right into working full-time as a software engineer. I spent a few years working on satellite software for space situational awareness for the DoD focused mostly on image processing and optimization. I currently work in cybersecurity using big-data analytics and machine learning to track down bad actors.
+## What I Am and What Drives Me
 
-I consider myself an engineer with expertise in software engineering and intelligent systems focused on cyber-physical systems (IoT, software automation, AI/ML). I’m a Linux and Python native with almost 8 years of professional experience in both, but I’m language- and technology-agnostic, having learned many others over the years. I’m mostly self-taught and a hands-on, project-based learner—hence why I love doing projects. If you’d like to know more about my experience, feel free to send a message, look at my résumé, or browse my past projects.
+I am, at my core, a builder. I love to create things that make a tangible, positive impact—whether that’s laying tile and framing walls in the physical world, or designing intelligent systems that orchestrate vast amounts of data in the digital one. My “why” is simple but powerful: to unite the physical and digital worlds into systems that think, sense, and act intelligently. I see engineering not just as solving problems, but as designing the “brain” of complex machines, organizations, and infrastructures.
+
+---
+
+## My Background Story
+
+My journey began in construction. From childhood through my undergrad years, I worked on remodeling homes and heavy civil projects—learning how things fit together, how systems interact, and how effort turns into something you can stand on. One day, while installing moisture sensors for an irrigation system, I had a spark of realization: data and computation could be as powerful a building material as wood, steel, and concrete. That insight set me on a new trajectory.
+
+I went on to earn a degree in Applied Statistics and Computer Science at BYU, then launched into my career as a software engineer. The mindset I developed in construction—practical, hands-on, iterative—carried over into my technical career. I still think like a builder; I just build with code, data, and systems as much as with tools and materials.
+
+---
+
+## Professional Journey
+
+My first professional chapter was in aerospace, working on satellite software for the Department of Defense. I focused on space situational awareness, developing image processing systems and leveraging optimization models (including vehicle routing problems for satellite scheduling). It gave me a front-row seat to the complexity of large-scale, mission-critical systems.
+
+Later, I transitioned into cybersecurity, where I applied big-data analytics (at petabyte scale) and machine learning to track down malicious actors across massive networks. This work deepened my passion for intelligent systems—systems that don’t just monitor, but understand, detect, and adapt.
+
+Today, I’m a systems engineer specializing in data architecture and engineering. I design and build data warehouses for business intelligence, architect pipelines for analytics, and lay the foundation for full data science ecosystems. My role blends engineering precision with systems-level thinking, bridging the gap between raw data and actionable intelligence.
+
+---
+
+## What I’ve Built & My Skills
+
+I consider myself a systems-minded engineer, fluent in software engineering, intelligent systems, and cyber-physical integration (IoT, automation, AI/ML). My strongest technical roots are in Linux and Python (with 10 years of professional experience), but I’m deliberately language- and tool-agnostic. For me, technology is a toolkit—I learn what’s needed to build what I envision.
+
+Some highlights of what I’ve built include:
+
+* A full-stack network monitoring application for network engineers and cybersecurity teams.
+
+* A data catalog platform from scratch, including the data crawler backend and search-enabled frontend.
+
+* Prototyped ML models for detecting malicious cyber activities at scale.
+
+* An Android application using blockchain technologies to support humanitarian assistance.
+
+* IoT-to-mobile applications connecting physical sensors with cloud and mobile platforms.
+
+* CI/CD pipelines and infrastructure-as-code deployments for complex workloads.
+
+* Containerized and Kubernetes-based systems to operationalize image processing and analytics within a cloud native environment.
+
+* Data visualization prototypes and mockups for executive and engineering audiences.
+
+* Leadership roles guiding software teams through development, deployment, and production.
+
+* Two entire homes from the ground up. 
+
+* Too many to count construction projects. On the side and as I have time I might do one every month or so. 
+
+At heart, I’m a project-based learner and builder. I’ve been fortunate to work across satellites, cybersecurity, data platforms, and intelligent infrastructure, and every project has sharpened my ability to think across domains.
+
+---
+
+## My Vision and Mission
+
+My dream is to revolutionize the construction industry and take it into an Industry 4.0/5.0 era, leveraging every available technology—from robotics and IoT to AI and digital twins. I want to bridge the gap between robots that can move and systems that can think. Others build machines and algorithms; I want to design the optimization, orchestration, and simulation frameworks that make them work together at scale.
+
+Using operations research, decision intelligence, digital twins, and systems AI, I aim to turn isolated automation into orchestrated, intelligent workflows—optimizing site logistics, safety, and long‑term cost efficiency.
+My mission is to pioneer systems‑scale intelligence that unites humans, machines, and AI into adaptive, resilient infrastructures—first across construction tech, and then extending to aerospace, industrial operations, and beyond.
+
+---
+
+## An Invitation
+
+I see this as a mission bigger than myself, and one that requires collaboration. If my story resonates with you—whether you’re an engineer, researcher, entrepreneur, or builder in any domain—I invite you to connect with me. Let’s build together, share ideas, and push the boundaries of what’s possible in intelligent, cyber-physical systems.
 :::
 
 ::: {.callout-note}
@@ -48,3 +113,6 @@ I consider myself an engineer with expertise in software engineering and intelli
 - 📈 Optimization (OR) & simulation  
 - 🧰 Edge/IoT & cyber-physical systems  
 - 🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling
+
+
+

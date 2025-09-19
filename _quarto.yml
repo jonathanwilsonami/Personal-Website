@@ -10,18 +10,21 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: research.qmd 
+        text: Research
       - text: Projects
         menu:
-          - text: "All Projects"
+          - text: All Projects
             href: projects/index.qmd
-          - text: "Data Viz"
+          - text: Data Viz
             href: projects/data-viz/index.qmd
-          - text: "AI / ML"
+          - text: AI / ML
             href: projects/ai-ml/index.qmd
-          - text: "IoT & Electronics"
+          - text: IoT & Electronics
             href: projects/iot-electronics/index.qmd
-          - text: "Construction"
+          - text: Construction
             href: projects/construction/index.qmd
   page-footer:
     center:

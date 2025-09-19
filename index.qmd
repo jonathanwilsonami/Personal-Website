@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "Welcome!"
 description-meta: "Systems & software engineer building intelligent, data-driven systems across AI/ML, IoT, and digital twins."
 image: images/profile.jpg
 page-navigation: false
@@ -11,40 +11,22 @@ about:
   template: trestles
   image-width: 70%
   links:
-    - icon: file-earmark-text
-      text: "Résumé (PDF)"
-      href: https://drive.google.com/file/d/1v5u2BQEA69krELmORPT-SBpvGJXmZapx/view?usp=sharing 
-      target: _blank
-      rel: noopener
-    - icon: github
-      text: GitHub
-      href: https://github.com/jonathanwilsonami/
-      target: _blank
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/jonathanwil/
-      target: _blank
-    - icon: envelope
-      text: Email
-      href: mailto:jonwilami@gmail.com
+    - icon: folder
+      text: "Projects"
+      href: projects/index.qmd
+    - icon: person
+      text: "About Me"
+      href: about.qmd
+    - icon: journal-text
+      text: "Research"
+      href: research/index.qmd
 ---
 
-:::{#hero-heading}
-For most of my early life (from childhood through part of my undergrad) I worked in construction renovating homes and eventually heavy civil. Then one day while installing moisture sensors for an irrigation system I got a spark of inspiration to change my career trajectory to computers and data. I went on to study my undergrad in Applied Statistics and Computer Science at BYU, after which I jumped right into working full-time as a software engineer. I spent a few years working on satellite software for space situational awareness for the DoD focused mostly on image processing and optimization. I currently work in cybersecurity using big-data analytics and machine learning to track down bad actors.
+:::{#hero-heading .center}
+# Welcome to My Website  
 
-I consider myself an engineer with expertise in software engineering and intelligent systems focused on cyber-physical systems (IoT, software automation, AI/ML). I’m a Linux and Python native with almost 8 years of professional experience in both, but I’m language- and technology-agnostic, having learned many others over the years. I’m mostly self-taught and a hands-on, project-based learner—hence why I love doing projects. If you’d like to know more about my experience, feel free to send a message, look at my résumé, or browse my past projects.
+Explore my **Projects** and **About Me** pages—this site is still evolving, with some areas complete and others under construction.  
+
+**My vision:** I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we **build**, **sense**, and **connect** across cyber-physical infrastructure.  
 :::
 
-::: {.callout-note}
-## Contact
-- 📧 [Gmail](mailto:jonwilami@gmail.com)
-- 🔗 [Linkedin - jonathanwil](https://www.linkedin.com/in/jonathanwil/)
-- 🐙 [Github - jonathanwilsonami](https://github.com/jonathanwilsonami/)
-- 📍 Virginia, USA
-:::
-
-## Interests
-- 🤖 Robotics & controls  
-- 📈 Optimization (OR) & simulation  
-- 🧰 Edge/IoT & cyber-physical systems  
-- 🏗️ Construction tech • 🏃 Trail running • 🛠️ Remodeling
