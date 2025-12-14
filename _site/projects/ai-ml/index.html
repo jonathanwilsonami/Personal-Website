@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AI/ML Projects – Jonathan Wilson</title>
+<title>Intelligent Systems &amp; Decision Modeling – Jonathan Wilson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -208,7 +208,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../../projects/ai-ml/index.html">
- <span class="dropdown-text">AI / ML</span></a>
+ <span class="dropdown-text">Intelligent Systems &amp; Decision Modeling</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../projects/iot-electronics/index.html">
@@ -239,7 +239,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI/ML Projects</h1>
+<h1 class="title">Intelligent Systems &amp; Decision Modeling</h1>
 </div>
 
 
@@ -256,14 +256,37 @@ window.Quarto = {
 </header>
 
 
-<p>A collection of AI/ML projects.</p>
+<p>A collection of Intelligent Systems &amp; Decision Modeling projects.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="T3B0aW1pemF0aW9uJTJDTGluZWFyJTIwUHJvZ3JhbW1pbmclMkNPcGVyYXRpb25zJTIwUmVzZWFyY2g=" data-listing-date-sort="1747022400000" data-listing-file-modified-sort="1765725554499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<a href="../../projects/ai-ml/gurobipy-transportation-simplex-lp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../images/projects/ai-ml/lp-transportation-project.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Gurobipy Transportation LP Solver
+</h5>
+<div class="card-text listing-description delink">
+<p>A simple Linear Programming transportation problem solver using Gurobi and Python</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
+</div>
+<div class="listing-date">
+May 12, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->

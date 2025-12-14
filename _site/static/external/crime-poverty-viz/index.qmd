@@ -1,0 +1,979 @@
+---
+title: "Possible Relationship Between Poverty & Crime in Dillon County South Carolina"
+date: 2025-09-25
+categories: [Data Viz]
+repo-url: https://github.com/jonathanwilsonami/stat-515
+format: html
+authors: 
+  - "Jonathan Wilson"
+  - "Sean Reilly"
+---
+
+**Summary:** Data Visualization Redesign Project. 
+
+## Introduction 
+The task of this project is to find an existing data visualization, critically analyze its context and shortcomings, create multiple improved redesigns to reveal new patterns, compare the effectiveness of the original and redesigned plots, and provide thoughtful commentary on the process, challenges, and potential next steps while providing a story we can tell from the data.  
+
+## Original Graphic
+
+![The original chart[^refnote].](/images/old-chart-bubble-chart-crime.png){#fig-original fig-align="center" width="100%"}
+
+[^refnote]: Gupta, A. (2022, February 23). 10 Good and Bad Examples of Data Visualization · Polymer. Polymer. https://www.polymersearch.com/blog/10-good-and-bad-examples-of-data-visualization
+
+  The visualization shown above (see @fig-original) is the original graph that we chose for this redesign project. This visualization was taken from a website that identified multiple examples of data visualizations that do not follow best practices. Just at first glance, we can very quickly determine that there is a lot going on in this graph. In fact, there is too much going on to the point that it is hard for the audience to understand the intended story behind the graph. 
+
+### The Good  
+
+- The chart attempts to track three variables (property crime, violent crime, and poverty rate) in the same visualization which can be insightful to examine their intertwined relationships.
+- Using bubble charts is actually not a bad idea here and when used well it can actually be insightful allowing for proportions to be distinguished. 
+
+### The Bad
+On the other hand the chart did not do a great job in portraying the data in such a way that the audience can easily interpret and did poorly is several areas:
+
+- The bubble radius for the poverty variable has no numeric reference, so even though they are comparable between states, any single radius has no meaning on its own. 
+- Additionally, there is no title of the graph so it is unclear what timeframe this data is coming from.
+- The state labels are messy and hard to read
+- The units could be more explicit.
+- The color choice is not the best. 
+
+Overall, there are several changes that can be made to this original graph to better illustrate the data and the message. 
+
+## Our Proposed Redesign 
+
+  In our redesigns, the primary goal is to make the visualizations easier to understand than the original graph. This entails reducing the level of effort needed to interpret the visualizations. There are some elements of the original graph that had good intentions behind them though, that are worth incorporating in our redesigns but we will also include several improvements and extensions to the original in several ways: 
+  
+- The concept of tracking three variables in the same visualization can be insightful to examine their intertwined relationships. However, we can implement this concept more effectively by simplifying variable visuals and reducing overall visual clutter within the graph. 
+- Additionally, we can create multiple graphs side by side for comparison between these variables, with each graph focusing on only one or two variables. 
+- For another example, the concept of comparing variables between states is important in telling a story about the data. However, we can implement this concept more effectively by cleaning up the state labels and even utilizing a different element, such as a color gradient, to differentiate between the multiple poverty levels. 
+- Additionally, we can even move away from classic dot plots and explore plotting this data on a map, as most readers are familiar with a map of the US. 
+
+These are just some of the various solutions that we implemented in our redesigns. 
+
+## Data Sources
+The original chart did not cite its data source. Given the topic (crime and poverty rates), we assumed the data should come from authoritative databases. For this redesign, we performed substantial data preparation (described next) using the sources listed below:
+
+ 1. FBI Crime Data API[^fbidata].
+
+[^fbidata]: Federal Bureau of Investigation. (n.d.). FBI Crime Data API [Web service and data API]. U.S. Department of Justice. Retrieved October 5, 2025, from https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi U.S. Census Bureau. (n.d.). data.census.gov [Data portal]. Retrieved October 5, 2025, from https://data.census.gov/
+
+2. The United States Census Bureau[^census].
+
+[^census]: U.S. Census Bureau. (n.d.). data.census.gov [Data portal]. Retrieved October 5, 2025, from https://data.census.gov/ 
+
+### A Note On Data Wrangling 
+
+We pulled 2023 data from two APIs—the U.S. Census Bureau (population and poverty) and the FBI Crime Data API—and used the Polars Python library to clean and reshape it into an analysis-ready dataset. The Census API let us retrieve state- and county-level values in a single request for 2023, but some counties lacked population (and therefore poverty rates), and a few areas (e.g., Louisiana) were missing from the pull.
+
+For crime, we queried two FBI endpoints roughly ~50,000 times using ORIs (Originating Agency Identifiers) that uniquely identify police agencies within counties. After fetching, we joined the Census and crime records on state and county, then performed the required aggregations and calculated per-100,000 incident rates.
+
+### Key Metrics & Derivations
+This project uses three key metrics namely: 
+
+- **Poverty rate**
+
+  $$
+  \text{PovertyRate (\%)} \;=\; \frac{N_{\text{below poverty}}}{N_{\text{poverty universe}}}\times 100
+  $$
+
+  *(As a proportion: \( \text{PovertyRate} = \frac{N_{\text{below}}}{N_{\text{universe}}} \).)*
+
+- **Property crime incidents per 100,000 residents**
+
+  $$
+  \text{PropertyCrimeRate}_{/100k} \;=\; \frac{N_{\text{property incidents}}}{N_{\text{population}}}\times 100{,}000
+  $$
+
+- **Violent crime incidents per 100,000 residents**
+
+  $$
+  \text{ViolentCrimeRate}_{/100k} \;=\; \frac{N_{\text{violent incidents}}}{N_{\text{population}}}\times 100{,}000
+  $$
+
+$$
+\begin{aligned}
+\textbf{Where:}\quad & \\
+N_{\text{population}} &:= \text{total population}\\
+N_{\text{below poverty}} &:= \text{count below poverty}\\
+N_{\text{property incidents}} &:= \text{total reported property crime incidents in the period (e.g., 2023)}\\
+N_{\text{violent incidents}} &:= \text{total reported violent crime incidents in the period (e.g., 2023)}
+\end{aligned}
+$$
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+# See renv.lock 
+library(ggplot2)
+library(dplyr)
+# library(sf)
+library(maps)
+# library(stringr)
+library(tidyr)
+library(tidyverse) 
+library(mapproj)
+library(patchwork)
+library(scales)
+library(plotly)
+
+##################################
+# Data Sources 
+##################################
+state <- read.csv("data/crime_plus_poverty_2023.csv")
+county <- read.csv("data/crime_poverty_by_county_2023.csv", check.names = FALSE)
+
+##################################
+# Data Cleaning 
+##################################
+# Droping rows where census data was not available for 2023 source county data 
+if ("no_population" %in% names(county)) {
+  county <- county %>% dplyr::filter(no_population != "true")
+}
+
+county <- county %>%
+  mutate(
+    poverty_rate = as.numeric(poverty_rate),
+    property_crime_per_100k = as.numeric(property_crime_per_100k),
+    violent_crime_per_100k = as.numeric(violent_crime_per_100k)
+  )
+
+##################################
+# Useful functions & Vars
+##################################
+county_metric_cols <- c("poverty_rate",
+            "property_crime_per_100k",
+            "violent_crime_per_100k")
+
+# Create geometries for mapping 
+us_counties <- ggplot2::map_data("county")  # long/lat + region (state), subregion (county)
+county_key  <- maps::county.fips %>% mutate(polyname = str_to_lower(polyname))
+
+counties_poly <- us_counties %>%
+  mutate(polyname = paste(region, subregion, sep = ",")) %>%
+  left_join(county_key, by = "polyname") %>%
+  rename(fips = fips) %>%
+  filter(!is.na(fips))
+
+# Function for creating maps
+build_county_map <- function(data) {
+  ggplot(data, aes(long, lat, group = group)) +
+    geom_polygon(color = "gray85", linewidth = 0.1, na.rm = TRUE) +
+    coord_quickmap() +
+    theme_void(base_size = 12) +
+    theme(
+      legend.position = "bottom",
+      plot.title = element_text(face = "bold", size = 16),
+      plot.margin = margin(4, 8, 4, 8)
+    )
+}
+
+# Helper to compute sensible upper limits (95th percentile) for crime and poverty rates 
+p95 <- function(x) {
+  x <- x[is.finite(x)]
+  if (!length(x)) return(NA_real_)
+  as.numeric(quantile(x, 0.95, na.rm = TRUE))
+}
+
+# Derive county FIPS given a data frame
+# Uses: fips OR state+county codes OR state_abbr+county name
+derive_fips <- function(df, county_key = NULL, keep_unmatched = FALSE) {
+  stopifnot(is.data.frame(df))
+
+  finish <- function(out) invisible(if (keep_unmatched) out else dplyr::filter(out, !is.na(.data$fips)))
+
+  # county crosswalk (polyname = "state,county" lowercase)
+  if (is.null(county_key)) {
+    county_key <- maps::county.fips |>
+      dplyr::mutate(polyname = stringr::str_to_lower(polyname))
+  }
+
+  # Already has FIPS
+  if ("fips" %in% names(df)) {
+    out <- dplyr::mutate(df, fips = stringr::str_pad(as.character(.data$fips), 5, "0"))
+    return(finish(out))
+  }
+
+  # state + county numeric/string codes
+  if (all(c("state", "county") %in% names(df))) {
+    out <- dplyr::mutate(
+      df,
+      fips = paste0(
+        stringr::str_pad(as.character(.data$state),  2, "0"),
+        stringr::str_pad(as.character(.data$county), 3, "0")
+      )
+    )
+    return(finish(out))
+  }
+
+  # state_abbr + county name (match via polyname)
+  county_col <- c("county_name", "county")[c("county_name", "county") %in% names(df)][1]
+  if (!is.na(county_col) && "state_abbr" %in% names(df)) {
+    states_lookup <- tibble::tibble(
+      state_abbr = c(state.abb, "DC"),
+      state_name = c(state.name, "District of Columbia")
+    ) |>
+      dplyr::mutate(state_name_lower = stringr::str_to_lower(state_name))
+
+    norm_county <- function(x) {
+      x |>
+        stringr::str_to_lower() |>
+        stringr::str_replace_all("\\s+(county|parish|borough|census area|municipality|city)$", "") |> # Regex to extract county name
+        stringr::str_replace_all("^st\\.?\\s", "saint ")
+    }
+
+    out <- df |>
+      dplyr::left_join(states_lookup, by = "state_abbr") |>
+      dplyr::mutate(polyname = paste(.data$state_name_lower, norm_county(.data[[county_col]]), sep = ",")) |>
+      dplyr::left_join(county_key, by = "polyname")  # adds fips
+    return(finish(out))
+  }
+
+  stop("derive_fips(): need one of: 'fips'; 'state'+'county'; or 'state_abbr'+county name.")
+}
+
+# Used to make the color scale look better 
+scale_fill_binned_left <- function(
+  x, # numeric vector used to size bins 
+  step, # bin width 
+  min_cap = NULL,
+  max_cap = NULL,
+  label_fmt = label_percent(accuracy = 1),
+  name = NULL, # legend title
+  option = "mako", begin = 0.15, end = 0.90, direction = -1, # colormap or palette
+  bar_width_mm = 200, bar_height_mm = 12,
+  title_size = 13, label_size = 12,
+  show_separators = TRUE  # draw white separators at bin edges
+) {
+  stopifnot(is.numeric(x), is.numeric(step), step > 0)
+
+  # compute "nice" upper bound from p95, then clamp to caps if provided
+  upper_raw <- ceiling(p95(x) / step) * step
+  if (!is.null(min_cap)) upper_raw <- max(min_cap, upper_raw)
+  if (!is.null(max_cap)) upper_raw <- min(max_cap, upper_raw)
+
+  brks <- seq(0, upper_raw, by = step)
+  labs <- paste0(label_fmt(head(brks, -1)), "–", label_fmt(tail(brks, -1)))
+  labs <- c(labs, "")
+
+  scale_fill_viridis_b(
+    option = option, begin = begin, end = end, direction = direction,
+    limits = range(brks),
+    breaks = brks,
+    labels = labs,
+    oob = scales::squish, na.value = "gray95",
+    name = name %||% "",
+    guide = guide_colorsteps(
+      title.position = "top",
+      label.position = "top", # labels above bar
+      label.theme  = element_text(size = label_size, hjust = 0),  # left-justify
+      ticks = show_separators,
+      ticks.colour = if (show_separators) "white" else NULL,
+      ticks.linewidth = if (show_separators) 2 else NULL,
+      show.limits = FALSE,
+      barwidth  = grid::unit(bar_width_mm,  "mm"),
+      barheight = grid::unit(bar_height_mm, "mm"),
+      title.theme = element_text(size = title_size, face = "bold",
+                                 margin = margin(b = 4))
+    )
+  )
+}
+
+`%||%` <- function(a, b) if (is.null(a)) b else a
+
+# Formtter for plotly maps 
+apply_plotly_binned_colorbar <- function(p, brks, labs, palette = "mako",
+                                         begin = 0.15, end = 0.90, direction = -1,
+                                         title = "Legend", horizontal = TRUE,
+                                         thickness = 28, len = 1, show_separators = TRUE,
+                                         title_font_size = 13, tick_font_size = 12) {
+  cols <- viridisLite::mako(length(brks) - 1, begin = begin, end = end, direction = direction)
+
+  # invisible heatmap solely to carry the colorbar
+  p <- p %>%
+    plotly::add_heatmap(
+      z = matrix(seq(min(brks), max(brks), length.out = 2), nrow = 1),
+      showscale = TRUE,
+      colors = cols,
+      hoverinfo = "skip",
+      opacity = 0,
+      xaxis = "x2", yaxis = "y2"
+    ) %>%
+    plotly::layout(
+      xaxis2 = list(visible = FALSE, domain = c(0, 0.001), anchor = "y2", overlaying = "x"),
+      yaxis2 = list(visible = FALSE, domain = c(0, 0.001), anchor = "x2", overlaying = "y")
+    )
+
+  idx <- length(p$x$data)
+  p$x$data[[idx]]$colorbar <- list(
+    title    = list(text = title, side = "top", font = list(size = title_font_size)),
+    tickmode = "array",
+    tickvals = brks,
+    ticktext = c(labs, ""),  # empty label on rightmost edge
+    ticks    = if (show_separators) "outside" else "",
+    tickcolor = if (show_separators) "white" else NULL,
+    tickwidth = if (show_separators) 2 else NULL,
+    tickfont = list(size = tick_font_size),
+    len = len,
+    thickness = thickness
+  )
+  if (horizontal) {
+    p$x$data[[idx]]$colorbar$orientation <- "h"
+    p$x$data[[idx]]$colorbar$x <- 0.5
+    p$x$data[[idx]]$colorbar$xanchor <- "center"
+    p$x$data[[idx]]$colorbar$y <- -0.22
+  }
+  p
+}
+
+```
+
+## Original Graphic Redesign
+
+The goal of our first redesign is to recreate the original graphic keeping most elements the same, but with improved labeling, less visual clutter, and clear interpretation of the poverty variable. More specifically, we will add a title that explains the nature and origin of the data, use a color gradient to differentiate between poverty levels, and transition the state labels to an interactive element of the visualization.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.show = "hide"}
+#load state data to be used for all state-level visualizations
+#####PLOT 1#####
+
+#create plot with all 3 variables (recreate original graph)
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+dataviz1a = ggplot(state, aes(x=crime_rate_per_100k_property,y=crime_rate_per_100k_violent,
+                              text = paste0("State: ", state_abbr,
+                                            "<br>Poverty: ", poverty_rate_pct, "%",
+                                            "<br>Property Crime: ", crime_rate_per_100k_property,
+                                            "<br>Violent Crime: ", crime_rate_per_100k_violent)))+
+  geom_point(aes(fill=poverty_rate_pct), color = "black", shape = 21, size = 3.5, stroke = 0.2)+
+  theme_minimal()+
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("white", "goldenrod1", "darkred"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50", 
+    labels = function(x) paste0(x, "%"))+ #used AI to help create code to add percent symbols in legend
+  labs(title = "2023 Property Crime vs Violent Crime by State in Relation to Poverty",
+       x = "Property Crime Incidents per 100k Residents",
+       y = "Violent Crime Incidents per 100k Residents")
+dataviz1a
+
+#convert previous plot to an interactive plotly plot
+###DISPLAY THIS PLOT ON WEBSITE###
+ggplotly(dataviz1a, tooltip = "text")
+```
+
+Note that we can quickly see that the District of Columbia (DC) has significantly more crime incidents (both property crime and violent crime) than any US state, which stretches the scales of the axes. Let’s recreate this graph, excluding the outlier data point of DC, so that we can identify potential trends between the 50 states more clearly.  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.show = "hide"}
+#####PLOT 2#####
+
+#create previous plot excluding the outlier data point (DC)
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+dataviz1b = ggplot(state, aes(x=crime_rate_per_100k_property,y=crime_rate_per_100k_violent,
+                       text = paste0("State: ", state_abbr,
+                                     "<br>Poverty: ", poverty_rate_pct, "%",
+                                     "<br>Property Crime: ", crime_rate_per_100k_property,
+                                     "<br>Violent Crime: ", crime_rate_per_100k_violent))) +
+  geom_point(aes(fill=poverty_rate_pct), color = "black", shape = 21, size = 3.5, stroke = 0.2)+
+  theme_minimal()+
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("white", "goldenrod1", "darkred"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50",
+    labels = function(x) paste0(x, "%"))+ #used AI to help create code to add percent symbols in legend
+  xlim(800,3000)+ 
+  ylim(100,800)+
+  labs(title = "2023 Property Crime vs Violent Crime by State in Relation to Poverty
+(D.C. Excluded)",
+       x = "Property Crime Incidents per 100k Residents",
+       y = "Violent Crime Incidents per 100k Residents")
+dataviz1b
+
+#convert previous plot to an interactive plotly plot
+###DISPLAY THIS PLOT ON WEBSITE###
+ggplotly(dataviz1b, tooltip = "text")
+```
+
+Now let’s analyze the redesign shown above. When viewing this visualization, we can identify a positive relationship between property crime and violent crime much easier than in the original graphic. In other words, the more property crime incidents a state experiences often correlates with more violent crime incidents. Additionally, it is worth taking note that there are multiple states with higher poverty percentages scattered throughout the plot (look at Mississippi, West Virgina, Kentucky, Louisiana, and New Mexico).  
+
+## Alternative Data Visualization - Using Bar Charts
+
+There are several alternative ways to illustrate the same information from the original graphic. The redesign below portrays the same data but in a familiar way by using two bar charts side by side, with one for property crime data by state and one for violent crime data by state. One positive of this type of visualization is that the state abbreviation labels are clearly displayed without requiring any interactive elements. Another positive is that these bar charts allow for even easier comparisons between state data, as states’ bars are arranged by their property crime data. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.show = "hide"}
+#arrange state data by property crime rate
+state2a <- state %>%
+  mutate(state_abbr = factor(state_abbr, levels = state_abbr[order(crime_rate_per_100k_property)]))
+
+#plot property crime data
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+ggplot(state2a, aes(x=crime_rate_per_100k_property,y=state_abbr)) +
+  geom_bar(stat="identity", aes(fill=poverty_rate_pct),color='black') +
+  labs(x="Property Crime Incidents per 100k Residents",
+       y="States",
+       title="2023 Property Crime by State in Relation to Poverty")+
+  theme_minimal()+
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("white", "goldenrod1", "darkred"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50",
+    labels = function(x) paste0(x, "%")) #used AI to help create code to add percent symbols in legend
+
+#arrange state data by violent crime rate
+state2b <- state %>%
+  mutate(state_abbr = factor(state_abbr, levels = state_abbr[order(crime_rate_per_100k_violent)]))
+
+#plot violent crime data
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+ggplot(state2b, aes(x=crime_rate_per_100k_violent,y=state_abbr)) +
+  geom_bar(stat="identity", aes(fill=poverty_rate_pct),color='black') +
+  labs(x="Violent Crime Incidents per 100k Residents",
+       y="States",
+       title="2023 Violent Crime by State in Relation to Poverty")+
+  theme_minimal()+
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("white", "goldenrod1", "darkred"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50",
+    labels = function(x) paste0(x, "%")) #used AI to help create code to add percent symbols in legend
+
+#convert state data to long format, so we can combine previous 2 plots into 1
+state_long2 <- state2a %>%
+  pivot_longer(cols = c(crime_rate_per_100k_property, crime_rate_per_100k_violent),
+               names_to = "crime_type",
+               values_to = "crime_rate") %>%
+  mutate(crime_type = recode(crime_type,
+                             crime_rate_per_100k_property = "Property Crime",
+                             crime_rate_per_100k_violent = "Violent Crime"))
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.width=10, fig.height=7}
+#plot property crime and violent crime side by side
+###DISPLAY THIS PLOT ON WEBSITE###
+ggplot(state_long2, aes(x = crime_rate, y = state_abbr)) +
+  geom_bar(stat = "identity", aes(fill = poverty_rate_pct), color = "black") +
+  labs(x = "Crime Incidents per 100k Residents",
+       y = "States",
+       title = "2023 Crime by State in Relation to Poverty",
+       fill = "Poverty Percentage") +
+  theme_minimal() +
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("white", "goldenrod1", "darkred"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50",
+    labels = function(x) paste0(x, "%"))+ #used AI to help create code to add percent symbols in legend
+  theme(
+    plot.title = element_text(face = "bold"))+
+  facet_wrap(~ crime_type, ncol = 2, scales = "free_x")
+```
+
+When comparing the two bar charts, the previously identified positive trend between property crime and violent crime is shown, although it is not exactly linear. Upon examining the visualization more closely, it is interesting that Mississippi exhibits relatively low property crime and violent crime given its high poverty percentage. Conversely, it is interesting that Colorado has such a low poverty percentage given that it exhibits higher property crime and violent crime. This could indicate the lack of a substantial relationship between poverty percentage and crime incidents (property crime and violent crime) at the state level. 
+
+## Alternative Data Visualization - Using Poverty as Dependent Variable
+
+While our previous graphs highlight more of the relationship between property crime and violent crime, the goal of the visualization below is to succinctly investigate the relationship between poverty and crime, by tracking poverty percentage as the dependent variable instead of a color gradient. This is done by creating two separate scatterplots side by side, one for property crime versus poverty and one for violent crime versus property. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.show = "hide"}
+#create/load hw theme commonly used in class
+hw <- theme_gray()+ theme(
+  plot.title=element_text(hjust=0.5),
+  plot.subtitle=element_text(hjust=0.5),
+  plot.caption=element_text(hjust=-.5),
+  
+  strip.text.y = element_blank(),
+  strip.background=element_rect(fill=rgb(.9,.95,1),
+                                colour=gray(.5), linewidth =.2),
+  
+  panel.border=element_rect(fill=FALSE,colour=gray(.70)),
+  panel.grid.minor.y = element_blank(),
+  panel.grid.minor.x = element_blank(),
+  panel.spacing.x = unit(0.10,"cm"),
+  panel.spacing.y = unit(0.05,"cm"),
+  
+  # axis.ticks.y= element_blank()
+  axis.ticks=element_blank(),
+  axis.text=element_text(colour="black"),
+  axis.text.y=element_text(margin=margin(0,3,0,3)),
+  axis.text.x=element_text(margin=margin(-1,0,3,0))
+)
+
+#create plot with only property crime and poverty data variables
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+ggplot(state, aes(x=crime_rate_per_100k_property,y=poverty_rate_pct))+
+  geom_point(fill="green", color = "black", shape = 21, size = 3, stroke = 0.5)+
+  hw+
+  labs(title = "2023 Property Crime vs Poverty by State",
+       x = "Property Crime Incidents per 100k Residents",
+       y = "Poverty Percentage")
+
+#create plot with only violent crime and poverty data variables
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+ggplot(state, aes(x=crime_rate_per_100k_violent,y=poverty_rate_pct))+
+  geom_point(fill="blue", color = "black", shape = 21, size = 3, stroke = 0.5)+
+  hw+
+  labs(title = "2023 Violent Crime vs Poverty by State",
+       x = "Violent Crime Incidents per 100k Residents",
+       y = "Poverty Percentage")
+
+#convert state data to long format, so we can combine previous 2 plots into 1
+state_long3 <- state %>%
+  select(state_abbr, poverty_rate_pct,
+         crime_rate_per_100k_property,
+         crime_rate_per_100k_violent) %>%
+  pivot_longer(
+    cols = c(crime_rate_per_100k_property, crime_rate_per_100k_violent),
+    names_to = "crime_type",
+    values_to = "crime_rate"
+  ) %>%
+  mutate(
+    crime_type = recode(crime_type,
+                        crime_rate_per_100k_property = "Property Crime",
+                        crime_rate_per_100k_violent = "Violent Crime")
+  )
+
+#plot property crime vs poverty and violent crime vs poverty side by side on same visualization
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+ggplot(state_long3, aes(x = crime_rate, y = poverty_rate_pct)) +
+  geom_point(aes(fill = crime_type), color = "black", shape = 21, size = 3, stroke = 0.5) +
+  scale_fill_manual(values = c("Property Crime" = "green", "Violent Crime" = "blue")) +
+  facet_wrap(~ crime_type, ncol = 2, scales = "free_x") +
+  labs(
+    title = "2023 Crime vs Poverty by State, Separated by Crime Type",
+    x = "Crime Incidents per 100k Residents",
+    y = "Poverty Percentage",
+    fill = "Crime Type"
+  ) +
+  hw 
+
+##recreate previous plot using plotly below (used AI to help create desired conversion)
+
+#create the Property Crime plot using plotly
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+plotly3a <- plot_ly(
+  data = state,
+  x = ~crime_rate_per_100k_property,
+  y = ~poverty_rate_pct,
+  type = "scatter",
+  mode = "markers",
+  marker = list(color = "green", line = list(color = "black", width = 0.5), size = 10),
+  text = ~paste0("State: ", state_abbr,
+                 "<br>Property Crime: ", crime_rate_per_100k_property,
+                 "<br>Poverty: ", poverty_rate_pct, "%"),
+  hoverinfo = "text",
+  name = "Property Crime"
+) %>%
+  layout(
+    title = "Property Crime vs Poverty",
+    xaxis = list(title = "Property Crime Incidents 
+    per 100k Residents"),
+    yaxis = list(title = "Poverty Percentage")
+  )
+
+#create the Violent Crime plot using plotly
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+plotly3b <- plot_ly(
+  data = state,
+  x = ~crime_rate_per_100k_violent,
+  y = ~poverty_rate_pct,
+  type = "scatter",
+  mode = "markers",
+  marker = list(color = "blue", line = list(color = "black", width = 0.5), size = 10),
+  text = ~paste0("State: ", state_abbr,
+                 "<br>Violent Crime: ", crime_rate_per_100k_violent,
+                 "<br>Poverty: ", poverty_rate_pct, "%"),
+  hoverinfo = "text",
+  name = "Violent Crime"
+) %>%
+  layout(
+    title = "Violent Crime vs Poverty",
+    xaxis = list(title = "Violent Crime Incidents 
+    per 100k Residents"),
+    yaxis = list(title = "Poverty Percentage")
+  )
+
+#combine the two previous plots into a subplot
+###DISPLAY THIS PLOT ON WEBSITE###
+subplot(plotly3a, plotly3b, nrows = 1, shareY = TRUE, titleX = TRUE, titleY = TRUE) %>%
+  layout(
+    title = "2023 Crime vs Poverty by State, Separated by Crime Type",
+    showlegend = FALSE
+  )
+```
+
+When analyzing these scatterplots of state-level data, we cannot identify a clear correlation between property crime and poverty, while only a slightly positive correlation between violent crime and poverty is observed. This confirms our suspicion that there is no substantial relationship between poverty percentage and crime incidents (property crime and violent crime) at the state level based on our data. Given this information, let’s visualize the data in one more way before determining the next steps. 
+
+## Comparing Crime and Poverty by State on USA Map
+
+After identifying some of the relationships between property crime, violent crime, and poverty using bubble charts, bar charts, and scatterplots, let's plot this data on a geographical map[^classnotes] that everyone is familiar with. The visualization below displays three US maps, each tracking a different variable by a common color gradient, making it easier to spot states of interest and see how the metrics move together. 
+
+[^classnotes]: Dassanayake (2023). Example 2: Republican voting in 1976 by state [HTML file]. In Maps (maps (4).html). Retrieved from file:///Users/sean/Downloads/maps%20(4).html#example-2-republican-voting-in-1976-by-state 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.show = "hide"}
+#get USA map data and save as tibble
+usa_tbl <- map_data("state") %>% as_tibble()
+#take state data and convert all state names to lower case
+state4 <- state %>%
+  mutate(state_name = str_to_lower(state_name))
+#join USE map data and state data
+usa_state_data <- usa_tbl %>%
+  left_join(state4, by = c("region"= "state_name"))
+
+#create USA map containing poverty data
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+dataviz4a = ggplot(usa_state_data, aes(long, lat, group = group)) +
+  geom_map(
+    aes(map_id = region),
+    map = usa_tbl,
+    color = "gray80", fill = "gray30", size = 0.3) +
+  coord_map("ortho", orientation = c(39, -98, 0)) +
+  geom_polygon(aes( fill = poverty_rate_pct), color = "black") +
+  scale_fill_gradientn(
+    name = "Poverty Percentage",
+    colours = c("darkseagreen2", "steelblue", "midnightblue"),
+    values = scales::rescale(c(0, median(state$poverty_rate_pct, na.rm = TRUE), max(state$poverty_rate_pct, na.rm = TRUE))),
+    na.value = "grey50", 
+    labels = function(x) paste0(x, "%")) +
+  theme_void() +
+  labs(title = "2023 Poverty Percentage by State",x = "", y = "", fill = "") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold", color = "darkred", hjust=0.5),
+    legend.title = element_text(size=12, face = "bold"),
+    legend.margin = margin(t = 10),
+    legend.key.size = unit(1, "cm"),
+    legend.position = "top")
+dataviz4a
+
+#create USA map containing property crime data
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+dataviz4b = ggplot(usa_state_data, aes(long, lat, group = group)) +
+  geom_map(
+    aes(map_id = region),
+    map = usa_tbl,
+    color = "gray80", fill = "gray30", size = 0.3) +
+  coord_map("ortho", orientation = c(39, -98, 0)) +
+  geom_polygon(aes( fill = crime_rate_per_100k_property), color = "black") +
+  scale_fill_gradientn(
+    name = "Property Crime Incidents per 100k Residents",
+    colours = c("darkseagreen2", "steelblue", "midnightblue"),
+    values = scales::rescale(c(0, max(state$crime_rate_per_100k_property, na.rm = TRUE))),
+    na.value = "grey50") +
+  theme_void() +
+  labs(title = "2023 Property Crime Incidents per 100,000 Residents by State",x = "", y = "", fill = "") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold", color = "darkgreen", hjust=0.5),
+    legend.title = element_text(size=12, face = "bold"),
+    legend.margin = margin(t = 10),
+    legend.key.size = unit(1, "cm"),
+    legend.position = "top")
+dataviz4b
+
+#create USA map containing violent crime data
+#DO NOT DISPLAY THIS PLOT ON WEBSITE#
+dataviz4c = ggplot(usa_state_data, aes(long, lat, group = group)) +
+  geom_map(
+    aes(map_id = region),
+    map = usa_tbl,
+    color = "gray80", fill = "gray30", size = 0.3) +
+  coord_map("ortho", orientation = c(39, -98, 0)) +
+  geom_polygon(aes( fill = crime_rate_per_100k_violent), color = "black") +
+  scale_fill_gradientn(
+    name = "Violent Crime Incidents per 100k Residents",
+    colours = c("darkseagreen2", "steelblue", "midnightblue"),
+    values = scales::rescale(c(0, max(state$crime_rate_per_100k_violent, na.rm = TRUE))),
+    na.value = "grey50") +
+  theme_void() +
+  labs(title = "2023 Violent Crime Incidents per 100,000 Residents by State",x = "", y = "", fill = "") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold", color = "darkblue", hjust=0.5),
+    legend.title = element_text(size=12, face = "bold"),
+    legend.margin = margin(t = 10),
+    legend.key.size = unit(1, "cm"),
+    legend.position = "top")
+dataviz4c
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.width=12, fig.height=15}
+#combine the previous 3 plots
+###DISPLAY THIS PLOT ON WEBSITE###
+dataviz4 <- dataviz4a / dataviz4b / dataviz4c
+dataviz4
+```
+
+There are a few regions in the US that exhibit a relatively darker hue on all three maps. These regions include the southern Midwest states, states in the mid-southern West Coast area, and a few states in the mid-southern East Coast area. However, analyzing broader state data may not be the most effective route to capture more comprehensive trends. To better understand the relationship between poverty and crime in the US, the next step is to examine data at the county level, allowing for more detailed and comprehensive analysis. 
+
+## Comparing Crime and Poverty by U.S. County 
+
+State-level data is useful for identifying broad, statewide trends, but county-level views let us zoom into specific pockets within states to understand patterns at a finer, more granular level. By comparing the three maps side by side, the color saturation makes it easier to spot counties of interest and see how the metrics move together.
+
+One state that suggests a clear pattern is South Carolina. Looking across all three charts, a region stands out with consistently darker hues—yet it’s still a bit hard to tell exactly which county is driving that signal.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+#| column: page
+#| fig-width: 22
+#| fig-height: 30
+#| fig-align: center
+#| out-width: 100%
+#| dpi: 220
+
+
+df <- county
+
+df <- derive_fips(df)
+
+# Join metrics to polygons
+map_df <- counties_poly %>%
+  left_join(
+    df %>% select(fips, all_of(county_metric_cols)),
+    by = "fips"
+  )
+
+# Limits for each metric - 95th percentile as the upper scale limit
+lim_pov  <- c(0, max(0.3, min(0.6, ceiling(p95(map_df$poverty_rate) * 10) / 10))) 
+lim_prop <- c(0, p95(map_df$property_crime_per_100k)) 
+lim_viol <- c(0, p95(map_df$violent_crime_per_100k)) 
+
+poverty <- build_county_map(map_df) +
+  geom_polygon(aes(fill = poverty_rate)) +
+  scale_fill_binned_left(
+    x = map_df$poverty_rate,
+    step = 0.05, 
+    min_cap = 0.30, max_cap = 0.60,
+    label_fmt = scales::label_percent(accuracy = 1),
+    name = "Poverty rate (% of residents)"
+  ) +
+  labs(title = "Poverty Rate by County") +
+  theme(
+    legend.position = "top",
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left"
+  )
+
+property <- build_county_map(map_df) +
+  geom_polygon(aes(fill = property_crime_per_100k)) +
+  scale_fill_binned_left(
+    x = map_df$property_crime_per_100k,
+    step = 500,  # Bucket width
+    label_fmt = scales::label_number(accuracy = 1, big.mark = ","),
+    name = "Property crime incidents (per 100k) residents" 
+  ) +
+  labs(title = "Property crime incidents per 100,000 residents") +
+  theme(
+    legend.position = "top",
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left"
+  )
+
+violent <- build_county_map(map_df) +
+  geom_polygon(aes(fill = violent_crime_per_100k)) +
+  scale_fill_binned_left(
+    x = map_df$violent_crime_per_100k,
+    step = 100,
+    label_fmt = scales::label_number(accuracy = 1, big.mark = ","),
+    name = "Violent crime incidents per 100k residents"
+  ) +
+  labs(title = "Violent crime incidents per 100,000 residents") +
+  theme(
+    legend.position = "top",
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left"
+  )
+
+# Stack each plot vertically
+stack_us <-
+  (poverty / property / violent) &
+  theme(
+    plot.margin = margin(6, 10, 6, 10)
+  )
+
+stack_us +
+  plot_annotation(
+    title   = "Crime & Poverty by U.S. County",
+    caption = "Note: Some county data are missing from the Census data\nSource: FBI Crime Data API and data.census.gov for 2023",
+    theme = theme(
+      plot.title.position = "plot",
+      plot.title   = element_text(size = 28, face = "bold", hjust = 0), 
+      plot.caption.position = "plot", 
+      plot.caption = element_text(size = 16, hjust = 0, colour = "grey30",
+                                  lineheight = 1.15, margin = margin(t = 10)),
+      plot.margin  = margin(8, 12, 18, 12)
+    )
+  )
+```
+
+## Zooming in on South Carolina
+Continuing our analysis, we remove the broader noise and focus on South Carolina using the same chart type. In the upper-right corner, one county consistently exhibits the darkest hue across all three metrics—poverty rate, property crime, and violent crime. Which county is that?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+#| column: page
+#| fig-width: 22
+#| fig-height: 30
+#| fig-align: center
+#| out-width: 100%
+#| dpi: 220
+
+df <- county
+
+df <- derive_fips(df)
+
+# Build South Carolina map data only
+sc_poly <- counties_poly %>% filter(region == "south carolina")
+
+sc_map <- sc_poly %>%
+  left_join(df %>% select(fips, all_of(county_metric_cols)), by = "fips")
+
+lim_pov  <- c(0, max(0.3, min(0.6, ceiling(p95(sc_map$poverty_rate) * 10) / 10)))
+lim_prop <- c(0, {x <- p95(sc_map$property_crime_per_100k); if (!is.finite(x)) max(sc_map$property_crime_per_100k, na.rm = TRUE) else x})
+lim_viol <- c(0, {x <- p95(sc_map$violent_crime_per_100k);  if (!is.finite(x)) max(sc_map$violent_crime_per_100k,  na.rm = TRUE) else x})
+
+poverty_sc <- build_county_map(sc_map) +
+  geom_polygon(aes(fill = poverty_rate)) +
+  scale_fill_binned_left(
+    x = sc_map$poverty_rate,
+    step = 0.05,
+    min_cap = 0.30, max_cap = 0.60,
+    label_fmt = scales::label_percent(accuracy = 1),
+    name = "Poverty rate (% of residents)"
+  ) +
+  labs(title = "Poverty Rate by County") +
+  theme(
+    legend.position = "top",
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left",
+    plot.title = element_text(size = 22, face = "bold")
+  )
+
+property_sc <- build_county_map(sc_map) +
+  geom_polygon(aes(fill = property_crime_per_100k)) +
+  scale_fill_binned_left(
+    x = sc_map$property_crime_per_100k,
+    step = 500,
+    label_fmt = scales::label_number(accuracy = 1, big.mark = ","),
+    name = "Property crime incidents per 100k residents"
+  ) +
+  labs(title = "Property crime incidents per 100,000 residents") +
+  theme(
+    legend.position = "top",
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left",
+    plot.title = element_text(size = 22, face = "bold")
+  )
+
+violent_sc <- build_county_map(sc_map) +
+  geom_polygon(aes(fill = violent_crime_per_100k)) +
+  scale_fill_binned_left(
+    x = sc_map$violent_crime_per_100k,
+    step = 200,
+    label_fmt = scales::label_number(accuracy = 1, big.mark = ","),
+    name = "Violent crime incidents per 100k residents"
+  ) +
+  labs(title = "Violent crime incidents per 100,000 residents") +
+  theme(
+    legend.position = "top",
+    plot.title.position = "plot",
+    legend.justification = "left",
+    legend.box.just = "left",
+    plot.title = element_text(size = 22, face = "bold")
+  )
+
+# Stack the three maps
+stack_sc <-
+  (poverty_sc / property_sc / violent_sc) &
+  theme(plot.margin = margin(6, 10, 6, 10))
+
+stack_sc +
+  plot_annotation(
+    title   = "South Carolina by County",
+    caption = "Note: Some county data are missing from the Census data\nSource: FBI Crime Data API and data.census.gov for 2023",
+    theme = theme(
+      plot.title.position = "plot",
+      plot.title   = element_text(size = 28, face = "bold", hjust = 0),
+      plot.caption.position = "plot",
+      plot.caption = element_text(size = 16, hjust = 0, colour = "grey30",
+                                  lineheight = 1.15, margin = margin(t = 10)),
+      plot.margin  = margin(8, 12, 18, 12)
+    )
+  )
+
+```
+
+## Interactive Plot of South Carolina to Look at Individual Counties
+To explore all counties across the metrics, use the interactive Plotly chart to identify each county. Hover to see names and values, and use the zoom/pan controls in the top-right modebar; to find Dillon County, zoom into the upper-right corner of South Carolina and hover until the tooltip shows “Dillon County.”
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+
+df <- county
+
+df <- derive_fips(df)
+
+sc <- counties_poly %>%
+  dplyr::filter(region == "south carolina") %>%
+  dplyr::left_join(df %>% dplyr::select(fips, poverty_rate, property_crime_per_100k, violent_crime_per_100k),
+                   by = "fips") %>%
+  dplyr::mutate(
+    hover_text = paste0(
+      "County: ", stringr::str_to_title(subregion), "<br>",
+      "Poverty rate: ", scales::percent(poverty_rate, accuracy = 0.1), "<br>",
+      "Property /100k: ", scales::comma(property_crime_per_100k, accuracy = 1), "<br>",
+      "Violent /100k: ",  scales::comma(violent_crime_per_100k,  accuracy = 1)
+    )
+  )
+
+step  <- 0.05
+upper <- min(0.60, max(0.30, ceiling(p95(sc$poverty_rate) / step) * step))
+brks  <- seq(0, upper, by = step)
+labs  <- paste0(scales::percent(head(brks, -1), accuracy = 1), "–",
+                scales::percent(tail(brks, -1), accuracy = 1))
+
+p_sc <- ggplot(sc, aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = poverty_rate, text = hover_text), color = "gray85", linewidth = 0.1, na.rm = TRUE) +
+  coord_quickmap() +
+  scale_fill_viridis_b(
+    option = "mako", begin = 0.15, end = 0.90, direction = -1, # colormap or palette
+    limits = range(brks),
+    breaks = brks,
+    labels = c(labs, ""),
+    oob = scales::squish, na.value = "gray95",
+    name = NULL, guide = "none"
+  ) +
+  labs(title = "South Carolina — Poverty Rate") +
+  theme_void(base_size = 12)
+
+# --- plotly conversion + enforced title + custom colorbar ---
+p <- plotly::ggplotly(p_sc, tooltip = "text")
+p <- plotly::layout(p, title = list(text = "South Carolina — Poverty Rate", x = 0, xanchor = "left"))
+
+p <- apply_plotly_binned_colorbar(
+  p,
+  brks = brks,
+  labs = labs,
+  title = "Poverty rate (% of residents)",
+  horizontal = TRUE,
+  thickness = 28, len = 1, show_separators = TRUE,
+  title_font_size = 13, tick_font_size = 12
+)
+
+p
+
+```
+
+## From Insight to Action: Dillon County’s Poverty–Crime Overlap
+The chart below uses a callout (“bang box”) to highlight the county that appears most at risk. Our call to action notes a strong apparent relationship between poverty rates and crime in Dillon County. While this is not an advanced statistical analysis, cursory online research suggests that through 2023 both crime and poverty were very high according to several reports[^report1], and at least one source indicates some action was taken in 2024[^report2].
+
+Before this analysis, we weren’t even aware of Dillon County; data visualization helped us surface a real-world issue. We will forgo making any claims about causality for now—further research is needed, ideally leveraging additional datasets such as Data Commons[^datacomon] and data on drug use, among others, to build a more comprehensive picture.
+
+[^datacomon]: https://datacommons.org/place/geoId/45033 
+[^report1]: https://www.wbtw.com/news/pee-dee/dillon-county/dillon-county-sheriff-talks-about-decreasing-crime-after-sleds-2023-report/ 
+[^report2]: https://wpde.com/news/local/violent-crime-rates-down-29-percent-in-dillon-county-says-sled-south-carolina-state-law-enforcement-division-statistics-murder-sexual-battery-robbery-aggravated-assault-breaking-entering-car-theft-larceny-arson-reduction-charges-investigations  
+
+![From Insight to Action: Dillon County’s Poverty–Crime Overlap](/images/dillon-sc-story.png){fig-alt="Dillon County" width="100%" fig-align="center"}
+
+## Video Demo 
+{{< video https://youtu.be/SMLH-oHrjuU >}} 

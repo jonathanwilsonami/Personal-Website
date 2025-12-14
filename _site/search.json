@@ -4,7 +4,7 @@
     "href": "research/index.html",
     "title": "Research",
     "section": "",
-    "text": "Coming soon — publications, working papers, and notes."
+    "text": "Publications, working papers, and notes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers\n\n\nStatistical learning analysis of electricity demand patterns in Virginia and the U.S.\n\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterizing Volumetric DDoS Attacks in IoT Traffic\n\n\nAnalysis of IoT volumetric DDoS attacks using the IoT23 dataset\n\n\n\n\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecurity Analysis of Blocked Network Clients\n\n\nA comparative analysis of blocked wireless and wired network clients at a university scale\n\n\n\n\n\n\nNov 27, 2019\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -137,7 +137,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI/ML Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntelligent Systems & Decision Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/iot-electronics/index.html",
@@ -149,9 +149,9 @@
   {
     "objectID": "projects/ai-ml/index.html",
     "href": "projects/ai-ml/index.html",
-    "title": "AI/ML Projects",
+    "title": "Intelligent Systems & Decision Modeling",
     "section": "",
-    "text": "A collection of AI/ML projects.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "A collection of Intelligent Systems & Decision Modeling projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGurobipy Transportation LP Solver\n\n\nA simple Linear Programming transportation problem solver using Gurobi and Python\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/construction/index.html",
@@ -165,7 +165,7 @@
     "href": "projects/data-viz/index.html",
     "title": "Data Viz Projects",
     "section": "",
-    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSample Page\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrime & Poverty (Dillon County, SC)\n\n\nInteractive data visualization redesign using Census + FBI crime data.\n\n\n\n\n\n\nSep 25, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html",
@@ -180,5 +180,166 @@
     "title": "Research",
     "section": "",
     "text": "Coming soon — publications, working papers, and notes."
+  },
+  {
+    "objectID": "projects/data-viz/crime-and-poverty.html",
+    "href": "projects/data-viz/crime-and-poverty.html",
+    "title": "Crime And Poverty",
+    "section": "",
+    "text": "Summary: Data Visualization Redesign Project."
+  },
+  {
+    "objectID": "projects/data-viz/crime-and-poverty.html#overview",
+    "href": "projects/data-viz/crime-and-poverty.html#overview",
+    "title": "Crime And Poverty",
+    "section": "Overview",
+    "text": "Overview\nBig Idea\n3 Min Story"
+  },
+  {
+    "objectID": "projects/data-viz/crime-and-poverty.html#original-graphic",
+    "href": "projects/data-viz/crime-and-poverty.html#original-graphic",
+    "title": "Crime And Poverty",
+    "section": "Original Graphic",
+    "text": "Original Graphic"
+  },
+  {
+    "objectID": "projects/data-viz/crime-and-poverty.html#sample-chart",
+    "href": "projects/data-viz/crime-and-poverty.html#sample-chart",
+    "title": "Crime And Poverty",
+    "section": "Sample Chart",
+    "text": "Sample Chart"
+  },
+  {
+    "objectID": "projects/data-viz/crime-viz.html",
+    "href": "projects/data-viz/crime-viz.html",
+    "title": "Crime & Poverty (Dillon County, SC)",
+    "section": "",
+    "text": "Crime & Poverty — Dillon County, South Carolina\n\n\nOpen the interactive project on GitHub Pages\nThis project is hosted externally. Click the link above to view the full interactive write-up."
+  },
+  {
+    "objectID": "research/power-data-center-study.html",
+    "href": "research/power-data-center-study.html",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "section": "",
+    "text": "Power & Data Centers"
+  },
+  {
+    "objectID": "research/power-data-center-study.html#project-overview",
+    "href": "research/power-data-center-study.html#project-overview",
+    "title": "Power & Data Centers",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis study examines how the rapid expansion of data centers is reshaping electricity demand in Virginia relative to national utility trends. Using ten years of U.S. Energy Information Administration (EIA-861) data, the project applies statistical learning and machine-learning methods to identify high-demand electric utilities and characterize emerging load patterns associated with commercial and industrial growth.\nKey techniques include engineered intensity metrics, supervised classification models (logistic regression, ridge regression, random forests, KNN), and unsupervised methods (PCA and K-means). Results indicate that Virginia exhibits a higher concentration of load-intensive utilities once demand is weighted by commercial activity—consistent with observed data center expansion—while ridge-regularized and tree-based models provide the most stable and interpretable performance."
+  },
+  {
+    "objectID": "research/power-data-center-study.html#view-the-full-interactive-study",
+    "href": "research/power-data-center-study.html#view-the-full-interactive-study",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "section": "View the Full Interactive Study",
+    "text": "View the Full Interactive Study\nOpen the interactive project on GitHub Pages\nDownload the paper (PDF)\nThe full write-up includes interactive visualizations, model diagnostics, and national-scale comparisons."
+  },
+  {
+    "objectID": "research/power-data-center-study.html#paper-overview",
+    "href": "research/power-data-center-study.html#paper-overview",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "section": "Paper Overview",
+    "text": "Paper Overview\nThis study examines how the rapid expansion of data centers is reshaping electricity demand in Virginia relative to national utility trends. Using ten years of U.S. Energy Information Administration (EIA-861) data, the project applies statistical learning and machine-learning methods to identify high-demand electric utilities and characterize emerging load patterns associated with commercial and industrial growth.\nKey techniques include engineered intensity metrics, supervised classification models (logistic regression, ridge regression, random forests, KNN), and unsupervised methods (PCA and K-means). Results indicate that Virginia exhibits a higher concentration of load-intensive utilities once demand is weighted by commercial activity—consistent with observed data center expansion—while ridge-regularized and tree-based models provide the most stable and interpretable performance."
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html",
+    "href": "research/ddos-attacks-iot.html",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "",
+    "text": "Volumetric DDoS in IoT Traffic"
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html#project-overview",
+    "href": "research/ddos-attacks-iot.html#project-overview",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project investigates volumetric Distributed Denial-of-Service (DDoS) attack patterns in Internet of Things (IoT) network traffic using the publicly available IoT23 dataset. The analysis characterizes how attack traffic behaves at scale, identifies key traffic features indicative of volumetric flooding, and demonstrates methods for profiling and distinguishing DDoS attack flows from normal IoT communications.\nThe repository includes: - A detailed written report summarizing the study and findings (PDF). - Data processing and analysis code in Python and R. - Traffic diagrams and supporting artifacts illustrating attack characterization. - Supporting scripts for data ingestion and transformation."
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html#explore-the-project",
+    "href": "research/ddos-attacks-iot.html#explore-the-project",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Explore the Project",
+    "text": "Explore the Project\nView the full project on GitHub"
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html#download-read",
+    "href": "research/ddos-attacks-iot.html#download-read",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Download & Read",
+    "text": "Download & Read\nDownload the paper (PDF)\nContains methodology, results, diagrams, and discussion of volumetric DDoS characteristics in real IoT traffic."
+  },
+  {
+    "objectID": "research/byu-security-study.html",
+    "href": "research/byu-security-study.html",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "",
+    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
+  },
+  {
+    "objectID": "research/byu-security-study.html#paper-overview",
+    "href": "research/byu-security-study.html#paper-overview",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "",
+    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
+  },
+  {
+    "objectID": "research/byu-security-study.html#methods-summary",
+    "href": "research/byu-security-study.html#methods-summary",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Methods Summary",
+    "text": "Methods Summary\nNetwork security data was collected by developing a custom Python-based API that queried Elasticsearch clusters used by university security and network engineering teams. Due to the scale of the data (terabytes of log records), queries were constrained to three-day windows to avoid timeouts.\nKey fields extracted include: - IP address, categorized by wireless or wired client ranges - Blocked event count, representing denied access attempts\nThe API returned aggregated JSON responses containing IP-level counts, which were then analyzed statistically to compare denial frequencies across client types."
+  },
+  {
+    "objectID": "research/byu-security-study.html#key-finding",
+    "href": "research/byu-security-study.html#key-finding",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Key Finding",
+    "text": "Key Finding\n\nWireless network clients were denied access more frequently on average than wired clients, indicating higher exposure to blocked or risky destinations."
+  },
+  {
+    "objectID": "research/byu-security-study.html#download-the-paper",
+    "href": "research/byu-security-study.html#download-the-paper",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Download the Paper",
+    "text": "Download the Paper\nDownload the full paper (PDF)\nThis PDF contains the complete methodology, statistical analysis, and results."
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "",
+    "text": "Gurobipy Transportation LP Solver"
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project demonstrates how to formulate and solve a transportation Linear Programming (LP) problem using the Gurobi optimization solver with its Python API (gurobipy). It was created as a learning exercise in optimization modeling, exploring LP formulation, constraint setup, and solution retrieval for classic network flow problems such as minimum-cost transportation.\nThe repository includes: - Python code implementing the transportation LP model. - Utility and helper modules for data handling. - A written report discussing modeling decisions and results.\nThe transportation problem classically seeks to minimize total shipping cost while satisfying supply and demand constraints across origins and destinations — a staple use case for LP solvers in operations research."
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "What You’ll Find Inside",
+    "text": "What You’ll Find Inside\n\nProblem formulation: Setting up decision variables, objective functions, and linear constraints representing supply, demand, and flow balance.\nGurobi integration: Leveraging the gurobipy API to build and solve the optimization model.\nReports & practice code: Supporting analysis of solver outputs and insights gained while learning LP concepts."
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Explore the Code",
+    "text": "Explore the Code\nView the full project on GitHub"
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Download Report (if available)",
+    "text": "Download Report (if available)\nDownload the memo (PDF)\nDownload the methods & model (PDF)"
   }
 ]

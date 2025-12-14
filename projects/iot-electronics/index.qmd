@@ -6,7 +6,6 @@ listing:
   - "!(index).qmd"
   type: grid
   sort: "date desc"
-  image-placeholder: /images/placeholder.png
 ---
 
 A collection of IoT & electronics projects.

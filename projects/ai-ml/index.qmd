@@ -1,12 +1,11 @@
 ---
-title: "AI/ML Projects"
+title: "Intelligent Systems & Decision Modeling"
 listing:
   contents: 
   - "*.qmd"
   - "!(index).qmd"
   type: grid
   sort: "date desc"
-  image-placeholder: /images/placeholder.png
 ---
 
-A collection of AI/ML projects.
+A collection of Intelligent Systems & Decision Modeling projects.

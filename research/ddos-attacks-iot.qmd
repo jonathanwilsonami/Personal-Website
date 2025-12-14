@@ -1,0 +1,33 @@
+---
+title: "Characterizing Volumetric DDoS Attacks in IoT Traffic"
+description: "Analysis of IoT volumetric DDoS attacks using the IoT23 dataset"
+date: 2024-11-23
+categories: [Cybersecurity, IoT, Network Traffic]
+image: /images/papers/ddos-attacks-iot/ddos-attacks-in-iot.png
+toc: false
+page-layout: full
+---
+
+![Volumetric DDoS in IoT Traffic](/images/papers/ddos-attacks-iot/ddos-attacks-in-iot.png){width=100%}
+
+## Project Overview
+
+This project investigates **volumetric Distributed Denial-of-Service (DDoS) attack patterns in Internet of Things (IoT) network traffic** using the publicly available *IoT23* dataset. The analysis characterizes how attack traffic behaves at scale, identifies key traffic features indicative of volumetric flooding, and demonstrates methods for profiling and distinguishing DDoS attack flows from normal IoT communications.
+
+The repository includes:
+- A detailed **written report** summarizing the study and findings (PDF).
+- Data processing and analysis code in Python and R.
+- Traffic diagrams and supporting artifacts illustrating attack characterization.
+- Supporting scripts for data ingestion and transformation.
+
+## Explore the Project
+
+**[View the full project on GitHub](https://github.com/jonathanwilsonami/Characterizing-Volumetric-DDoS-Attacks-in-IoT-Network-Traffic)**
+
+---
+
+## Download & Read
+
+**[Download the paper (PDF)](/research/papers/characterizing-ddos-attacks-iot.pdf)**
+
+*Contains methodology, results, diagrams, and discussion of volumetric DDoS characteristics in real IoT traffic.* 

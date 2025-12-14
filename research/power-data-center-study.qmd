@@ -1,0 +1,27 @@
+---
+title: "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers"
+description: "Statistical learning analysis of electricity demand patterns in Virginia and the U.S."
+date: 2025-12-10
+categories: [Power Grid, Data Centers, Machine Learning, Classification, Clustering, Unsupervised Learning]
+image: /images/papers/power-data-center/power-data-center-study.png
+toc: false
+page-layout: full
+---
+
+![Power & Data Centers](/images/papers/power-data-center/power-data-center-study.png){width=100%}
+
+## Paper Overview
+
+This study examines how the rapid expansion of data centers is reshaping electricity demand in Virginia relative to national utility trends. Using ten years of U.S. Energy Information Administration (EIA-861) data, the project applies statistical learning and machine-learning methods to identify **high-demand electric utilities** and characterize emerging load patterns associated with commercial and industrial growth.
+
+Key techniques include engineered intensity metrics, supervised classification models (logistic regression, ridge regression, random forests, KNN), and unsupervised methods (PCA and K-means). Results indicate that **Virginia exhibits a higher concentration of load-intensive utilities** once demand is weighted by commercial activity—consistent with observed data center expansion—while ridge-regularized and tree-based models provide the most stable and interpretable performance.
+
+## View the Full Interactive Study
+
+**[Open the interactive project on GitHub Pages](https://jonathanwilsonami.github.io/stat-515/projects/power.html)**
+
+**[Download the paper (PDF)](/research/papers/power-and-data-centers.pdf)**
+
+*The full write-up includes interactive visualizations, model diagnostics, and national-scale comparisons.*
+
+

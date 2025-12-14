@@ -1,8 +1,12 @@
 ---
 title: "Research"
-page-layout: full
-
-
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+  image-placeholder: /images/placeholder.png
 ---
 
-Coming soon — publications, working papers, and notes.
+Publications, working papers, and notes.

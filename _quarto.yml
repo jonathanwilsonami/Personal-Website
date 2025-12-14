@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - images/**
+    - static/external/**
 
 website:
   title: "Jonathan Wilson"
@@ -20,7 +21,7 @@ website:
             href: projects/index.qmd
           - text: Data Viz
             href: projects/data-viz/index.qmd
-          - text: AI / ML
+          - text: Intelligent Systems & Decision Modeling
             href: projects/ai-ml/index.qmd
           - text: IoT & Electronics
             href: projects/iot-electronics/index.qmd

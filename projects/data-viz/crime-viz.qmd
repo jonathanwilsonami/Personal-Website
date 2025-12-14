@@ -1,0 +1,20 @@
+---
+title: "Crime & Poverty (Dillon County, SC)"
+description: "Interactive data visualization redesign using Census + FBI crime data."
+date: 2025-09-25
+categories: [Data Viz, Crime]
+image: /images/projects/data-viz/crime-and-poverty/poverty.png
+toc: false
+---
+
+![Crime & Poverty — Dillon County, South Carolina](/images/projects/data-viz/crime-and-poverty/poverty.png){width=100%}
+
+**[Open the interactive project on GitHub Pages](https://jonathanwilsonami.github.io/stat-515/projects/crime-and-poverty.html)**
+
+This project is hosted externally. Click the link above to view the full interactive write-up.
+
+
+
+
+
+

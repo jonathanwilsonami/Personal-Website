@@ -1,0 +1,40 @@
+---
+title: "Gurobipy Transportation LP Solver"
+description: "A simple Linear Programming transportation problem solver using Gurobi and Python"
+date: 2025-05-12
+categories: [Optimization, Linear Programming, Operations Research]
+image: /images/projects/ai-ml/lp-transportation-project.png
+toc: false
+page-layout: full
+---
+
+![Gurobipy Transportation LP Solver](/images/projects/ai-ml/lp-transportation-project.png){width=100%}
+
+## Project Overview
+
+This project demonstrates how to formulate and solve a **transportation Linear Programming (LP) problem** using the **Gurobi optimization solver** with its Python API (`gurobipy`). It was created as a **learning exercise in optimization modeling**, exploring LP formulation, constraint setup, and solution retrieval for classic network flow problems such as minimum-cost transportation.
+
+The repository includes:
+- Python code implementing the transportation LP model.
+- Utility and helper modules for data handling.
+- A written report discussing modeling decisions and results.
+
+The transportation problem classically seeks to minimize total shipping cost while satisfying supply and demand constraints across origins and destinations — a staple use case for LP solvers in operations research.
+
+## What You’ll Find Inside
+
+- **Problem formulation:** Setting up decision variables, objective functions, and linear constraints representing supply, demand, and flow balance.
+- **Gurobi integration:** Leveraging the `gurobipy` API to build and solve the optimization model.
+- **Reports & practice code:** Supporting analysis of solver outputs and insights gained while learning LP concepts.
+
+## Explore the Code
+
+**[View the full project on GitHub](https://github.com/jonathanwilsonami/gurobipy_transportation_LP_solver)**
+
+## Download Report (if available)
+
+**[Download the memo (PDF)](/projects/ai-ml/papers/lp-transportation-project-memo.pdf)**
+
+**[Download the methods & model (PDF)](/projects/ai-ml/papers/lp-transportation-project-methods.pdf)**
+
+

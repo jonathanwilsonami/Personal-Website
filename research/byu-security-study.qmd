@@ -1,0 +1,42 @@
+---
+title: "Security Analysis of Blocked Network Clients"
+description: "A comparative analysis of blocked wireless and wired network clients at a university scale"
+date: 2019-11-27
+categories: [Cybersecurity, Network Security, Statistics]
+toc: false
+page-layout: full
+image: /images/papers/byu-bayesian-security-study/byu-bayesian-security-study.png
+---
+
+## Paper Overview
+
+This paper analyzes **security risk differences between wireless and wired network clients** by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.
+
+Wireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:
+
+> **Given that a network client is denied access, which client type is denied access more frequently on average?**
+
+Using network security logs collected via Elasticsearch, the analysis demonstrates that **wireless clients exhibit a higher average rate of denied access events**, suggesting a higher relative risk classification compared to wired clients.
+
+## Methods Summary
+
+Network security data was collected by developing a custom **Python-based API** that queried Elasticsearch clusters used by university security and network engineering teams. Due to the scale of the data (terabytes of log records), queries were constrained to three-day windows to avoid timeouts.
+
+Key fields extracted include:
+- **IP address**, categorized by wireless or wired client ranges
+- **Blocked event count**, representing denied access attempts
+
+The API returned aggregated JSON responses containing IP-level counts, which were then analyzed statistically to compare denial frequencies across client types.
+
+## Key Finding
+
+- **Wireless network clients were denied access more frequently on average than wired clients**, indicating higher exposure to blocked or risky destinations.
+
+## Download the Paper
+
+**[Download the full paper (PDF)](/papers/bayesian-analysis-on-security-data.pdf)**
+
+*This PDF contains the complete methodology, statistical analysis, and results.*
+
+
+

@@ -14,7 +14,9 @@
   },
   {
     "listing": "/projects/ai-ml/index.html",
-    "items": []
+    "items": [
+      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
+    ]
   },
   {
     "listing": "/projects/construction/index.html",
@@ -25,11 +27,19 @@
   {
     "listing": "/projects/data-viz/index.html",
     "items": [
-      "/projects/data-viz/sample.html"
+      "/projects/data-viz/crime-viz.html"
     ]
   },
   {
     "listing": "/projects.html",
     "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/power-data-center-study.html",
+      "/research/ddos-attacks-iot.html",
+      "/research/byu-security-study.html"
+    ]
   }
 ]
