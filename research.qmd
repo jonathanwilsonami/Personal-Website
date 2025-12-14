@@ -1,8 +1,0 @@
----
-title: "Research"
-page-layout: full
-
-
----
-
-Coming soon — publications, working papers, and notes.

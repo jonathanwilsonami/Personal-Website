@@ -34,7 +34,7 @@ The API returned aggregated JSON responses containing IP-level counts, which wer
 
 ## Download the Paper
 
-**[Download the full paper (PDF)](/papers/bayesian-analysis-on-security-data.pdf)**
+**[Download the full paper (PDF)](/research/papers/bayesian-analysis-on-security-data.pdf)**
 
 *This PDF contains the complete methodology, statistical analysis, and results.*
 
