@@ -1,0 +1,14 @@
+---
+title: "First Computer Build"
+categories: [Tech, Hardware]
+image: /images/projects/tech/first-computer-build/frame.jpg
+---
+
+My first PC build—parts selection, assembly, and first boot/BIOS moments.
+
+### Gallery
+![](/images/projects/tech/first-computer-build/parts.jpg){fig-alt="PC parts"}
+![](/images/projects/tech/first-computer-build/price.jpg){fig-alt="PC parts pricing"}
+![](/images/projects/tech/first-computer-build/workbench.jpg){fig-alt="Workbench setup"}
+![](/images/projects/tech/first-computer-build/frame.jpg){fig-alt="PC frame / build in progress"}
+![](/images/projects/tech/first-computer-build/bios.jpg){fig-alt="First BIOS screen"}

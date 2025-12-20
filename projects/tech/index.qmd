@@ -1,0 +1,11 @@
+---
+title: "Tech"
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+---
+
+A collection of Tech projects.

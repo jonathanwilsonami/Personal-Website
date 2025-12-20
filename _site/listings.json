@@ -4,7 +4,7 @@
     "items": [
       "/projects/data-viz/index.html",
       "/projects/ai-ml/index.html",
-      "/projects/iot-electronics/index.html",
+      "/projects/tech/index.html",
       "/projects/construction/index.html"
     ]
   },
@@ -21,7 +21,23 @@
   {
     "listing": "/projects/construction/index.html",
     "items": [
-      "/projects/construction/bathroom-1.html"
+      "/projects/construction/floors/mom-floor.html",
+      "/projects/construction/floors/town-house.html",
+      "/projects/construction/landscaping/multiple-walls.html",
+      "/projects/construction/landscaping/pergolas.html",
+      "/projects/construction/landscaping/town-house-wall.html",
+      "/projects/construction/patios/town-house.html",
+      "/projects/construction/patios/wes-patio.html",
+      "/projects/construction/roofs/index.html",
+      "/projects/construction/roofs/lean-to.html",
+      "/projects/construction/service/habitat-for-humanity.html",
+      "/projects/construction/sheds/mom-shed.html",
+      "/projects/construction/sheds/town-home-shed.html",
+      "/projects/construction/sheds/utils-shed.html",
+      "/projects/construction/woodworking/bookshelves.html",
+      "/projects/construction/woodworking/standing-desk.html",
+      "/projects/construction/bathroom-1.html",
+      "/projects/construction/heavy-civil-construction.html"
     ]
   },
   {
@@ -40,6 +56,17 @@
       "/research/power-data-center-study.html",
       "/research/ddos-attacks-iot.html",
       "/research/byu-security-study.html"
+    ]
+  },
+  {
+    "listing": "/projects/misc/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/tech/index.html",
+    "items": [
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
     ]
   }
 ]

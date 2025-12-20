@@ -1,0 +1,14 @@
+---
+title: "Townhouse Patio"
+categories: [Construction, Patios]
+image: /images/projects/construction/patios/town-house/town-house-patio-after.jpg
+---
+
+A townhouse patio project from material staging to finished outdoor space.
+
+### Gallery
+![](/images/projects/construction/patios/town-house/town-house-patio-before.jpg){fig-alt="Before - townhouse patio"}
+![](/images/projects/construction/patios/town-house/town-house-patio-before2.jpg){fig-alt="Before (alternate) - townhouse patio"}
+![](/images/projects/construction/patios/town-house/material.jpg){fig-alt="Materials - townhouse patio"}
+![](/images/projects/construction/patios/town-house/town-house-patio-after.jpg){fig-alt="After - townhouse patio"}
+![](/images/projects/construction/patios/town-house/town-house-patio-after2.jpg){fig-alt="After (alternate) - townhouse patio"}

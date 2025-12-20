@@ -1,0 +1,12 @@
+---
+title: "First CAD Experiments"
+categories: [CAD, Design]
+image: /images/projects/misc/first-cad/cad-drawings.jpg
+---
+
+Early CAD drawings and practice models.
+
+### Gallery
+![](/images/projects/misc/first-cad/cad-drawings.jpg){fig-alt="CAD drawings - set 1"}
+![](/images/projects/misc/first-cad/cad-drawings2.jpg){fig-alt="CAD drawings - set 2"}
+![](/images/projects/misc/first-cad/wheel-rim.jpg){fig-alt="Wheel rim model"}

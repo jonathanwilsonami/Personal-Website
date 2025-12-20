@@ -1,10 +1,8 @@
 ---
-title: "First Bathroom Remodel"
+title: "Bathroom Remodel"
 date: 2025-09-10
 categories: [Construction - Bathrooms]
-image: /images/projects/construction/bathroom-1/finished-shower-left.jpg   # card image
-website: https://demo.example.com
-repo-url: https://github.com/yourname/metro-explorer
+image: /images/projects/construction/bathroom-1/finished-shower-left.jpg
 ---
 
 **Summary:** First Bathroom Remodel.

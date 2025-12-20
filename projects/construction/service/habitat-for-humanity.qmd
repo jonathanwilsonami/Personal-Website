@@ -1,0 +1,11 @@
+---
+title: "Service: Habitat for Humanity"
+categories: [Construction, Service]
+image: /images/projects/construction/service/habitat-for-humanity.jpg
+---
+
+Volunteer work supporting home construction through Habitat for Humanity.
+
+### Gallery
+![](/images/projects/construction/service/habitat-for-humanity.jpg){fig-alt="Habitat for Humanity service"}
+![](/images/projects/construction/service/habitat-for-humanity2.JPG){fig-alt="Habitat for Humanity service (alternate)"}

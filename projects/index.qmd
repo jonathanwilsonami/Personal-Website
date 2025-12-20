@@ -6,7 +6,7 @@ listing:
   contents:
     - data-viz/index.qmd
     - ai-ml/index.qmd
-    - iot-electronics/index.qmd
+    - tech/index.qmd
     - construction/index.qmd
   type: grid
   sort: "date desc"

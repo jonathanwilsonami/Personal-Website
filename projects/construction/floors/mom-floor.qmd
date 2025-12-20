@@ -1,0 +1,12 @@
+---
+title: "Flooring Renovation (Mom’s Floor)"
+categories: [Construction, Floors]
+image: /images/projects/construction/floors/moms-floor/after.jpg
+---
+
+A small flooring renovation with a clear before/after transformation.
+
+### Gallery
+![](/images/projects/construction/floors/moms-floor/before.jpg){fig-alt="Before - mom's floor"}
+![](/images/projects/construction/floors/moms-floor/before2.jpg){fig-alt="Before (alternate) - mom's floor"}
+![](/images/projects/construction/floors/moms-floor/after.jpg){fig-alt="After - mom's floor"}

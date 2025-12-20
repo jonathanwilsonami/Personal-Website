@@ -7,7 +7,7 @@ listing:
   contents:
     - data-viz
     - ai-ml
-    - iot-electronics
+    - tech
     - construction
   type: grid
   sort: "date desc"

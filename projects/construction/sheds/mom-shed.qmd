@@ -1,0 +1,17 @@
+---
+title: "Shed Build (Mom’s Shed)"
+categories: [Construction, Sheds]
+image: /images/projects/construction/sheds/mom-shed/after.jpg
+---
+
+A full small-structure build from foundation and framing to roof details and final finish.
+
+### Gallery
+![](/images/projects/construction/sheds/mom-shed/foundation.jpg){fig-alt="Foundation - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/foundation2.jpg){fig-alt="Foundation (alternate) - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/frame.jpg){fig-alt="Framing - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/roof-detail.jpg){fig-alt="Roof detail - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/uncle-and-myself.jpg){fig-alt="Build team - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/mom.jpg){fig-alt="Mom at the shed project"}
+![](/images/projects/construction/sheds/mom-shed/after.jpg){fig-alt="After - mom's shed"}
+![](/images/projects/construction/sheds/mom-shed/after2.jpg){fig-alt="After (alternate) - mom's shed"}

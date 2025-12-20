@@ -114,21 +114,21 @@
   {
     "objectID": "projects/construction/bathroom-1.html",
     "href": "projects/construction/bathroom-1.html",
-    "title": "First Bathroom Remodel",
+    "title": "Bathroom Remodel",
     "section": "",
     "text": "Summary: First Bathroom Remodel."
   },
   {
     "objectID": "projects/construction/bathroom-1.html#overview",
     "href": "projects/construction/bathroom-1.html#overview",
-    "title": "First Bathroom Remodel",
+    "title": "Bathroom Remodel",
     "section": "Overview",
     "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
   },
   {
     "objectID": "projects/construction/bathroom-1.html#gallery",
     "href": "projects/construction/bathroom-1.html#gallery",
-    "title": "First Bathroom Remodel",
+    "title": "Bathroom Remodel",
     "section": "Gallery",
     "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
   },
@@ -137,7 +137,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntelligent Systems & Decision Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIoT & Electronics Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntelligent Systems & Decision Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTech\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/iot-electronics/index.html",
@@ -158,7 +158,7 @@
     "href": "projects/construction/index.html",
     "title": "Construction Projects",
     "section": "",
-    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Bathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlooring Renovation (Mom’s Floor)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Flooring Renovation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Multiple Retaining Walls\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Pergola Build\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Retaining Wall\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Patio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPatio Build (Wes)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoof Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Lean-to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nService: Habitat for Humanity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShed Build (Mom’s Shed)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhome Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtility Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Bookshelves\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Standing Desk\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeavy Civil Construction\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/data-viz/index.html",
@@ -341,5 +341,159 @@
     "title": "Gurobipy Transportation LP Solver",
     "section": "Download Report (if available)",
     "text": "Download Report (if available)\nDownload the memo (PDF)\nDownload the methods & model (PDF)"
+  },
+  {
+    "objectID": "projects/construction/heavy-civil-construction.html",
+    "href": "projects/construction/heavy-civil-construction.html",
+    "title": "Heavy Civil Construction",
+    "section": "",
+    "text": "Summary:\nBefore transitioning into software and intelligent systems, I worked in heavy civil construction, gaining hands-on experience with large-scale infrastructure, utilities, and site development. This background continues to influence how I approach complex, real-world systems.\n\nWork Focus: Excavation · Sewer & Water Lines · Site Development · Public Infrastructure\n\n\nBYU Waterline Installation\nInstallation of underground waterlines on campus, including trenching, pipe placement, bedding, and coordination around active facilities.\n\n\n\nSewer Line Replacement\nReplacement of aging sewer infrastructure requiring careful excavation, grade control, and safe work around existing utilities.\n\n\n\nHousing Development\nEarly-stage site work for residential developments, including mass excavation, utility rough-ins, and preparation for foundations and roadways.\n\n\n\nLakeside Power Station\nHeavy excavation and utility work supporting power-generation infrastructure, with strong emphasis on safety and sequencing.\n\n\n\nNew Public Park\nSite preparation and infrastructure installation for a new public park designed for long-term community use."
+  },
+  {
+    "objectID": "projects/construction/floors/mom-floor.html",
+    "href": "projects/construction/floors/mom-floor.html",
+    "title": "Flooring Renovation (Mom’s Floor)",
+    "section": "",
+    "text": "A small flooring renovation with a clear before/after transformation.\n\nGallery"
+  },
+  {
+    "objectID": "projects/misc/index.html",
+    "href": "projects/misc/index.html",
+    "title": "Miscellaneous Projects",
+    "section": "",
+    "text": "A collection of smaller miscellaneous projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/construction/floors/town-house.html",
+    "href": "projects/construction/floors/town-house.html",
+    "title": "Townhouse Flooring Renovation",
+    "section": "",
+    "text": "Flooring work in a townhouse—from rough before conditions through the process and final finish.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/landscaping/multiple-walls.html",
+    "href": "projects/construction/landscaping/multiple-walls.html",
+    "title": "Landscaping: Multiple Retaining Walls",
+    "section": "",
+    "text": "Small landscaping builds focused on structure, drainage, and clean finished lines.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/landscaping/pergolas.html",
+    "href": "projects/construction/landscaping/pergolas.html",
+    "title": "Landscaping: Pergola Build",
+    "section": "",
+    "text": "A small pergola build—layout, framing, and first-stage assembly.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/landscaping/town-house-wall.html",
+    "href": "projects/construction/landscaping/town-house-wall.html",
+    "title": "Townhouse Retaining Wall",
+    "section": "",
+    "text": "A townhouse retaining wall project from footers and layout through the finished result.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/misc-small/bookshelves.html",
+    "href": "projects/construction/misc-small/bookshelves.html",
+    "title": "Small Build: Bookshelves",
+    "section": "",
+    "text": "A small custom build focused on practicality and clean finish work.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/roofs/lean-to.html",
+    "href": "projects/construction/roofs/lean-to.html",
+    "title": "Small Build: Lean-to",
+    "section": "",
+    "text": "A small lean-to build for simple coverage and utility.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/woodworking/bookshelves.html",
+    "href": "projects/construction/woodworking/bookshelves.html",
+    "title": "Small Build: Bookshelves",
+    "section": "",
+    "text": "A small custom build focused on practicality and clean finish work.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/woodworking/standing-desk.html",
+    "href": "projects/construction/woodworking/standing-desk.html",
+    "title": "Small Build: Standing Desk",
+    "section": "",
+    "text": "A standing desk build from early layout through final setup.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/patios/town-house.html",
+    "href": "projects/construction/patios/town-house.html",
+    "title": "Townhouse Patio",
+    "section": "",
+    "text": "A townhouse patio project from material staging to finished outdoor space.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/patios/wes-patio.html",
+    "href": "projects/construction/patios/wes-patio.html",
+    "title": "Patio Build (Wes)",
+    "section": "",
+    "text": "A patio build with a simple, clean before/after progression.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/roofs/index.html",
+    "href": "projects/construction/roofs/index.html",
+    "title": "Roof Projects",
+    "section": "",
+    "text": "A couple of roof-related builds and structures.\n\nA-Frame\n\n\n\nLean-to Roof"
+  },
+  {
+    "objectID": "projects/construction/service/habitat-for-humanity.html",
+    "href": "projects/construction/service/habitat-for-humanity.html",
+    "title": "Service: Habitat for Humanity",
+    "section": "",
+    "text": "Volunteer work supporting home construction through Habitat for Humanity.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds.html",
+    "href": "projects/construction/sheds.html",
+    "title": "Sheds",
+    "section": "",
+    "text": "Summary:\n\nWork Focus:\n\n\nTown house Shed\n\n\n\nMom’s Shed"
+  },
+  {
+    "objectID": "projects/construction/sheds/mom-shed.html",
+    "href": "projects/construction/sheds/mom-shed.html",
+    "title": "Shed Build (Mom’s Shed)",
+    "section": "",
+    "text": "A full small-structure build from foundation and framing to roof details and final finish.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds/town-home-shed.html",
+    "href": "projects/construction/sheds/town-home-shed.html",
+    "title": "Townhome Shed",
+    "section": "",
+    "text": "A small shed build/finish shot.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds/utils-shed.html",
+    "href": "projects/construction/sheds/utils-shed.html",
+    "title": "Utility Shed",
+    "section": "",
+    "text": "A compact utility shed build.\n\nGallery"
+  },
+  {
+    "objectID": "projects/tech/first-cad.html",
+    "href": "projects/tech/first-cad.html",
+    "title": "First CAD Experiments",
+    "section": "",
+    "text": "Early CAD drawings and practice models.\n\nGallery"
+  },
+  {
+    "objectID": "projects/tech/index.html",
+    "href": "projects/tech/index.html",
+    "title": "Tech",
+    "section": "",
+    "text": "A collection of Tech projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst CAD Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Computer Build\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/tech/first-computer-build.html",
+    "href": "projects/tech/first-computer-build.html",
+    "title": "First Computer Build",
+    "section": "",
+    "text": "My first PC build—parts selection, assembly, and first boot/BIOS moments.\n\nGallery"
   }
 ]

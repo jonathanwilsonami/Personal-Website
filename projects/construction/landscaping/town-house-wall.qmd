@@ -1,0 +1,16 @@
+---
+title: "Townhouse Retaining Wall"
+categories: [Construction, Landscaping]
+image: /images/projects/construction/landscaping-small/town-house-wall/town-house-wall-after.jpg
+---
+
+A townhouse retaining wall project from footers and layout through the finished result.
+
+### Gallery
+![](/images/projects/construction/landscaping-small/town-house-wall/town-house-wall-before.jpg){fig-alt="Before - townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/town-house-wall-before2.jpg){fig-alt="Before (alternate) - townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/footers.jpg){fig-alt="Footers - townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/me.jpg){fig-alt="Working on the townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/town-house-wall-after.jpg){fig-alt="After - townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/town-house-wall-after2.jpg){fig-alt="After (alternate) - townhouse wall"}
+![](/images/projects/construction/landscaping-small/town-house-wall/town-house-wall-after3.jpg){fig-alt="After (alternate 2) - townhouse wall"}

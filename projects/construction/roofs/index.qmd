@@ -1,0 +1,13 @@
+---
+title: "Roof Projects"
+categories: [Construction, Roofs]
+image: /images/projects/construction/roofs/a-frame.jpg
+---
+
+A couple of roof-related builds and structures.
+
+### A-Frame
+![](/images/projects/construction/roofs/a-frame.jpg){fig-alt="A-frame structure"}
+
+### Lean-to Roof
+![](/images/projects/construction/roofs/lean-to.jpg){fig-alt="Lean-to roof"}

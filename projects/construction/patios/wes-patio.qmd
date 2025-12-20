@@ -1,0 +1,11 @@
+---
+title: "Patio Build (Wes)"
+categories: [Construction, Patios]
+image: /images/projects/construction/patios/wes-patio/after.jpg
+---
+
+A patio build with a simple, clean before/after progression.
+
+### Gallery
+![](/images/projects/construction/patios/wes-patio/before.jpg){fig-alt="Before - Wes patio"}
+![](/images/projects/construction/patios/wes-patio/after.jpg){fig-alt="After - Wes patio"}

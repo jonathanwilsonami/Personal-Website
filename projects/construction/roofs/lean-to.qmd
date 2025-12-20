@@ -1,0 +1,10 @@
+---
+title: "Small Build: Lean-to"
+categories: [Construction, Outdoor]
+image: /images/projects/construction/misc-small/leanto/lean-to.jpg
+---
+
+A small lean-to build for simple coverage and utility.
+
+### Gallery
+![](/images/projects/construction/misc-small/leanto/lean-to.jpg){fig-alt="Lean-to structure"}

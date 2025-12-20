@@ -1,0 +1,10 @@
+---
+title: "Townhome Shed"
+categories: [Construction, Sheds]
+image: /images/projects/construction/sheds/town-home-shed/front-finish.jpg
+---
+
+A small shed build/finish shot.
+
+### Gallery
+![](/images/projects/construction/sheds/town-home-shed/front-finish.jpg){fig-alt="Townhome shed front finish"}

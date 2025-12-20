@@ -1,0 +1,11 @@
+---
+title: "Utility Shed"
+categories: [Construction, Sheds]
+image: /images/projects/construction/sheds/utils-shed/1.jpg
+---
+
+A compact utility shed build.
+
+### Gallery
+![](/images/projects/construction/sheds/utils-shed/1.jpg){fig-alt="Utility shed - photo 1"}
+![](/images/projects/construction/sheds/utils-shed/2.jpg){fig-alt="Utility shed - photo 2"}

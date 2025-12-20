@@ -1,0 +1,18 @@
+---
+title: "Townhouse Flooring Renovation"
+categories: [Construction, Floors]
+image: /images/projects/construction/floors/town-house/town-house-floor-after.jpg
+---
+
+Flooring work in a townhouse—from rough before conditions through the process and final finish.
+
+### Gallery
+![](/images/projects/construction/floors/town-house/before.jpg){fig-alt="Before - townhouse floor"}
+![](/images/projects/construction/floors/town-house/before2.jpg){fig-alt="Before (alternate) - townhouse floor"}
+![](/images/projects/construction/floors/town-house/ouch.jpg){fig-alt="An 'ouch' moment during the job"}
+![](/images/projects/construction/floors/town-house/process.jpg){fig-alt="Process - townhouse flooring work"}
+![](/images/projects/construction/floors/town-house/town-house-floor-before.jpg){fig-alt="Before - townhouse floor (set)"}
+![](/images/projects/construction/floors/town-house/town-house-floor-before2.jpg){fig-alt="Before (alternate) - townhouse floor (set)"}
+![](/images/projects/construction/floors/town-house/town-house-floor-after.jpg){fig-alt="After - townhouse floor"}
+![](/images/projects/construction/floors/town-house/town-house-floor-after2.jpg){fig-alt="After (alternate) - townhouse floor"}
+![](/images/projects/construction/floors/town-house/town-house-floor-after3.jpg){fig-alt="After (alternate 2) - townhouse floor"}

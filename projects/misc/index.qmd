@@ -1,0 +1,13 @@
+---
+title: "Miscellaneous Projects"
+listing:
+  contents: 
+  - "*.qmd"
+  - "!(index).qmd"
+  type: grid
+  sort: "date desc"
+---
+
+A collection of smaller miscellaneous projects.
+
+

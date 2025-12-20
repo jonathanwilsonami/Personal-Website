@@ -1,0 +1,14 @@
+---
+title: "Small Build: Standing Desk"
+categories: [Construction, Woodworking]
+image: /images/projects/construction/misc-small/standing-desk/done.jpg
+---
+
+A standing desk build from early layout through final setup.
+
+### Gallery
+![](/images/projects/construction/misc-small/standing-desk/desk-start.jpg){fig-alt="Standing desk - start"}
+![](/images/projects/construction/misc-small/standing-desk/desk.jpg){fig-alt="Standing desk - in progress"}
+![](/images/projects/construction/misc-small/standing-desk/shop.jpg){fig-alt="Shop setup"}
+![](/images/projects/construction/misc-small/standing-desk/ops-mode.jpg){fig-alt="Ops mode / working configuration"}
+![](/images/projects/construction/misc-small/standing-desk/done.jpg){fig-alt="Standing desk - done"}

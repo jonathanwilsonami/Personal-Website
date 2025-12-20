@@ -1,0 +1,10 @@
+---
+title: "Small Build: Bookshelves"
+categories: [Construction, Woodworking]
+image: /images/projects/construction/misc-small/bookshelves/book-shelf.jpg
+---
+
+A small custom build focused on practicality and clean finish work.
+
+### Gallery
+![](/images/projects/construction/misc-small/bookshelves/book-shelf.jpg){fig-alt="Bookshelf build"}

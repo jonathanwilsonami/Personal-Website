@@ -1,0 +1,38 @@
+---
+title: "Heavy Civil Construction"
+date: 2025-09-10
+categories: [Construction, Heavy Civil]
+image: /images/projects/construction/heavy-civil/byu-waterline.jpg
+---
+
+**Summary:**  
+Before transitioning into software and intelligent systems, I worked in heavy civil construction, gaining hands-on experience with large-scale infrastructure, utilities, and site development. This background continues to influence how I approach complex, real-world systems.
+
+::: {.badges}
+**Work Focus:** Excavation · Sewer & Water Lines · Site Development · Public Infrastructure
+:::
+
+### BYU Waterline Installation
+Installation of underground waterlines on campus, including trenching, pipe placement, bedding, and coordination around active facilities.
+
+![](/images/projects/construction/heavy-civil/byu-waterline.jpg){fig-alt="BYU campus waterline installation"}
+
+### Sewer Line Replacement
+Replacement of aging sewer infrastructure requiring careful excavation, grade control, and safe work around existing utilities.
+
+![](/images/projects/construction/heavy-civil/sewer-line.jpg){fig-alt="Sewer line replacement"}
+
+### Housing Development
+Early-stage site work for residential developments, including mass excavation, utility rough-ins, and preparation for foundations and roadways.
+
+![](/images/projects/construction/heavy-civil/housing-dev.jpg){fig-alt="Housing development site work"}
+
+### Lakeside Power Station
+Heavy excavation and utility work supporting power-generation infrastructure, with strong emphasis on safety and sequencing.
+
+![](/images/projects/construction/heavy-civil/lake-side-power-station.jpg){fig-alt="Lakeside power station construction"}
+
+### New Public Park
+Site preparation and infrastructure installation for a new public park designed for long-term community use.
+
+![](/images/projects/construction/heavy-civil/new-park.jpg){fig-alt="New public park construction"}

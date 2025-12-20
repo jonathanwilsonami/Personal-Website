@@ -1,0 +1,10 @@
+---
+title: "Landscaping: Pergola Build"
+categories: [Construction, Landscaping]
+image: /images/projects/construction/landscaping-small/pergolas/pergola-first.jpg
+---
+
+A small pergola build—layout, framing, and first-stage assembly.
+
+### Gallery
+![](/images/projects/construction/landscaping-small/pergolas/pergola-first.jpg){fig-alt="Pergola build - first stage"}
