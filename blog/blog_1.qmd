@@ -1,0 +1,22 @@
+---
+title: "Getting Started with My Blog"
+author: "Jonathan Wilson"
+date: 2026-01-05
+categories: [blog, personal]
+---
+
+Welcome to my blog! This first post shows how I'll use Quarto to publish short notes, project updates, and tutorials.
+
+## Why this blog
+
+I'll use this space to capture ideas about data visualization, decision modeling, and technical projects.
+
+## What you'll find
+
+- Short tutorials
+- Project write-ups
+- Notes on tools and workflows
+
+Thanks for reading — more posts coming soon!
+
+----

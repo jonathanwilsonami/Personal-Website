@@ -56,6 +56,13 @@
     "text": "If you are interested in seeing what projects I’ve worked on see the project section. If you wanted to know more about who I am and my vision see the about section. If you need a comprehensive look at my technical skills and experince see my Master CV."
   },
   {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome — this a place for thoughts and reflections related to my career and passions. Most will remain a work in progress, writings that I come back to upon gaining more knowledge over time.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with My Blog\n\n\n\nblog\n\npersonal\n\n\n\n\n\n\n\n\n\nJan 5, 2026\n\n\nJonathan Wilson\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
@@ -341,6 +348,27 @@
     "title": "Data Viz Projects",
     "section": "",
     "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrime & Poverty (Dillon County, SC)\n\n\nInteractive data visualization redesign using Census + FBI crime data.\n\n\n\n\n\n\nSep 25, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/blog_1.html",
+    "href": "blog/blog_1.html",
+    "title": "Getting Started with My Blog",
+    "section": "",
+    "text": "Welcome to my blog! This first post shows how I’ll use Quarto to publish short notes, project updates, and tutorials."
+  },
+  {
+    "objectID": "blog/blog_1.html#why-this-blog",
+    "href": "blog/blog_1.html#why-this-blog",
+    "title": "Getting Started with My Blog",
+    "section": "Why this blog",
+    "text": "Why this blog\nI’ll use this space to capture ideas about data visualization, decision modeling, and technical projects."
+  },
+  {
+    "objectID": "blog/blog_1.html#what-youll-find",
+    "href": "blog/blog_1.html#what-youll-find",
+    "title": "Getting Started with My Blog",
+    "section": "What you’ll find",
+    "text": "What you’ll find\n\nShort tutorials\nProject write-ups\nNotes on tools and workflows\n\nThanks for reading — more posts coming soon!"
   },
   {
     "objectID": "projects.html",

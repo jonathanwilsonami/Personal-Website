@@ -27,6 +27,8 @@ website:
             href: projects/tech/index.qmd
           - text: Construction
             href: projects/construction/index.qmd
+      - href: blog/index.qmd
+        text: Blog
   page-footer:
     center:
       - text: "© 2025 Jonathan Wilson"

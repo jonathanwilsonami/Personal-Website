@@ -8,6 +8,12 @@
     ]
   },
   {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/blog_1.html"
+    ]
+  },
+  {
     "listing": "/projects/misc/index.html",
     "items": []
   },
