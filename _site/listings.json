@@ -1,5 +1,24 @@
 [
   {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/power-data-center-study.html",
+      "/research/ddos-attacks-iot.html",
+      "/research/byu-security-study.html"
+    ]
+  },
+  {
+    "listing": "/projects/misc/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/tech/index.html",
+    "items": [
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
+    ]
+  },
+  {
     "listing": "/projects/index.html",
     "items": [
       "/projects/data-viz/index.html",
@@ -7,10 +26,6 @@
       "/projects/tech/index.html",
       "/projects/construction/index.html"
     ]
-  },
-  {
-    "listing": "/projects/iot-electronics/index.html",
-    "items": []
   },
   {
     "listing": "/projects/ai-ml/index.html",
@@ -49,24 +64,5 @@
   {
     "listing": "/projects.html",
     "items": []
-  },
-  {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/power-data-center-study.html",
-      "/research/ddos-attacks-iot.html",
-      "/research/byu-security-study.html"
-    ]
-  },
-  {
-    "listing": "/projects/misc/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/tech/index.html",
-    "items": [
-      "/projects/tech/first-cad.html",
-      "/projects/tech/first-computer-build.html"
-    ]
   }
 ]

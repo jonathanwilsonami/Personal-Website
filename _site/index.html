@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,13 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cbd51242bb15cf1db6e2d2b8b2a9f477.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -207,8 +208,11 @@ cookieconsent.run({
   <div class="about-contents"><div id="hero-heading" class="center">
 <section id="welcome-to-my-website" class="level1">
 <h1>Welcome to My Website</h1>
-<p>Explore my <strong>Projects</strong> and <strong>About Me</strong> pages—this site is still evolving, with some areas complete and others under construction.</p>
-<p><strong>My vision:</strong> I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we <strong>build</strong>, <strong>sense</strong>, and <strong>connect</strong> across cyber-physical infrastructure.</p>
+<p>I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we <strong>build</strong>, <strong>sense</strong>, and <strong>connect</strong> across cyber-physical infrastructure.</p>
+<section id="navigation" class="level2">
+<h2 data-anchor-id="navigation">Navigation</h2>
+<p>If you are interested in seeing what projects I’ve worked on see the project section. If you wanted to know more about who I am and my vision see the about section. If you need a comprehensive look at my technical skills and experince see my Master CV.</p>
+</section>
 </section>
 </div></div>
 </div>
@@ -262,13 +266,14 @@ cookieconsent.run({
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
