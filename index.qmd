@@ -25,6 +25,17 @@ about:
 :::{#hero-heading .center}
 # Welcome to My Website  
 
-I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we **build**, **sense**, and **connect** across cyber-physical infrastructure.  
-::: 
+I’m an engineer and builder at heart, uniting the physical and digital worlds.  
 
+I design intelligent systems that optimize how we **build**, **sense**, and **connect** across cyber-physical infrastructure.  
+
+**Systems & software engineer specializing in data platforms, AI/ML, and digital twins for mission-critical systems.**
+
+---
+
+## What I’m Working On Now
+
+Building a digital twin and decision intelligence platform integrating data engineering, simulation, AI/ML, and operations research for mission-critical infrastructure.
+
+---
+:::
