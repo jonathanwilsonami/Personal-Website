@@ -35,7 +35,7 @@ I design intelligent systems that optimize how we **build**, **sense**, and **co
 
 ## What I’m Working On Now
 
-Building a digital twin and decision intelligence platform integrating data engineering, simulation, AI/ML, and operations research for mission-critical infrastructure.
+Building a decision intelligence platform, developing a home robotics/AI/IoT lab, and prototyping new product concepts in emerging technologies. I’m also experimenting with agentic AI at the edge. 
 
 ---
 :::
