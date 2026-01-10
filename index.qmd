@@ -26,8 +26,5 @@ about:
 # Welcome to My Website  
 
 I’m an engineer and builder at heart, uniting the physical and digital worlds. I design intelligent systems that optimize how we **build**, **sense**, and **connect** across cyber-physical infrastructure.  
-
-## Navigation 
-If you are interested in seeing what projects I've worked on see the project section. If you wanted to know more about who I am and my vision see the about section. If you need a comprehensive look at my technical skills and experince see my Master CV. 
 ::: 
 

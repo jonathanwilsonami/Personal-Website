@@ -31,7 +31,7 @@ website:
         text: Blog
   page-footer:
     center:
-      - text: "© 2025 Jonathan Wilson"
+      - text: "© 2026 Jonathan Wilson"
       - icon: github
         aria-label: GitHub
         href: https://github.com/jonathanwilsonami/
