@@ -13,7 +13,7 @@ about:
   links:
     - icon: file-earmark-text
       text: "Comprehensive CV (PDF)"
-      href: https://drive.google.com/file/d/1rMHn8kVOineAp4wR6B04OwObDhQYWoiz/view?usp=sharing 
+      href: https://drive.google.com/file/d/1hEIYs8NsNqqCDt3-CrERJZX7VjU8Crwt/view?usp=drive_link  
       target: _blank
       rel: noopener
     - icon: github
