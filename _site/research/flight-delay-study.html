@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Systems &amp; software engineer building intelligent, data-driven systems across AI/ML, IoT, and digital twins.">
+<meta name="dcterms.date" content="2026-05-18">
+<meta name="description" content="End-to-end ML pipeline for predicting flight delays using BTS On-Time Performance and NOAA weather data.">
 
-<title>Welcome! – Jonathan Wilson</title>
+<title>Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics – Jonathan Wilson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,26 +25,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/about/favicon.ico" rel="icon">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/about/favicon.ico" rel="icon">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +104,7 @@ cookieconsent.run({
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -112,7 +114,7 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jonathan Wilson</span>
     </a>
   </div>
@@ -123,15 +125,15 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research/index.html"> 
+    <a class="nav-link" href="../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -140,29 +142,29 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects/index.html">
+    <a class="dropdown-item" href="../projects/index.html">
  <span class="dropdown-text">All Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/data-viz/index.html">
+    <a class="dropdown-item" href="../projects/data-viz/index.html">
  <span class="dropdown-text">Data Viz</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/ai-ml/index.html">
+    <a class="dropdown-item" href="../projects/ai-ml/index.html">
  <span class="dropdown-text">Intelligent Systems &amp; Decision Modeling</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/tech/index.html">
+    <a class="dropdown-item" href="../projects/tech/index.html">
  <span class="dropdown-text">Tech</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/construction/index.html">
+    <a class="dropdown-item" href="../projects/construction/index.html">
  <span class="dropdown-text">Construction</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -180,60 +182,62 @@ cookieconsent.run({
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/about/profile.jpg" class="about-image
-  rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome!</h1>
+<h1 class="title">Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Aviation</div>
+    <div class="quarto-category">Flight Delays</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">XGBoost</div>
+    <div class="quarto-category">LSTM</div>
+    <div class="quarto-category">Feature Engineering</div>
+    <div class="quarto-category">Time Series</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    End-to-end ML pipeline for predicting flight delays using BTS On-Time Performance and NOAA weather data.
+  </div>
 </div>
+
+
 <div class="quarto-title-meta column-page">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-05-18</p>
+    </div>
   </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/projects/index.html" class="about-link" rel="" target="">
-    <i class="bi bi-folder"></i>
-     <span class="about-link-text">Projects</span>
-  </a>
-  <a href="/about.html" class="about-link" rel="" target="">
-    <i class="bi bi-person"></i>
-     <span class="about-link-text">About Me</span>
-  </a>
-  <a href="/research/index.html" class="about-link" rel="" target="">
-    <i class="bi bi-journal-text"></i>
-     <span class="about-link-text">Research</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading" class="center">
-<section id="hi-im-jonathan" class="level1">
-<h1>Hi, I’m Jonathan</h1>
-<p>I build <strong>intelligent systems</strong> for the messy seam between the physical and digital worlds — predictive platforms, decision intelligence, and digital twins for safety- and mission-critical infrastructure.</p>
-<p>Systems &amp; software engineer working across data platforms, AI/ML, and cyber-physical intelligence.</p>
-</section>
-</div></div>
-</div>
 
-<hr>
-<section id="what-im-doing-now" class="level2">
-<h2 data-anchor-id="what-im-doing-now">What I’m Doing Now</h2>
-<p>Working as a <strong>systems engineer building data pipelines, warehouse, and ecosystem purpose-built for AI/ML workflows</strong> — the kind of foundation that turns raw operational signals into something models, agents, and humans can actually reason over.</p>
-<hr>
-</section>
-<section id="currently-building-aeroflux" class="level2">
-<h2 data-anchor-id="currently-building-aeroflux">Currently Building: AeroFlux</h2>
-<p><strong><a href="projects/ai-ml/aero-flux.html">AeroFlux</a></strong> is a predictive intelligence platform for U.S. domestic flight delays — and the seed of a broader <strong>cyber-physical intelligence layer</strong> for networks of interdependent agents moving through shared physical space.</p>
-<hr>
-</section>
-<section id="also-in-motion" class="level2">
-<h2 data-anchor-id="also-in-motion">Also In Motion</h2>
-<p>Home robotics, 3D printing, agentic AI experiments at the edge, and early prototypes around decision intelligence for operational environments. The through-line is the same: <strong>systems that perceive state, anticipate consequences, and help humans act before the window closes.</strong></p>
-<hr>
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/papers/flight-delay/aero-flux-flight-map.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Flight Delay Prediction</figcaption>
+</figure>
+</div>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This study examines flight delay dynamics across the U.S. air transportation network by combining real-world aviation, weather, and operational data into a reproducible machine learning pipeline. Using BTS On-Time Performance flight records joined with NOAA Global Hourly Weather observations, the project models <strong>delay propagation, congestion effects, and weather-driven disruptions</strong> across multiple years of data.</p>
+<p>The workflow spans the full data science lifecycle: ingestion of raw flight and weather feeds, time-zone-aware feature engineering with strict no-look-ahead joins, aircraft rotation and propagation features, and airport-level congestion aggregates. Models include <strong>XGBoost, Logistic Regression, Random Forest, and an experimental LSTM</strong>, evaluated with time-aware rolling cross-validation and holdout test years. The configurable ML pipeline supports feature-set toggling, hyperparameter tuning, GPU acceleration, and full run versioning with logs, metrics, plots, and saved model artifacts.</p>
+<p>The companion <strong>AeroFlux</strong> prototype showcases real-time flight delay intelligence, model predictions, propagation chains, and interactive maps—prototyping a digital-twin view of the network.</p>
+</section>
+<section id="view-the-full-interactive-study" class="level2">
+<h2 class="anchored" data-anchor-id="view-the-full-interactive-study">View the Full Interactive Study</h2>
+<p><strong><a href="https://jonathanwilsonami.github.io/OR568_ML_Project/">Open the interactive project site on GitHub Pages</a></strong></p>
+<p><strong><a href="https://github.com/jonathanwilsonami/OR568_ML_Project">View the source on GitHub</a></strong></p>
+<p><em>The full site includes the data pipeline walkthrough, ML workflow notebooks, model diagnostics, the AeroFlux interactive prototype, and the final paper.</em></p>
 
 
 </section>
@@ -241,6 +245,13 @@ cookieconsent.run({
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

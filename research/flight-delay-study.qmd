@@ -1,0 +1,32 @@
+---
+title: "flight-delay-study"
+format: html
+---
+
+---
+title: "Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics"
+description: "End-to-end ML pipeline for predicting flight delays using BTS On-Time Performance and NOAA weather data."
+date: 2026-05-18
+categories: [Aviation, Flight Delays, Machine Learning, XGBoost, LSTM, Feature Engineering, Time Series]
+image: /images/papers/flight-delay/aero-flux-flight-map.png
+toc: false
+page-layout: full
+---
+
+![Flight Delay Prediction](/images/papers/flight-delay/aero-flux-flight-map.png){width=100%}
+
+## Project Overview
+
+This study examines flight delay dynamics across the U.S. air transportation network by combining real-world aviation, weather, and operational data into a reproducible machine learning pipeline. Using BTS On-Time Performance flight records joined with NOAA Global Hourly Weather observations, the project models **delay propagation, congestion effects, and weather-driven disruptions** across multiple years of data.
+
+The workflow spans the full data science lifecycle: ingestion of raw flight and weather feeds, time-zone-aware feature engineering with strict no-look-ahead joins, aircraft rotation and propagation features, and airport-level congestion aggregates. Models include **XGBoost, Logistic Regression, Random Forest, and an experimental LSTM**, evaluated with time-aware rolling cross-validation and holdout test years. The configurable ML pipeline supports feature-set toggling, hyperparameter tuning, GPU acceleration, and full run versioning with logs, metrics, plots, and saved model artifacts.
+
+The companion **AeroFlux** prototype showcases real-time flight delay intelligence, model predictions, propagation chains, and interactive maps—prototyping a digital-twin view of the network.
+
+## View the Full Interactive Study
+
+**[Open the interactive project site on GitHub Pages](https://jonathanwilsonami.github.io/OR568_ML_Project/)**
+
+**[View the source on GitHub](https://github.com/jonathanwilsonami/OR568_ML_Project)**
+
+*The full site includes the data pipeline walkthrough, ML workflow notebooks, model diagnostics, the AeroFlux interactive prototype, and the final paper.*

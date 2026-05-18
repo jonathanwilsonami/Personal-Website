@@ -4,63 +4,371 @@
     "href": "research/index.html",
     "title": "Research",
     "section": "",
-    "text": "Publications, working papers, and notes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers\n\n\nStatistical learning analysis of electricity demand patterns in Virginia and the U.S.\n\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterizing Volumetric DDoS Attacks in IoT Traffic\n\n\nAnalysis of IoT volumetric DDoS attacks using the IoT23 dataset\n\n\n\n\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecurity Analysis of Blocked Network Clients\n\n\nA comparative analysis of blocked wireless and wired network clients at a university scale\n\n\n\n\n\n\nNov 27, 2019\n\n\n\n\n\n\nNo matching items"
+    "text": "Publications, working papers, and notes.\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers\n\n\nStatistical learning analysis of electricity demand patterns in Virginia and the U.S.\n\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterizing Volumetric DDoS Attacks in IoT Traffic\n\n\nAnalysis of IoT volumetric DDoS attacks using the IoT23 dataset\n\n\n\n\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecurity Analysis of Blocked Network Clients\n\n\nA comparative analysis of blocked wireless and wired network clients at a university scale\n\n\n\n\n\n\nNov 27, 2019\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "research/byu-security-study.html",
-    "href": "research/byu-security-study.html",
-    "title": "Security Analysis of Blocked Network Clients",
+    "objectID": "research/ddos-attacks-iot.html",
+    "href": "research/ddos-attacks-iot.html",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
     "section": "",
-    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
+    "text": "Volumetric DDoS in IoT Traffic"
   },
   {
-    "objectID": "research/byu-security-study.html#paper-overview",
-    "href": "research/byu-security-study.html#paper-overview",
-    "title": "Security Analysis of Blocked Network Clients",
+    "objectID": "research/ddos-attacks-iot.html#project-overview",
+    "href": "research/ddos-attacks-iot.html#project-overview",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project investigates volumetric Distributed Denial-of-Service (DDoS) attack patterns in Internet of Things (IoT) network traffic using the publicly available IoT23 dataset. The analysis characterizes how attack traffic behaves at scale, identifies key traffic features indicative of volumetric flooding, and demonstrates methods for profiling and distinguishing DDoS attack flows from normal IoT communications.\nThe repository includes: - A detailed written report summarizing the study and findings (PDF). - Data processing and analysis code in Python and R. - Traffic diagrams and supporting artifacts illustrating attack characterization. - Supporting scripts for data ingestion and transformation."
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html#explore-the-project",
+    "href": "research/ddos-attacks-iot.html#explore-the-project",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Explore the Project",
+    "text": "Explore the Project\nView the full project on GitHub"
+  },
+  {
+    "objectID": "research/ddos-attacks-iot.html#download-read",
+    "href": "research/ddos-attacks-iot.html#download-read",
+    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
+    "section": "Download & Read",
+    "text": "Download & Read\nDownload the paper (PDF)\nContains methodology, results, diagrams, and discussion of volumetric DDoS characteristics in real IoT traffic."
+  },
+  {
+    "objectID": "research/power-data-center-study.html",
+    "href": "research/power-data-center-study.html",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
     "section": "",
-    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
+    "text": "Power & Data Centers"
   },
   {
-    "objectID": "research/byu-security-study.html#methods-summary",
-    "href": "research/byu-security-study.html#methods-summary",
-    "title": "Security Analysis of Blocked Network Clients",
-    "section": "Methods Summary",
-    "text": "Methods Summary\nNetwork security data was collected by developing a custom Python-based API that queried Elasticsearch clusters used by university security and network engineering teams. Due to the scale of the data (terabytes of log records), queries were constrained to three-day windows to avoid timeouts.\nKey fields extracted include: - IP address, categorized by wireless or wired client ranges - Blocked event count, representing denied access attempts\nThe API returned aggregated JSON responses containing IP-level counts, which were then analyzed statistically to compare denial frequencies across client types."
+    "objectID": "research/power-data-center-study.html#paper-overview",
+    "href": "research/power-data-center-study.html#paper-overview",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "section": "Paper Overview",
+    "text": "Paper Overview\nThis study examines how the rapid expansion of data centers is reshaping electricity demand in Virginia relative to national utility trends. Using ten years of U.S. Energy Information Administration (EIA-861) data, the project applies statistical learning and machine-learning methods to identify high-demand electric utilities and characterize emerging load patterns associated with commercial and industrial growth.\nKey techniques include engineered intensity metrics, supervised classification models (logistic regression, ridge regression, random forests, KNN), and unsupervised methods (PCA and K-means). Results indicate that Virginia exhibits a higher concentration of load-intensive utilities once demand is weighted by commercial activity—consistent with observed data center expansion—while ridge-regularized and tree-based models provide the most stable and interpretable performance."
   },
   {
-    "objectID": "research/byu-security-study.html#key-finding",
-    "href": "research/byu-security-study.html#key-finding",
-    "title": "Security Analysis of Blocked Network Clients",
-    "section": "Key Finding",
-    "text": "Key Finding\n\nWireless network clients were denied access more frequently on average than wired clients, indicating higher exposure to blocked or risky destinations."
+    "objectID": "research/power-data-center-study.html#view-the-full-interactive-study",
+    "href": "research/power-data-center-study.html#view-the-full-interactive-study",
+    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "section": "View the Full Interactive Study",
+    "text": "View the Full Interactive Study\nOpen the interactive project on GitHub Pages\nDownload the paper (PDF)\nThe full write-up includes interactive visualizations, model diagnostics, and national-scale comparisons."
   },
   {
-    "objectID": "research/byu-security-study.html#download-the-paper",
-    "href": "research/byu-security-study.html#download-the-paper",
-    "title": "Security Analysis of Blocked Network Clients",
-    "section": "Download the Paper",
-    "text": "Download the Paper\nDownload the full paper (PDF)\nThis PDF contains the complete methodology, statistical analysis, and results."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Projects\n  \n  \n    \n     About Me\n  \n  \n    \n     Research\n  \n\n  \n  \n\n\nI’m an engineer and builder at heart, uniting the physical and digital worlds.\nI design intelligent systems that optimize how we build, sense, and connect across cyber-physical infrastructure.\nSystems & software engineer specializing in data platforms, AI/ML, and digital twins for mission-critical systems.\n\n\n\nBuilding a decision intelligence platform, developing a home robotics/AI/IoT lab, and prototyping new product concepts in emerging technologies. I’m also experimenting with agentic AI at the edge."
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html#what-im-working-on-now",
-    "href": "index.html#what-im-working-on-now",
-    "title": "Welcome!",
+    "objectID": "blog/blog_1.html",
+    "href": "blog/blog_1.html",
+    "title": "Getting Started with My Blog",
     "section": "",
-    "text": "Building a decision intelligence platform, developing a home robotics/AI/IoT lab, and prototyping new product concepts in emerging technologies. I’m also experimenting with agentic AI at the edge."
+    "text": "Welcome to my blog! This first post shows how I’ll use Quarto to publish short notes, project updates, and tutorials."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "blog/blog_1.html#why-this-blog",
+    "href": "blog/blog_1.html#why-this-blog",
+    "title": "Getting Started with My Blog",
+    "section": "Why this blog",
+    "text": "Why this blog\nI’ll use this space to capture ideas about data visualization, decision modeling, and technical projects."
+  },
+  {
+    "objectID": "blog/blog_1.html#what-youll-find",
+    "href": "blog/blog_1.html#what-youll-find",
+    "title": "Getting Started with My Blog",
+    "section": "What you’ll find",
+    "text": "What you’ll find\n\nShort tutorials\nProject write-ups\nNotes on tools and workflows\n\nThanks for reading — more posts coming soon!"
+  },
+  {
+    "objectID": "projects/data-viz/index.html",
+    "href": "projects/data-viz/index.html",
+    "title": "Data Viz Projects",
     "section": "",
-    "text": "Welcome — this a place for thoughts and reflections related to my career and passions. Most will remain a work in progress, writings that I come back to upon gaining more knowledge over time.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with My Blog\n\n\n\nblog\n\npersonal\n\n\n\n\n\n\n\n\n\nJan 5, 2026\n\n\nJonathan Wilson\n\n\n\n\n\nNo matching items"
+    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrime & Poverty (Dillon County, SC)\n\n\nInteractive data visualization redesign using Census + FBI crime data.\n\n\n\n\n\n\nSep 25, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/construction/woodworking/standing-desk.html",
+    "href": "projects/construction/woodworking/standing-desk.html",
+    "title": "Small Build: Standing Desk",
+    "section": "",
+    "text": "A standing desk build from early layout through final setup.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds/town-home-shed.html",
+    "href": "projects/construction/sheds/town-home-shed.html",
+    "title": "Townhome Shed",
+    "section": "",
+    "text": "A small shed build/finish shot.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds/utils-shed.html",
+    "href": "projects/construction/sheds/utils-shed.html",
+    "title": "Utility Shed",
+    "section": "",
+    "text": "A compact utility shed build.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/patios/wes-patio.html",
+    "href": "projects/construction/patios/wes-patio.html",
+    "title": "Patio Build (Wes)",
+    "section": "",
+    "text": "A patio build with a simple, clean before/after progression.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/index.html",
+    "href": "projects/construction/index.html",
+    "title": "Construction Projects",
+    "section": "",
+    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlooring Renovation (Mom’s Floor)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Flooring Renovation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Multiple Retaining Walls\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Pergola Build\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Retaining Wall\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Patio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPatio Build (Wes)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoof Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Lean-to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nService: Habitat for Humanity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShed Build (Mom’s Shed)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhome Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtility Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Bookshelves\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Standing Desk\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeavy Civil Construction\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/construction/landscaping/town-house-wall.html",
+    "href": "projects/construction/landscaping/town-house-wall.html",
+    "title": "Townhouse Retaining Wall",
+    "section": "",
+    "text": "A townhouse retaining wall project from footers and layout through the finished result.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/landscaping/pergolas.html",
+    "href": "projects/construction/landscaping/pergolas.html",
+    "title": "Landscaping: Pergola Build",
+    "section": "",
+    "text": "A small pergola build—layout, framing, and first-stage assembly.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/roofs/index.html",
+    "href": "projects/construction/roofs/index.html",
+    "title": "Roof Projects",
+    "section": "",
+    "text": "A couple of roof-related builds and structures.\n\nA-Frame\n\n\n\nLean-to Roof"
+  },
+  {
+    "objectID": "projects/construction/floors/town-house.html",
+    "href": "projects/construction/floors/town-house.html",
+    "title": "Townhouse Flooring Renovation",
+    "section": "",
+    "text": "Flooring work in a townhouse—from rough before conditions through the process and final finish.\n\nGallery"
+  },
+  {
+    "objectID": "projects/ai-ml/index.html",
+    "href": "projects/ai-ml/index.html",
+    "title": "Intelligent Systems & Decision Modeling",
+    "section": "",
+    "text": "A collection of Intelligent Systems & Decision Modeling projects.\n\n\n\n\n\n\n\n\n\n\n\n\nAeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGurobipy Transportation LP Solver\n\n\nA simple Linear Programming transportation problem solver using Gurobi and Python\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html",
+    "href": "projects/ai-ml/aero-flux.html",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "",
+    "text": "AeroFlux: Propagate. Simulate. Orchestrate."
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#what-is-aeroflux",
+    "href": "projects/ai-ml/aero-flux.html#what-is-aeroflux",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "What is AeroFlux?",
+    "text": "What is AeroFlux?\nAeroFlux is a predictive intelligence system for U.S. domestic flight delays. Given a specific flight — tail number, date, origin, destination — it predicts whether the flight will arrive 15+ minutes late and the estimated delay magnitude in minutes. Unlike single-flight models, AeroFlux encodes the full operational history of the aircraft, capturing the cascading nature of delay propagation across the network.\nMore broadly, AeroFlux is the seed of a cyber-physical intelligence layer — a dynamic, network-aware reasoning system designed to perceive, anticipate, and propagate consequences across tightly coupled physical systems before disruption converges. Aviation is the first proving ground because it is safety-critical, networked, data-rich, and highly sensitive to cascading delays."
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#the-problem-it-addresses",
+    "href": "projects/ai-ml/aero-flux.html#the-problem-it-addresses",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "The Problem It Addresses",
+    "text": "The Problem It Addresses\nComplex systems fail when disruptions propagate faster than their defenses can adapt. Static models name the holes; they don’t show which are aligning, or how fast. Two preventable collisions in fourteen months — the January 2025 DCA mid-air collision and the March 2026 LaGuardia ground collision — exposed the same structural gap: no shared, real-time awareness layer across moving actors operating in a shared environment.\nAeroFlux is positioned as a higher-level pre-tactical fusion, simulation, and decision-support layer that complements certified tactical systems like ACAS Xr / TCAS, UAS Detect-and-Avoid, and ForeFlight — not a replacement."
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#whats-built-today",
+    "href": "projects/ai-ml/aero-flux.html#whats-built-today",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "What’s Built Today",
+    "text": "What’s Built Today\nA production-scale, propagation-aware ML pipeline trained on 61M+ U.S. domestic flight records (2015–2024) from the Bureau of Transportation Statistics, fused with NOAA hourly weather and airport metadata under strict temporal alignment (no look-ahead bias).\nCore technical components:\n\nData fusion pipeline — BTS flight records, NOAA weather observations, and airport metadata joined via UTC-normalized as-of joins, with engineered tail-rotation, congestion, and propagation features\nXGBoost production model — gradient-boosted trees (300 trees, depth 6, η = 0.05) trained on 61M flights in ~17 minutes using the histogram method, with dual classification/regression heads\nLSTM model — dual-output (classification + regression) over 3-timestep aircraft rotation sequences; built but deemed too memory-intensive for full multi-year deployment\nTime-aware rolling-origin cross-validation — 5 expanding-window folds (2015 → 2023) validating on subsequent years, with 2025 as a true unseen holdout\nPre-departure constraint — no departure-delay leakage; uses only features available before the aircraft leaves the gate"
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#headline-results",
+    "href": "projects/ai-ml/aero-flux.html#headline-results",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "Headline Results",
+    "text": "Headline Results\nOn the 2025 holdout (6.86M unseen flights) after tuning:\n\n\n\nMetric\nValue\n\n\n\n\nAUC\n0.840\n\n\nF₁\n0.554\n\n\nMAE\n20.3 min\n\n\nPrecision\n79%\n\n\n\nWhen the model issues a delay alert, it is right 4 out of 5 times — operationally useful for rebooking triage. Across 5 rolling-origin folds (2019–2023 validation years), mean AUC was 0.836 and mean MAE was 18.1 minutes."
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#the-dominant-signal",
+    "href": "projects/ai-ml/aero-flux.html#the-dominant-signal",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "The Dominant Signal",
+    "text": "The Dominant Signal\n51% of total model importance comes from one feature: prev1_arr_del15 — was the same aircraft late on its previous leg? This single finding validates the central thesis: propagation is the signal. Upstream aircraft state dominates downstream delay outcomes. Most flight-delay models ask what is true about this flight? AeroFlux asks what state is the aircraft carrying into this flight?"
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#roadmap",
+    "href": "projects/ai-ml/aero-flux.html#roadmap",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "Roadmap",
+    "text": "Roadmap\nAeroFlux is being built in stages, each standing on its own and unlocking the next:\n\nStage 1 — Predictive ML Model (complete) — Offline gradient-boosted delay predictor on 61M flights with published methodology and reproducible pipeline.\nStage 2 — Real-Time Inference (active, next 6 months) — Live data streaming, online serving, agentic copilot, richer feature streams (SWIM, NOTAMs, sentiment).\nStage 3 — Network Simulation (12–18 months) — Rust-based forward simulator propagating disruptions through rotation chains, gates, crews, and passenger connections.\nStage 4 — Cyber-Physical Intelligence Platform (18–36 months) — Operational digital twin of the NAS with pre-tactical decision support and conformance monitoring.\nStage 5 — Multi-Domain Autonomy Layer (long-horizon) — Generalize the platform pattern to UAM, drones, AVs, ports, energy, and other systems of interdependent agents in physical space."
+  },
+  {
+    "objectID": "projects/ai-ml/aero-flux.html#try-it-read-more",
+    "href": "projects/ai-ml/aero-flux.html#try-it-read-more",
+    "title": "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence Layer",
+    "section": "Try It & Read More",
+    "text": "Try It & Read More\nLive AeroFlux App — real-time delay prediction with route-chain visualization, propagation charts, and feature attribution\nOpen the OR568 project site on GitHub Pages — full methodology, ML workflow notebooks, and paper\nOR568 Project repo on GitHub — data pipeline, ML pipeline, and reproducible environment\nAeroFlux repo on GitHub — the inference system and web app\nPropagate. Simulate. Orchestrate."
+  },
+  {
+    "objectID": "projects/misc/index.html",
+    "href": "projects/misc/index.html",
+    "title": "Miscellaneous Projects",
+    "section": "",
+    "text": "A collection of smaller miscellaneous projects.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/tech/first-cad.html",
+    "href": "projects/tech/first-cad.html",
+    "title": "First CAD Experiments",
+    "section": "",
+    "text": "Early CAD drawings and practice models.\n\nGallery"
+  },
+  {
+    "objectID": "projects/tech/first-computer-build.html",
+    "href": "projects/tech/first-computer-build.html",
+    "title": "First Computer Build",
+    "section": "",
+    "text": "My first PC build—parts selection, assembly, and first boot/BIOS moments.\n\nGallery"
+  },
+  {
+    "objectID": "projects/tech/index.html",
+    "href": "projects/tech/index.html",
+    "title": "Tech",
+    "section": "",
+    "text": "A collection of Tech projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst CAD Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Computer Build\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntelligent Systems & Decision Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTech\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "",
+    "text": "Gurobipy Transportation LP Solver"
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project demonstrates how to formulate and solve a transportation Linear Programming (LP) problem using the Gurobi optimization solver with its Python API (gurobipy). It was created as a learning exercise in optimization modeling, exploring LP formulation, constraint setup, and solution retrieval for classic network flow problems such as minimum-cost transportation.\nThe repository includes: - Python code implementing the transportation LP model. - Utility and helper modules for data handling. - A written report discussing modeling decisions and results.\nThe transportation problem classically seeks to minimize total shipping cost while satisfying supply and demand constraints across origins and destinations — a staple use case for LP solvers in operations research."
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "What You’ll Find Inside",
+    "text": "What You’ll Find Inside\n\nProblem formulation: Setting up decision variables, objective functions, and linear constraints representing supply, demand, and flow balance.\nGurobi integration: Leveraging the gurobipy API to build and solve the optimization model.\nReports & practice code: Supporting analysis of solver outputs and insights gained while learning LP concepts."
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Explore the Code",
+    "text": "Explore the Code\nView the full project on GitHub"
+  },
+  {
+    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
+    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
+    "title": "Gurobipy Transportation LP Solver",
+    "section": "Download Report (if available)",
+    "text": "Download Report (if available)\nDownload the memo (PDF)\nDownload the methods & model (PDF)"
+  },
+  {
+    "objectID": "projects/construction/floors/mom-floor.html",
+    "href": "projects/construction/floors/mom-floor.html",
+    "title": "Flooring Renovation (Mom’s Floor)",
+    "section": "",
+    "text": "A small flooring renovation with a clear before/after transformation.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/roofs/lean-to.html",
+    "href": "projects/construction/roofs/lean-to.html",
+    "title": "Small Build: Lean-to",
+    "section": "",
+    "text": "A small lean-to build for simple coverage and utility.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/service/habitat-for-humanity.html",
+    "href": "projects/construction/service/habitat-for-humanity.html",
+    "title": "Service: Habitat for Humanity",
+    "section": "",
+    "text": "Volunteer work supporting home construction through Habitat for Humanity.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/landscaping/multiple-walls.html",
+    "href": "projects/construction/landscaping/multiple-walls.html",
+    "title": "Landscaping: Multiple Retaining Walls",
+    "section": "",
+    "text": "Small landscaping builds focused on structure, drainage, and clean finished lines.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html",
+    "href": "projects/construction/bathroom-1.html",
+    "title": "Bathroom Remodel",
+    "section": "",
+    "text": "Summary: First Bathroom Remodel."
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#overview",
+    "href": "projects/construction/bathroom-1.html#overview",
+    "title": "Bathroom Remodel",
+    "section": "Overview",
+    "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "projects/construction/bathroom-1.html#gallery",
+    "href": "projects/construction/bathroom-1.html#gallery",
+    "title": "Bathroom Remodel",
+    "section": "Gallery",
+    "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
+  },
+  {
+    "objectID": "projects/construction/heavy-civil-construction.html",
+    "href": "projects/construction/heavy-civil-construction.html",
+    "title": "Heavy Civil Construction",
+    "section": "",
+    "text": "Summary:\nBefore transitioning into software and intelligent systems, I worked in heavy civil construction, gaining hands-on experience with large-scale infrastructure, utilities, and site development. This background continues to influence how I approach complex, real-world systems.\n\nWork Focus: Excavation · Sewer & Water Lines · Site Development · Public Infrastructure\n\n\nBYU Waterline Installation\nInstallation of underground waterlines on campus, including trenching, pipe placement, bedding, and coordination around active facilities.\n\n\n\nSewer Line Replacement\nReplacement of aging sewer infrastructure requiring careful excavation, grade control, and safe work around existing utilities.\n\n\n\nHousing Development\nEarly-stage site work for residential developments, including mass excavation, utility rough-ins, and preparation for foundations and roadways.\n\n\n\nLakeside Power Station\nHeavy excavation and utility work supporting power-generation infrastructure, with strong emphasis on safety and sequencing.\n\n\n\nNew Public Park\nSite preparation and infrastructure installation for a new public park designed for long-term community use."
+  },
+  {
+    "objectID": "projects/construction/patios/town-house.html",
+    "href": "projects/construction/patios/town-house.html",
+    "title": "Townhouse Patio",
+    "section": "",
+    "text": "A townhouse patio project from material staging to finished outdoor space.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/sheds/mom-shed.html",
+    "href": "projects/construction/sheds/mom-shed.html",
+    "title": "Shed Build (Mom’s Shed)",
+    "section": "",
+    "text": "A full small-structure build from foundation and framing to roof details and final finish.\n\nGallery"
+  },
+  {
+    "objectID": "projects/construction/woodworking/bookshelves.html",
+    "href": "projects/construction/woodworking/bookshelves.html",
+    "title": "Small Build: Bookshelves",
+    "section": "",
+    "text": "A small custom build focused on practicality and clean finish work.\n\nGallery"
+  },
+  {
+    "objectID": "projects/data-viz/crime-viz.html",
+    "href": "projects/data-viz/crime-viz.html",
+    "title": "Crime & Poverty (Dillon County, SC)",
+    "section": "",
+    "text": "Crime & Poverty — Dillon County, South Carolina\n\n\nOpen the interactive project on GitHub Pages\nThis project is hosted externally. Click the link above to view the full interactive write-up."
   },
   {
     "objectID": "about.html",
@@ -147,311 +455,94 @@
     "text": "Personal Interests & Hobbies\n\nTrail running & hiking\nDeep reading across diverse topics\nConstruction projects & remodeling\nTraveling & exploring\nCross-functional fitness"
   },
   {
-    "objectID": "projects/data-viz/crime-viz.html",
-    "href": "projects/data-viz/crime-viz.html",
-    "title": "Crime & Poverty (Dillon County, SC)",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Crime & Poverty — Dillon County, South Carolina\n\n\nOpen the interactive project on GitHub Pages\nThis project is hosted externally. Click the link above to view the full interactive write-up."
+    "text": "Welcome — this a place for thoughts and reflections related to my career and passions. Most will remain a work in progress, writings that I come back to upon gaining more knowledge over time.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with My Blog\n\n\n\nblog\n\npersonal\n\n\n\n\n\n\n\n\n\nJan 5, 2026\n\n\nJonathan Wilson\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/construction/woodworking/bookshelves.html",
-    "href": "projects/construction/woodworking/bookshelves.html",
-    "title": "Small Build: Bookshelves",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
     "section": "",
-    "text": "A small custom build focused on practicality and clean finish work.\n\nGallery"
+    "text": "Projects\n  \n  \n    \n     About Me\n  \n  \n    \n     Research\n  \n\n  \n  \n\n\nI build intelligent systems for the messy seam between the physical and digital worlds — predictive platforms, decision intelligence, and digital twins for safety- and mission-critical infrastructure.\nSystems & software engineer working across data platforms, AI/ML, and cyber-physical intelligence."
   },
   {
-    "objectID": "projects/construction/sheds/mom-shed.html",
-    "href": "projects/construction/sheds/mom-shed.html",
-    "title": "Shed Build (Mom’s Shed)",
+    "objectID": "index.html#what-im-doing-now",
+    "href": "index.html#what-im-doing-now",
+    "title": "Welcome!",
+    "section": "What I’m Doing Now",
+    "text": "What I’m Doing Now\nWorking as a systems engineer building data pipelines, warehouse, and ecosystem purpose-built for AI/ML workflows — the kind of foundation that turns raw operational signals into something models, agents, and humans can actually reason over."
+  },
+  {
+    "objectID": "index.html#currently-building-aeroflux",
+    "href": "index.html#currently-building-aeroflux",
+    "title": "Welcome!",
+    "section": "Currently Building: AeroFlux",
+    "text": "Currently Building: AeroFlux\nAeroFlux is a predictive intelligence platform for U.S. domestic flight delays — and the seed of a broader cyber-physical intelligence layer for networks of interdependent agents moving through shared physical space."
+  },
+  {
+    "objectID": "index.html#also-in-motion",
+    "href": "index.html#also-in-motion",
+    "title": "Welcome!",
+    "section": "Also In Motion",
+    "text": "Also In Motion\nHome robotics, 3D printing, agentic AI experiments at the edge, and early prototypes around decision intelligence for operational environments. The through-line is the same: systems that perceive state, anticipate consequences, and help humans act before the window closes."
+  },
+  {
+    "objectID": "research/byu-security-study.html",
+    "href": "research/byu-security-study.html",
+    "title": "Security Analysis of Blocked Network Clients",
     "section": "",
-    "text": "A full small-structure build from foundation and framing to roof details and final finish.\n\nGallery"
+    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
   },
   {
-    "objectID": "projects/construction/patios/town-house.html",
-    "href": "projects/construction/patios/town-house.html",
-    "title": "Townhouse Patio",
+    "objectID": "research/byu-security-study.html#paper-overview",
+    "href": "research/byu-security-study.html#paper-overview",
+    "title": "Security Analysis of Blocked Network Clients",
     "section": "",
-    "text": "A townhouse patio project from material staging to finished outdoor space.\n\nGallery"
+    "text": "This paper analyzes security risk differences between wireless and wired network clients by examining blocked access attempts within a large university network environment. Clients attempting to access sites flagged as risky or inappropriate by institutional security controls are classified as higher-risk, providing a measurable proxy for security exposure.\nWireless clients are defined as devices connected via institutional Wi-Fi (guest or secure), while wired clients include devices connected through Ethernet infrastructure such as labs, libraries, and campus workstations. The central research question asks:\n\nGiven that a network client is denied access, which client type is denied access more frequently on average?\n\nUsing network security logs collected via Elasticsearch, the analysis demonstrates that wireless clients exhibit a higher average rate of denied access events, suggesting a higher relative risk classification compared to wired clients."
   },
   {
-    "objectID": "projects/construction/heavy-civil-construction.html",
-    "href": "projects/construction/heavy-civil-construction.html",
-    "title": "Heavy Civil Construction",
+    "objectID": "research/byu-security-study.html#methods-summary",
+    "href": "research/byu-security-study.html#methods-summary",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Methods Summary",
+    "text": "Methods Summary\nNetwork security data was collected by developing a custom Python-based API that queried Elasticsearch clusters used by university security and network engineering teams. Due to the scale of the data (terabytes of log records), queries were constrained to three-day windows to avoid timeouts.\nKey fields extracted include: - IP address, categorized by wireless or wired client ranges - Blocked event count, representing denied access attempts\nThe API returned aggregated JSON responses containing IP-level counts, which were then analyzed statistically to compare denial frequencies across client types."
+  },
+  {
+    "objectID": "research/byu-security-study.html#key-finding",
+    "href": "research/byu-security-study.html#key-finding",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Key Finding",
+    "text": "Key Finding\n\nWireless network clients were denied access more frequently on average than wired clients, indicating higher exposure to blocked or risky destinations."
+  },
+  {
+    "objectID": "research/byu-security-study.html#download-the-paper",
+    "href": "research/byu-security-study.html#download-the-paper",
+    "title": "Security Analysis of Blocked Network Clients",
+    "section": "Download the Paper",
+    "text": "Download the Paper\nDownload the full paper (PDF)\nThis PDF contains the complete methodology, statistical analysis, and results."
+  },
+  {
+    "objectID": "research/flight-delay-study.html",
+    "href": "research/flight-delay-study.html",
+    "title": "Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics",
     "section": "",
-    "text": "Summary:\nBefore transitioning into software and intelligent systems, I worked in heavy civil construction, gaining hands-on experience with large-scale infrastructure, utilities, and site development. This background continues to influence how I approach complex, real-world systems.\n\nWork Focus: Excavation · Sewer & Water Lines · Site Development · Public Infrastructure\n\n\nBYU Waterline Installation\nInstallation of underground waterlines on campus, including trenching, pipe placement, bedding, and coordination around active facilities.\n\n\n\nSewer Line Replacement\nReplacement of aging sewer infrastructure requiring careful excavation, grade control, and safe work around existing utilities.\n\n\n\nHousing Development\nEarly-stage site work for residential developments, including mass excavation, utility rough-ins, and preparation for foundations and roadways.\n\n\n\nLakeside Power Station\nHeavy excavation and utility work supporting power-generation infrastructure, with strong emphasis on safety and sequencing.\n\n\n\nNew Public Park\nSite preparation and infrastructure installation for a new public park designed for long-term community use."
+    "text": "Flight Delay Prediction"
   },
   {
-    "objectID": "projects/construction/bathroom-1.html",
-    "href": "projects/construction/bathroom-1.html",
-    "title": "Bathroom Remodel",
-    "section": "",
-    "text": "Summary: First Bathroom Remodel."
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#overview",
-    "href": "projects/construction/bathroom-1.html#overview",
-    "title": "Bathroom Remodel",
-    "section": "Overview",
-    "text": "Overview\nBrief summary….:\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "projects/construction/bathroom-1.html#gallery",
-    "href": "projects/construction/bathroom-1.html#gallery",
-    "title": "Bathroom Remodel",
-    "section": "Gallery",
-    "text": "Gallery\n\nBefore\n   \n\n\nDemo\n \n\n\nIn Process\n     \n\n\nAfter"
-  },
-  {
-    "objectID": "projects/construction/landscaping/multiple-walls.html",
-    "href": "projects/construction/landscaping/multiple-walls.html",
-    "title": "Landscaping: Multiple Retaining Walls",
-    "section": "",
-    "text": "Small landscaping builds focused on structure, drainage, and clean finished lines.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/service/habitat-for-humanity.html",
-    "href": "projects/construction/service/habitat-for-humanity.html",
-    "title": "Service: Habitat for Humanity",
-    "section": "",
-    "text": "Volunteer work supporting home construction through Habitat for Humanity.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/roofs/lean-to.html",
-    "href": "projects/construction/roofs/lean-to.html",
-    "title": "Small Build: Lean-to",
-    "section": "",
-    "text": "A small lean-to build for simple coverage and utility.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/floors/mom-floor.html",
-    "href": "projects/construction/floors/mom-floor.html",
-    "title": "Flooring Renovation (Mom’s Floor)",
-    "section": "",
-    "text": "A small flooring renovation with a clear before/after transformation.\n\nGallery"
-  },
-  {
-    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
-    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html",
-    "title": "Gurobipy Transportation LP Solver",
-    "section": "",
-    "text": "Gurobipy Transportation LP Solver"
-  },
-  {
-    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
-    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#project-overview",
-    "title": "Gurobipy Transportation LP Solver",
+    "objectID": "research/flight-delay-study.html#project-overview",
+    "href": "research/flight-delay-study.html#project-overview",
+    "title": "Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics",
     "section": "Project Overview",
-    "text": "Project Overview\nThis project demonstrates how to formulate and solve a transportation Linear Programming (LP) problem using the Gurobi optimization solver with its Python API (gurobipy). It was created as a learning exercise in optimization modeling, exploring LP formulation, constraint setup, and solution retrieval for classic network flow problems such as minimum-cost transportation.\nThe repository includes: - Python code implementing the transportation LP model. - Utility and helper modules for data handling. - A written report discussing modeling decisions and results.\nThe transportation problem classically seeks to minimize total shipping cost while satisfying supply and demand constraints across origins and destinations — a staple use case for LP solvers in operations research."
+    "text": "Project Overview\nThis study examines flight delay dynamics across the U.S. air transportation network by combining real-world aviation, weather, and operational data into a reproducible machine learning pipeline. Using BTS On-Time Performance flight records joined with NOAA Global Hourly Weather observations, the project models delay propagation, congestion effects, and weather-driven disruptions across multiple years of data.\nThe workflow spans the full data science lifecycle: ingestion of raw flight and weather feeds, time-zone-aware feature engineering with strict no-look-ahead joins, aircraft rotation and propagation features, and airport-level congestion aggregates. Models include XGBoost, Logistic Regression, Random Forest, and an experimental LSTM, evaluated with time-aware rolling cross-validation and holdout test years. The configurable ML pipeline supports feature-set toggling, hyperparameter tuning, GPU acceleration, and full run versioning with logs, metrics, plots, and saved model artifacts.\nThe companion AeroFlux prototype showcases real-time flight delay intelligence, model predictions, propagation chains, and interactive maps—prototyping a digital-twin view of the network."
   },
   {
-    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
-    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#what-youll-find-inside",
-    "title": "Gurobipy Transportation LP Solver",
-    "section": "What You’ll Find Inside",
-    "text": "What You’ll Find Inside\n\nProblem formulation: Setting up decision variables, objective functions, and linear constraints representing supply, demand, and flow balance.\nGurobi integration: Leveraging the gurobipy API to build and solve the optimization model.\nReports & practice code: Supporting analysis of solver outputs and insights gained while learning LP concepts."
-  },
-  {
-    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
-    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#explore-the-code",
-    "title": "Gurobipy Transportation LP Solver",
-    "section": "Explore the Code",
-    "text": "Explore the Code\nView the full project on GitHub"
-  },
-  {
-    "objectID": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
-    "href": "projects/ai-ml/gurobipy-transportation-simplex-lp.html#download-report-if-available",
-    "title": "Gurobipy Transportation LP Solver",
-    "section": "Download Report (if available)",
-    "text": "Download Report (if available)\nDownload the memo (PDF)\nDownload the methods & model (PDF)"
-  },
-  {
-    "objectID": "projects/misc/index.html",
-    "href": "projects/misc/index.html",
-    "title": "Miscellaneous Projects",
-    "section": "",
-    "text": "A collection of smaller miscellaneous projects.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/tech/first-cad.html",
-    "href": "projects/tech/first-cad.html",
-    "title": "First CAD Experiments",
-    "section": "",
-    "text": "Early CAD drawings and practice models.\n\nGallery"
-  },
-  {
-    "objectID": "projects/tech/first-computer-build.html",
-    "href": "projects/tech/first-computer-build.html",
-    "title": "First Computer Build",
-    "section": "",
-    "text": "My first PC build—parts selection, assembly, and first boot/BIOS moments.\n\nGallery"
-  },
-  {
-    "objectID": "projects/tech/index.html",
-    "href": "projects/tech/index.html",
-    "title": "Tech",
-    "section": "",
-    "text": "A collection of Tech projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst CAD Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Computer Build\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\n\n\n\n\nData Viz Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntelligent Systems & Decision Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTech\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstruction Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/ai-ml/index.html",
-    "href": "projects/ai-ml/index.html",
-    "title": "Intelligent Systems & Decision Modeling",
-    "section": "",
-    "text": "A collection of Intelligent Systems & Decision Modeling projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGurobipy Transportation LP Solver\n\n\nA simple Linear Programming transportation problem solver using Gurobi and Python\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/construction/floors/town-house.html",
-    "href": "projects/construction/floors/town-house.html",
-    "title": "Townhouse Flooring Renovation",
-    "section": "",
-    "text": "Flooring work in a townhouse—from rough before conditions through the process and final finish.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/roofs/index.html",
-    "href": "projects/construction/roofs/index.html",
-    "title": "Roof Projects",
-    "section": "",
-    "text": "A couple of roof-related builds and structures.\n\nA-Frame\n\n\n\nLean-to Roof"
-  },
-  {
-    "objectID": "projects/construction/landscaping/pergolas.html",
-    "href": "projects/construction/landscaping/pergolas.html",
-    "title": "Landscaping: Pergola Build",
-    "section": "",
-    "text": "A small pergola build—layout, framing, and first-stage assembly.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/landscaping/town-house-wall.html",
-    "href": "projects/construction/landscaping/town-house-wall.html",
-    "title": "Townhouse Retaining Wall",
-    "section": "",
-    "text": "A townhouse retaining wall project from footers and layout through the finished result.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/index.html",
-    "href": "projects/construction/index.html",
-    "title": "Construction Projects",
-    "section": "",
-    "text": "A collection of construction projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlooring Renovation (Mom’s Floor)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Flooring Renovation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Multiple Retaining Walls\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLandscaping: Pergola Build\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Retaining Wall\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhouse Patio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPatio Build (Wes)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoof Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Lean-to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nService: Habitat for Humanity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShed Build (Mom’s Shed)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTownhome Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtility Shed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Bookshelves\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall Build: Standing Desk\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBathroom Remodel\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeavy Civil Construction\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/construction/patios/wes-patio.html",
-    "href": "projects/construction/patios/wes-patio.html",
-    "title": "Patio Build (Wes)",
-    "section": "",
-    "text": "A patio build with a simple, clean before/after progression.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/sheds/utils-shed.html",
-    "href": "projects/construction/sheds/utils-shed.html",
-    "title": "Utility Shed",
-    "section": "",
-    "text": "A compact utility shed build.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/sheds/town-home-shed.html",
-    "href": "projects/construction/sheds/town-home-shed.html",
-    "title": "Townhome Shed",
-    "section": "",
-    "text": "A small shed build/finish shot.\n\nGallery"
-  },
-  {
-    "objectID": "projects/construction/woodworking/standing-desk.html",
-    "href": "projects/construction/woodworking/standing-desk.html",
-    "title": "Small Build: Standing Desk",
-    "section": "",
-    "text": "A standing desk build from early layout through final setup.\n\nGallery"
-  },
-  {
-    "objectID": "projects/data-viz/index.html",
-    "href": "projects/data-viz/index.html",
-    "title": "Data Viz Projects",
-    "section": "",
-    "text": "A collection of visualization projects—dashboards, interactive charts, and storytelling with data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrime & Poverty (Dillon County, SC)\n\n\nInteractive data visualization redesign using Census + FBI crime data.\n\n\n\n\n\n\nSep 25, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/blog_1.html",
-    "href": "blog/blog_1.html",
-    "title": "Getting Started with My Blog",
-    "section": "",
-    "text": "Welcome to my blog! This first post shows how I’ll use Quarto to publish short notes, project updates, and tutorials."
-  },
-  {
-    "objectID": "blog/blog_1.html#why-this-blog",
-    "href": "blog/blog_1.html#why-this-blog",
-    "title": "Getting Started with My Blog",
-    "section": "Why this blog",
-    "text": "Why this blog\nI’ll use this space to capture ideas about data visualization, decision modeling, and technical projects."
-  },
-  {
-    "objectID": "blog/blog_1.html#what-youll-find",
-    "href": "blog/blog_1.html#what-youll-find",
-    "title": "Getting Started with My Blog",
-    "section": "What you’ll find",
-    "text": "What you’ll find\n\nShort tutorials\nProject write-ups\nNotes on tools and workflows\n\nThanks for reading — more posts coming soon!"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome! Explore featured work across Data Viz, AI/ML, IoT & Electronics, and Construction.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/power-data-center-study.html",
-    "href": "research/power-data-center-study.html",
-    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
-    "section": "",
-    "text": "Power & Data Centers"
-  },
-  {
-    "objectID": "research/power-data-center-study.html#paper-overview",
-    "href": "research/power-data-center-study.html#paper-overview",
-    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
-    "section": "Paper Overview",
-    "text": "Paper Overview\nThis study examines how the rapid expansion of data centers is reshaping electricity demand in Virginia relative to national utility trends. Using ten years of U.S. Energy Information Administration (EIA-861) data, the project applies statistical learning and machine-learning methods to identify high-demand electric utilities and characterize emerging load patterns associated with commercial and industrial growth.\nKey techniques include engineered intensity metrics, supervised classification models (logistic regression, ridge regression, random forests, KNN), and unsupervised methods (PCA and K-means). Results indicate that Virginia exhibits a higher concentration of load-intensive utilities once demand is weighted by commercial activity—consistent with observed data center expansion—while ridge-regularized and tree-based models provide the most stable and interpretable performance."
-  },
-  {
-    "objectID": "research/power-data-center-study.html#view-the-full-interactive-study",
-    "href": "research/power-data-center-study.html#view-the-full-interactive-study",
-    "title": "Identifying High-Demand Utilities in Virginia: Statistical Learning and National Comparative Analysis in the Era of Data Centers",
+    "objectID": "research/flight-delay-study.html#view-the-full-interactive-study",
+    "href": "research/flight-delay-study.html#view-the-full-interactive-study",
+    "title": "Predicting Flight Delays: A Machine Learning Approach to Aviation Delay Dynamics",
     "section": "View the Full Interactive Study",
-    "text": "View the Full Interactive Study\nOpen the interactive project on GitHub Pages\nDownload the paper (PDF)\nThe full write-up includes interactive visualizations, model diagnostics, and national-scale comparisons."
-  },
-  {
-    "objectID": "research/ddos-attacks-iot.html",
-    "href": "research/ddos-attacks-iot.html",
-    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
-    "section": "",
-    "text": "Volumetric DDoS in IoT Traffic"
-  },
-  {
-    "objectID": "research/ddos-attacks-iot.html#project-overview",
-    "href": "research/ddos-attacks-iot.html#project-overview",
-    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
-    "section": "Project Overview",
-    "text": "Project Overview\nThis project investigates volumetric Distributed Denial-of-Service (DDoS) attack patterns in Internet of Things (IoT) network traffic using the publicly available IoT23 dataset. The analysis characterizes how attack traffic behaves at scale, identifies key traffic features indicative of volumetric flooding, and demonstrates methods for profiling and distinguishing DDoS attack flows from normal IoT communications.\nThe repository includes: - A detailed written report summarizing the study and findings (PDF). - Data processing and analysis code in Python and R. - Traffic diagrams and supporting artifacts illustrating attack characterization. - Supporting scripts for data ingestion and transformation."
-  },
-  {
-    "objectID": "research/ddos-attacks-iot.html#explore-the-project",
-    "href": "research/ddos-attacks-iot.html#explore-the-project",
-    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
-    "section": "Explore the Project",
-    "text": "Explore the Project\nView the full project on GitHub"
-  },
-  {
-    "objectID": "research/ddos-attacks-iot.html#download-read",
-    "href": "research/ddos-attacks-iot.html#download-read",
-    "title": "Characterizing Volumetric DDoS Attacks in IoT Traffic",
-    "section": "Download & Read",
-    "text": "Download & Read\nDownload the paper (PDF)\nContains methodology, results, diagrams, and discussion of volumetric DDoS characteristics in real IoT traffic."
+    "text": "View the Full Interactive Study\nOpen the interactive project site on GitHub Pages\nView the source on GitHub\nThe full site includes the data pipeline walkthrough, ML workflow notebooks, model diagnostics, the AeroFlux interactive prototype, and the final paper."
   }
 ]

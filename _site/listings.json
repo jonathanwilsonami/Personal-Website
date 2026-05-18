@@ -2,41 +2,20 @@
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/flight-delay-study.html",
       "/research/power-data-center-study.html",
       "/research/ddos-attacks-iot.html",
       "/research/byu-security-study.html"
     ]
   },
   {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/blog_1.html"
-    ]
-  },
-  {
-    "listing": "/projects/misc/index.html",
+    "listing": "/projects.html",
     "items": []
   },
   {
-    "listing": "/projects/tech/index.html",
+    "listing": "/projects/data-viz/index.html",
     "items": [
-      "/projects/tech/first-cad.html",
-      "/projects/tech/first-computer-build.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/data-viz/index.html",
-      "/projects/ai-ml/index.html",
-      "/projects/tech/index.html",
-      "/projects/construction/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/ai-ml/index.html",
-    "items": [
-      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
+      "/projects/data-viz/crime-viz.html"
     ]
   },
   {
@@ -62,13 +41,36 @@
     ]
   },
   {
-    "listing": "/projects/data-viz/index.html",
+    "listing": "/projects/ai-ml/index.html",
     "items": [
-      "/projects/data-viz/crime-viz.html"
+      "/projects/ai-ml/aero-flux.html",
+      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
     ]
   },
   {
-    "listing": "/projects.html",
+    "listing": "/projects/misc/index.html",
     "items": []
+  },
+  {
+    "listing": "/projects/tech/index.html",
+    "items": [
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/data-viz/index.html",
+      "/projects/ai-ml/index.html",
+      "/projects/tech/index.html",
+      "/projects/construction/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/blog_1.html"
+    ]
   }
 ]
