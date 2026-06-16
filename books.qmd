@@ -1,0 +1,64 @@
+---
+title: "Favorite Books"
+description-meta: "Books that have shaped how I think and build."
+toc: true
+page-layout: full
+---
+
+A running list of books I keep coming back to — covers link out to where you can buy them.
+
+::: {.book-list}
+
+## Systems, Architecture & Design
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![Cover of Designing Data-Intensive Applications](/images/books/designing-data-intensive-applications.jpg)](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){target="_blank" rel="noopener"}
+:::
+::: {.book-body}
+### Designing Data-Intensive Applications
+*Martin Kleppmann*
+
+**Why I liked it:** ...
+
+**Summary:** ...
+:::
+:::
+
+:::
+
+## Psychology, Decision-Making & Self-Development
+
+::: {.book}
+::: {.book-cover}
+[![Cover of Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555){target="_blank" rel="noopener"}
+:::
+::: {.book-body}
+### Thinking, Fast and Slow
+*Daniel Kahneman*
+
+**Why I liked it:** ...
+
+**Summary:** ...
+:::
+:::
+
+## Technology & Software Engineering
+
+::: {.book}
+::: {.book-cover}
+[![Cover of The Pragmatic Programmer](/images/books/pragmatic-programmer.jpg)](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X){target="_blank" rel="noopener"}
+:::
+::: {.book-body}
+### The Pragmatic Programmer
+*David Thomas & Andrew Hunt*
+
+**Why I liked it:** ...
+
+**Summary:** ...
+:::
+:::
+
+:::

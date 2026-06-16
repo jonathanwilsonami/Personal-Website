@@ -161,6 +161,13 @@
     "text": "Personal Interests & Hobbies\n\nTrail running & hiking\nDeep reading across diverse topics\nConstruction projects & remodeling\nTraveling & exploring\nCross-functional fitness"
   },
   {
+    "objectID": "about.html#favorite-books",
+    "href": "about.html#favorite-books",
+    "title": "About Me",
+    "section": "Favorite Books",
+    "text": "Favorite Books\nThe books that have shaped how I think and build — browse the full list."
+  },
+  {
     "objectID": "projects/data-viz/crime-viz.html",
     "href": "projects/data-viz/crime-viz.html",
     "title": "Crime & Poverty (Dillon County, SC)",
@@ -299,6 +306,34 @@
     "title": "First Computer Build",
     "section": "",
     "text": "My first PC build—parts selection, assembly, and first boot/BIOS moments.\n\nGallery"
+  },
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Favorite Books",
+    "section": "",
+    "text": "A running list of books I keep coming back to — covers link out to where you can buy them."
+  },
+  {
+    "objectID": "books.html#systems-architecture-design",
+    "href": "books.html#systems-architecture-design",
+    "title": "Favorite Books",
+    "section": "Systems, Architecture & Design",
+    "text": "Systems, Architecture & Design\n\n\n\n\n\n\nCover of Designing Data-Intensive Applications\n\n\n\n\nDesigning Data-Intensive Applications\nMartin Kleppmann\nWhy I liked it: …\nSummary: …"
+  },
+  {
+    "objectID": "books.html#psychology-decision-making-self-development",
+    "href": "books.html#psychology-decision-making-self-development",
+    "title": "Favorite Books",
+    "section": "Psychology, Decision-Making & Self-Development",
+    "text": "Psychology, Decision-Making & Self-Development\n\n\n\n\n\nCover of Thinking, Fast and Slow\n\n\n\n\nThinking, Fast and Slow\nDaniel Kahneman\nWhy I liked it: …\nSummary: …"
+  },
+  {
+    "objectID": "books.html#technology-software-engineering",
+    "href": "books.html#technology-software-engineering",
+    "title": "Favorite Books",
+    "section": "Technology & Software Engineering",
+    "text": "Technology & Software Engineering\n\n\n\n\n\nCover of The Pragmatic Programmer\n\n\n\n\nThe Pragmatic Programmer\nDavid Thomas & Andrew Hunt\nWhy I liked it: …\nSummary: …"
   },
   {
     "objectID": "projects/tech/first-cad.html",

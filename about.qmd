@@ -134,3 +134,6 @@ I’m particularly interested in collaborating on:
 - Construction projects & remodeling 
 - Traveling & exploring 
 - Cross-functional fitness 
+
+## Favorite Books 
+The books that have shaped how I think and build — [browse the full list](books.qmd).

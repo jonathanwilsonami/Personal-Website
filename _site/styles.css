@@ -1,1 +1,33 @@
 /* css styles */
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+.book {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.book-cover img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease;
+}
+.book-cover img:hover {
+  transform: scale(1.03);
+}
+.book-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+.book-body em {
+  opacity: 0.75;
+}
+@media (max-width: 600px) {
+  .book { flex-direction: column; }
+  .book-cover img { width: 120px; }
+}
