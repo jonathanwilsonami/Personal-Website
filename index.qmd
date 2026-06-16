@@ -25,9 +25,9 @@ about:
 :::{#hero-heading .center}
 # Hi, I'm Jonathan
 
-I build **intelligent systems** for the messy seam between the physical and digital worlds — predictive platforms, decision intelligence, and digital twins for safety- and mission-critical infrastructure.
+I build **intelligent systems** connecting the physical and digital worlds together — AI platforms, decision intelligence, and digital twins for mission-critical infrastructure.
 
-Systems & software engineer working across data platforms, AI/ML, and cyber-physical intelligence.
+Engineer building data and AI systems for the physical world.
 
 :::
 
@@ -35,18 +35,12 @@ Systems & software engineer working across data platforms, AI/ML, and cyber-phys
 
 ## What I'm Doing Now
 
-Working as a **systems engineer building data pipelines, warehouse, and ecosystem purpose-built for AI/ML workflows** — the kind of foundation that turns raw operational signals into something models, agents, and humans can actually reason over.
+Working as a **systems engineer at Peraton building data pipelines, warehouse, and ecosystem purpose-built for AI/ML workflows**.
 
 ---
 
-## Currently Building: AeroFlux
+## Passion Project: AeroFlux
 
 **[AeroFlux](projects/ai-ml/aero-flux.html)** is a predictive intelligence platform for U.S. domestic flight delays — and the seed of a broader **cyber-physical intelligence layer** for networks of interdependent agents moving through shared physical space.
-
----
-
-## Also In Motion
-
-Home robotics, 3D printing, agentic AI experiments at the edge, and early prototypes around decision intelligence for operational environments. The through-line is the same: **systems that perceive state, anticipate consequences, and help humans act before the window closes.**
 
 ---
