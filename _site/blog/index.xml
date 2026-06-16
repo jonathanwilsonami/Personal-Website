@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Jonathan Wilson</title>
+<link>https://jonathanwil.com/blog/</link>
+<atom:link href="https://jonathanwil.com/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Tue, 16 Jun 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Exploring Peru</title>
+  <dc:creator>Jonathan Wilson</dc:creator>
+  <link>https://jonathanwil.com/blog/posts/travel/peru.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="exploring-peru" class="level1">
+<h1>Exploring Peru</h1>
+<section id="machu-picchu" class="level2">
+<h2 class="anchored" data-anchor-id="machu-picchu">Machu Picchu</h2>
+<p>View from the Inca Trail:</p>
+<p><img src="https://jonathanwil.com/images/travel/peru/machu-picchu-2.jpg" class="img-fluid" alt="machu-picchu-2"></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>travel</category>
+  <guid>https://jonathanwil.com/blog/posts/travel/peru.html</guid>
+  <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://jonathanwil.com/images/travel/peru/machu-picchu-2.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

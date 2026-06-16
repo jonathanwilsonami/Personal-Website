@@ -163,7 +163,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Jonathan Wilson" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed quarto-light">
 
@@ -221,10 +221,25 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
-<span class="menu-text">Blog</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blog" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blog</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
+        <li>
+    <a class="dropdown-item" href="../blog/index.html">
+ <span class="dropdown-text">All Posts</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/travel.html">
+ <span class="dropdown-text">Travel</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/tech.html">
+ <span class="dropdown-text">Tech</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -238,7 +253,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmxvZw==">blog <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGVyc29uYWw=">personal <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhdmVs">travel <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -261,38 +276,61 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome — this a place for thoughts and reflections related to my career and passions. Most will remain a work in progress, writings that I come back to upon gaining more knowledge over time.</p>
+<p>A place for thoughts and reflections. Most stay works in progress — writings I return to as I learn more over time.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YmxvZyUyQ3BlcnNvbmFs" data-listing-date-sort="1767589200000" data-listing-file-modified-sort="1767795922353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
-<div class="thumbnail"><a href="../blog/blog_1.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="dHJhdmVs" data-listing-date-sort="1781582400000" data-listing-file-modified-sort="1781631697125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail"><a href="../blog/posts/travel/peru.html" class="no-external">
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<img loading="lazy" src="../images/travel/peru/machu-picchu-2.jpg" class="thumbnail-image" alt="Machu Picchu">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/blog_1.html" class="no-external">Getting Started with My Blog</a>
+<a href="../blog/posts/travel/peru.html" class="no-external">Exploring Peru</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGVyc29uYWw='); return false;">personal</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhdmVs'); return false;">travel</div>
 
 </div>
-<div class="delink listing-description"><a href="../blog/blog_1.html" class="no-external">
-Welcome to my blog! This first post shows how I’ll use Quarto to publish short notes, project updates, and tutorials.
+<div class="delink listing-description"><a href="../blog/posts/travel/peru.html" class="no-external">
+View from the Inca Trail:
 </a></div>
 </div>
 <div class="metadata">
-<a href="../blog/blog_1.html" class="no-external">
+<a href="../blog/posts/travel/peru.html" class="no-external">
 <div class="listing-date">
-Jan 5, 2026
+Jun 16, 2026
 </div>
 <div class="listing-author">
 Jonathan Wilson

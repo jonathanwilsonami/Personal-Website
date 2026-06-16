@@ -1,9 +1,13 @@
 ---
 title: "Blog"
 listing:
-  contents: "."
+  contents: posts
   sort: "date desc"
+  type: default
   categories: true
+  sort-ui: true
+  filter-ui: true
+  feed: true
 ---
 
-Welcome — this a place for thoughts and reflections related to my career and passions. Most will remain a work in progress, writings that I come back to upon gaining more knowledge over time. 
+A place for thoughts and reflections. Most stay works in progress — writings I return to as I learn more over time.

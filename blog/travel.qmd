@@ -1,0 +1,10 @@
+---
+title: "Travel"
+listing:
+  contents: posts/travel
+  sort: "date desc"
+  type: default
+  feed: true
+---
+
+Notes from the road.

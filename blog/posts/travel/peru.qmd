@@ -1,0 +1,15 @@
+---
+title: "Exploring Peru"
+date: 2026-06-16
+categories: [travel]
+image: /images/travel/peru/machu-picchu-2.jpg
+image-alt: "Machu Picchu"
+---
+
+# Exploring Peru 
+
+## Machu Picchu 
+
+View from the Inca Trail:
+
+![](/images/travel/peru/machu-picchu-2.jpg){fig-alt="machu-picchu-2"}

@@ -13,9 +13,30 @@
     "items": []
   },
   {
-    "listing": "/projects/data-viz/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/projects/data-viz/crime-viz.html"
+      "/projects/data-viz/index.html",
+      "/projects/ai-ml/index.html",
+      "/projects/tech/index.html",
+      "/projects/construction/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/tech/index.html",
+    "items": [
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
+    ]
+  },
+  {
+    "listing": "/projects/misc/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/ai-ml/index.html",
+    "items": [
+      "/projects/ai-ml/aero-flux.html",
+      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
     ]
   },
   {
@@ -41,36 +62,21 @@
     ]
   },
   {
-    "listing": "/projects/ai-ml/index.html",
+    "listing": "/projects/data-viz/index.html",
     "items": [
-      "/projects/ai-ml/aero-flux.html",
-      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
+      "/projects/data-viz/crime-viz.html"
     ]
   },
   {
-    "listing": "/projects/misc/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/tech/index.html",
+    "listing": "/blog/travel.html",
     "items": [
-      "/projects/tech/first-cad.html",
-      "/projects/tech/first-computer-build.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/data-viz/index.html",
-      "/projects/ai-ml/index.html",
-      "/projects/tech/index.html",
-      "/projects/construction/index.html"
+      "/blog/posts/travel/peru.html"
     ]
   },
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/blog_1.html"
+      "/blog/posts/travel/peru.html"
     ]
   }
 ]

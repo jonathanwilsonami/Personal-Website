@@ -27,8 +27,14 @@ website:
             href: projects/tech/index.qmd
           - text: Construction
             href: projects/construction/index.qmd
-      - href: blog/index.qmd
-        text: Blog
+      - text: Blog
+        menu:
+          - text: All Posts
+            href: blog/index.qmd
+          - text: Travel
+            href: blog/travel.qmd
+          - text: Tech
+            href: blog/tech.qmd
   page-footer:
     center:
       - text: "© 2026 Jonathan Wilson"
