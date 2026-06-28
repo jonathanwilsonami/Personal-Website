@@ -11,8 +11,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - text: About
+        menu:
+          - text: About
+            href: about.qmd
+          - text: Books
+            href: books.qmd
       - href: research/index.qmd 
         text: Research
       - text: Projects

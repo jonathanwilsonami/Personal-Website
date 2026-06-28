@@ -3,13 +3,239 @@ title: "Exploring Peru"
 date: 2026-06-16
 categories: [travel]
 image: /images/travel/peru/machu-picchu-2.jpg
-image-alt: "Machu Picchu"
+image-alt: "Machu Picchu surrounded by the mountains of Peru"
+description: "Exploring Cusco, hiking the Salkantay and Inca trails, visiting Machu Picchu, and experiencing the food, landscapes, and culture of Peru."
 ---
 
-# Exploring Peru 
+# Exploring Peru
 
-## Machu Picchu 
+Peru had been on my travel list for a long time, largely because of Machu Picchu and the opportunity to hike through the Andes. What I did not fully appreciate before visiting was just how much variety the country offers. In a relatively short period, we experienced historic cities, enormous Inca ruins, glaciated mountains, high-altitude lakes, cloud forests, tropical vegetation, traditional markets, and some of the best food I have encountered while traveling.
 
-View from the Inca Trail:
+The centerpiece of the trip was a five-day trek that combined portions of the Salkantay and Inca trails before ending at Machu Picchu. Altogether, we hiked roughly 50 miles through some of the most diverse landscapes I have ever seen.
 
-![](/images/travel/peru/machu-picchu-2.jpg){fig-alt="machu-picchu-2"}
+![](/images/travel/peru/machu-picchu-2.jpg){fig-alt="Machu Picchu viewed from above with green mountains in the background" fig-cap="Machu Picchu was the final destination of our trek."}
+
+## Cusco
+
+Our journey began in Cusco, the historic capital of the Inca Empire. The city sits at approximately 3,400 meters, or 11,150 feet, above sea level, so it also served as our introduction to the effects of high altitude.
+
+The altitude was noticeable, but it was not as bad as I expected. I did not feel sick when we arrived, although walking uphill or climbing stairs made it immediately apparent that less oxygen was available. Even relatively simple physical activities required more effort than they would at sea level.
+
+![](/images/travel/peru/cusco-city-from-mountain.jpg){fig-alt="The city of Cusco viewed from the surrounding mountains" fig-cap="Cusco viewed from the surrounding hills."}
+
+Cusco is a fascinating combination of Inca foundations and Spanish colonial architecture. In many places, colonial buildings and churches were constructed directly on top of older Inca stonework. Walking around the city feels like moving through several periods of history at once.
+
+Some of the places we visited included:
+
+- **Plaza de Armas** — Cusco's central square, surrounded by colonial buildings, restaurants, shops, and historic churches.
+- **Cusco Cathedral** — A massive colonial cathedral containing religious artwork and architecture built over earlier Inca foundations.
+- **Qorikancha** — The former Inca Temple of the Sun, which was later incorporated into the Spanish Convent of Santo Domingo.
+- **Sacsayhuamán** — An enormous Inca complex overlooking Cusco, known for its precisely fitted stone walls.
+- **Centro de Textiles Tradicionales del Cusco** — A cultural center preserving traditional Andean weaving techniques and textile designs.
+- **San Pedro Market** — A busy local market filled with produce, prepared food, fruit juices, spices, textiles, and everyday goods.
+
+We visited several additional ruins and cultural sites throughout Cusco and the surrounding region. One of the most impressive aspects of the Inca sites was the scale and precision of their stonework. Many of the stones are enormous, irregularly shaped, and fitted together so precisely that almost no space remains between them.
+
+::: {layout-ncol=2}
+![](/images/travel/peru/incan-ruins.jpg){fig-alt="Large stone walls at an Inca ruin near Cusco"}
+
+![](/images/travel/peru/incan-ruins-2.jpg){fig-alt="Historic Inca ruins surrounded by the Andes"}
+:::
+
+## The Sacred Valley
+
+We also traveled through the Sacred Valley, visiting areas such as Pisac and Ollantaytambo. The valley contains farmland, villages, mountains, archaeological sites, and terraces that demonstrate how effectively the Incas adapted to the mountainous terrain.
+
+![](/images/travel/peru/sacred-valley-peru.jpg){fig-alt="Green agricultural land and mountains in Peru's Sacred Valley" fig-cap="The Sacred Valley of the Incas."}
+
+Ollantaytambo was especially memorable. The town still follows portions of its original Inca street plan and sits beneath an impressive archaeological complex built into the mountainside. It was also one of the major staging points for travelers heading toward the Inca Trail and Machu Picchu.
+
+## The Salkantay Trek
+
+The most memorable part of the trip was our five-day trek through the Andes. The route covered roughly 50 miles and combined the Salkantay route with portions of the Inca Trail.
+
+::: {.callout-note}
+## Trek at a Glance
+
+- **Length:** Approximately 50 miles
+- **Duration:** Five days
+- **Highest point:** Salkantay Pass at approximately 4,630 meters, or 15,190 feet
+- **Terrain:** Mountain valleys, glaciated peaks, high-altitude passes, cloud forest, jungle, and Inca trails
+- **Final destination:** Machu Picchu
+:::
+
+At the beginning of the trek, the landscape was open and mountainous, with distant glaciers and snow-covered peaks surrounding the trail.
+
+![](/images/travel/peru/starting-salkantay-treck.jpg){fig-alt="The beginning of the Salkantay trek through a mountain valley" fig-cap="Starting the Salkantay Trek."}
+
+::: {layout-ncol=2}
+![](/images/travel/peru/salkantay-mountain.jpg){fig-alt="Salkantay Mountain rising above the trail"}
+
+![](/images/travel/peru/salkantay-mountain-1.jpg){fig-alt="Snow-covered Salkantay Mountain beneath a blue sky"}
+:::
+
+### Humantay Lake
+
+One of our first major destinations was Humantay Lake, a turquoise glacial lake beneath the surrounding mountains. The climb to the lake was steep, especially while we were still adjusting to the altitude, but the view at the top made the effort worthwhile.
+
+::: {layout-ncol=2}
+![](/images/travel/peru/unmantay-lake.jpg){fig-alt="Turquoise water at Humantay Lake beneath glaciated mountains"}
+
+![](/images/travel/peru/unmantay-mountain.jpg){fig-alt="Humantay Mountain rising behind the hiking trail"}
+:::
+
+### Crossing Salkantay Pass
+
+The most difficult section was the climb to Salkantay Pass, the highest point of the trek at approximately 4,630 meters, or 15,190 feet.
+
+The trail itself was manageable, but the altitude made every step more demanding. Near the pass, the air felt noticeably thinner, and maintaining a steady pace became more important than moving quickly.
+
+Unfortunately, I also caught a virus during the trek. The illness was not caused by the altitude, but the fever and congestion made breathing at high elevation much more difficult. Reaching the pass while sick added an unexpected challenge, but it also made standing at the summit feel even more rewarding.
+
+![](/images/travel/peru/salkantay-pass-summit.jpg){fig-alt="Standing near the summit of Salkantay Pass surrounded by mountains" fig-cap="Reaching Salkantay Pass at approximately 15,190 feet."}
+
+![](/images/travel/peru/coming-down-from-salkantay-pass.jpg){fig-alt="Descending from Salkantay Pass along a rocky mountain trail" fig-cap="Descending from the pass."}
+
+Overall, I would not describe the trek as excessively difficult for someone who is reasonably active. The biggest variable is the altitude. The distance and terrain require endurance, but the limited oxygen is what makes otherwise ordinary climbs feel much harder.
+
+## From Glaciers to Jungle
+
+One of the most remarkable parts of the trek was how quickly the landscape changed. We began among glaciated mountains and high-altitude valleys, but after crossing the pass, we gradually descended into cloud forest and tropical rainforest.
+
+Within a relatively short distance, the environment changed from rocky, cold, and exposed to warm, green, and humid.
+
+::: {layout-ncol=2}
+![](/images/travel/peru/mountain-sky-view.jpg){fig-alt="Mountain peaks and dramatic clouds along the Salkantay route"}
+
+![](/images/travel/peru/hiking-jungles-of-peru.jpg){fig-alt="Hiking through dense green vegetation in the Peruvian jungle"}
+:::
+
+We saw a surprising amount of wildlife along the way, including insects, birds, and other animals adapted to the different elevations. One of the more unusual sightings was a high-altitude tarantula that our guide identified along the trail.
+
+We also passed farms growing coffee, cacao, passion fruit, sugar cane, and other tropical crops. Being able to see and taste food directly where it was grown made this portion of the trip especially memorable.
+
+![](/images/travel/peru/passion-fruit.jpg){fig-alt="Fresh passion fruit opened along the trail"}
+
+## Coffee and Chocolate
+
+During the lower-elevation portion of the trek, we participated in a coffee-making experience. We started with raw coffee beans and worked through several of the steps involved in preparing them.
+
+![](/images/travel/peru/coffee-tree.jpg){fig-alt="Coffee cherries growing on a coffee tree"}
+
+![](/images/travel/peru/making-coffee.jpg){fig-alt="Roasting and preparing coffee beans by hand" fig-cap="Preparing coffee from locally grown beans."}
+
+We also tasted raw cacao beans and learned more about how cacao is transformed into chocolate. Raw cacao tastes very different from the finished chocolate most people are familiar with, making it interesting to experience the ingredient closer to its original form.
+
+![](/images/travel/peru/coco-beans.jpg){fig-alt="Fresh cacao beans removed from a cacao pod"}
+
+## Life on the Trail
+
+The trekking company handled nearly all of the logistics. Our group had a guide, two chefs, and mules that carried much of the equipment between camps. At night, we stayed in a mixture of small lodges and glamping-style accommodations rather than carrying and setting up traditional tents ourselves.
+
+The level of support made the trip considerably more comfortable than I originally expected. Meals were prepared for us each day, transportation was coordinated, and our guide explained the history, geography, plants, and cultural significance of the places we encountered.
+
+Our guide also regularly chewed coca leaves. Coca has a long history in Andean culture and is commonly used by people living and working at high elevations. The leaves are also used in tea and are believed to help people manage fatigue and some of the effects of altitude.
+
+There was a running joke that the Incas managed to build their enormous mountain complexes with a little help from coca leaves. Joking aside, the plant clearly has a deep cultural significance that goes far beyond its association with cocaine.
+
+## The Inca Trail
+
+As we moved closer to Machu Picchu, portions of the route joined historic Inca trails. Hiking these sections provided a better appreciation for the scale of the Inca road system and the difficulty of building paths through such steep terrain.
+
+![](/images/travel/peru/inca-train-jungle.jpg){fig-alt="A railway passing through the jungle near the Inca Trail"}
+
+At several points, we could see Machu Picchu in the distance before reaching the site itself. After several days of hiking, seeing it appear across the mountains made the destination feel much more significant than arriving by train or bus alone.
+
+![](/images/travel/peru/machu-picchu-in-distance.jpg){fig-alt="Machu Picchu visible in the distance between the mountains"}
+
+![](/images/travel/peru/looking-man-machu-picchu-distance.jpg){fig-alt="A hiker looking toward Machu Picchu in the distance" fig-cap="Our first distant views of Machu Picchu."}
+
+## Aguas Calientes
+
+Before entering Machu Picchu, we spent time in Aguas Calientes, the primary town serving visitors to the archaeological site. The town sits in a narrow valley surrounded by steep, forested mountains, with a river and railway running through it.
+
+![](/images/travel/peru/train-to-aguas-calientes.jpg){fig-alt="Train traveling toward Aguas Calientes through the mountains"}
+
+![](/images/travel/peru/aguas-calientes-peru.jpg){fig-alt="Buildings and mountains in Aguas Calientes, Peru" fig-cap="Aguas Calientes, the gateway to Machu Picchu."}
+
+The train system connecting the region also provides some incredible views as it winds between the mountains and follows the river toward Aguas Calientes.
+
+## Machu Picchu
+
+Machu Picchu was the culmination of the trek and the place I had most anticipated seeing. Photographs capture its basic shape, but they do not fully communicate how dramatically the site is positioned within the surrounding mountains.
+
+The combination of architecture, elevation, terraces, clouds, and steep green peaks makes the entire setting feel almost unreal.
+
+::: {layout-ncol=2}
+![](/images/travel/peru/machu-picchu-1.jpg){fig-alt="Stone structures and terraces at Machu Picchu"}
+
+![](/images/travel/peru/machu-picchu-3.jpg){fig-alt="A wide view of Machu Picchu and the surrounding mountains"}
+:::
+
+Walking through the site also makes it easier to appreciate its complexity. Machu Picchu was not simply a collection of stone buildings. It incorporated agricultural terraces, water systems, residences, ceremonial spaces, stairways, and carefully planned pathways throughout a steep mountain environment.
+
+![](/images/travel/peru/machu-picchu-4.jpg){fig-alt="Terraces and stone buildings within Machu Picchu"}
+
+After hiking for several days, reaching Machu Picchu on foot made the experience feel like the conclusion of a much larger journey rather than a single sightseeing stop.
+
+## Rainbow Mountain and the Red Valley
+
+Another major excursion was Rainbow Mountain and the nearby Red Valley. Rainbow Mountain reaches approximately 5,036 meters, or 16,522 feet, making it one of the highest elevations we reached during the trip.
+
+![](/images/travel/peru/rainbow-mountain.jpg){fig-alt="The colorful mineral layers of Rainbow Mountain beneath a blue sky" fig-cap="Rainbow Mountain at approximately 16,522 feet."}
+
+The altitude was again the greatest challenge. Even after spending several days in the mountains, walking uphill at more than 16,000 feet required a slow and deliberate pace.
+
+The neighboring Red Valley was equally impressive and, in some ways, even more striking. The landscape contained broad red slopes and ridgelines that looked almost like another planet.
+
+![](/images/travel/peru/red-valley-peru.jpg){fig-alt="Red mountains and valleys near Rainbow Mountain" fig-cap="The Red Valley near Rainbow Mountain."}
+
+## Food in Peru
+
+Food was another major part of the experience. We tried a wide range of dishes and ingredients, including:
+
+- Alpaca
+- Guinea pig, traditionally known as *cuy*
+- Several varieties of ceviche
+- Fresh tropical fruit
+- Raw cacao beans
+- Locally grown coffee
+- Sugar cane
+- Inka Cola
+- Coca tea and coca leaves
+
+The ceviche in Lima was some of the best I have ever had. It was extremely fresh, bright, acidic, and very different from many versions I had tried previously.
+
+Guinea pig was one of the most unusual foods we sampled. It had a flavor and texture unlike anything I had eaten before. It was not necessarily something I would order regularly, but I am glad I tried it as part of the cultural experience.
+
+![](/images/travel/peru/eating-guinea-pig.jpg){fig-alt="Trying a traditional guinea pig dish in Peru"}
+
+![](/images/travel/peru/guinea-pig-place.jpg){fig-alt="Restaurant serving traditional guinea pig dishes"}
+
+San Pedro Market in Cusco was one of the best places to explore local food at an affordable price. The market offered fruit, juices, soups, meats, baked goods, spices, and prepared meals alongside textiles and household products.
+
+## Inti Raymi and Andean Culture
+
+We also experienced some of the celebrations surrounding **Inti Raymi**, or the Festival of the Sun, which takes place every June. The festival celebrates the Inca sun god and remains one of Cusco's most important annual cultural events.
+
+Throughout the trip, we encountered traditions connected to weaving, farming, food, music, clothing, and religious practice. Visiting the textile center and seeing how alpaca wool is processed and woven helped illustrate the amount of skill involved in creating traditional Andean clothing.
+
+We also had opportunities to feed alpacas and learn more about how alpaca fiber is cleaned, dyed, spun, and turned into clothing and textiles.
+
+## Trekking Company
+
+For anyone interested in completing a similar trip, we used [Salkantay Trekking](https://www.salkantaytrekking.com/).
+
+The company was professional and well organized, especially compared with some of the other trekking operations we observed along the route. Transportation, accommodations, food, entrance arrangements, and guides were coordinated in advance, which allowed us to focus on the experience itself.
+
+Our guide was knowledgeable about the trail, Inca history, local culture, wildlife, and plant life. The chefs also managed to prepare surprisingly elaborate meals despite working from temporary kitchens along the trail.
+
+The company offers several different packages and routes. Our experience included glamping-style accommodations, while some versions of the traditional Inca Trail involve more basic backcountry camping conditions. I originally expected our accommodations to be much more rugged, so the level of comfort was a pleasant surprise.
+
+## Final Thoughts
+
+Peru was one of the most varied trips I have taken. Within a relatively small geographic area, we moved from colonial cities and ancient ruins to glaciers, high-altitude mountain passes, cloud forests, tropical farms, and dense jungle.
+
+The altitude, illness, and long days of hiking made portions of the trip challenging, but those difficulties also made the experience more memorable. Reaching Salkantay Pass, seeing Machu Picchu emerge in the distance, preparing coffee from locally grown beans, and walking through landscapes that changed almost daily were all experiences I will remember for a long time.
+
+Machu Picchu may have been the destination, but the journey through Peru was what made the trip truly meaningful.

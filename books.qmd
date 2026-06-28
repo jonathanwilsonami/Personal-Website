@@ -5,7 +5,11 @@ toc: true
 page-layout: full
 ---
 
-A running list of books I keep coming back to — covers link out to where you can buy them.
+I absolutely love reading! I became a voracious reader around the age of twelve discovering their power of unlocking the world. I probably buy more books than I will ever have time to finish, but I love learning from other people, discovering new perspectives, and exploring unfamiliar ideas.
+
+Below are some of my favorite books—ones that have shaped how I think, work, and build. 
+
+I also have a slightly unusual habit: whenever I see someone’s bookshelf, I can spend ten or twenty minutes studying what they have chosen to read. Sometimes I even take a picture so I can look up the titles later.
 
 ::: {.book-list}
 
@@ -15,15 +19,25 @@ A running list of books I keep coming back to — covers link out to where you c
 
 ::: {.book}
 ::: {.book-cover}
-[![Cover of Designing Data-Intensive Applications](/images/books/designing-data-intensive-applications.jpg)](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){target="_blank" rel="noopener"}
+[![Designing Data-Intensive Applications](/images/books/designing-data-intensive-applications.jpg)](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){target="_blank" rel="noopener"}
 :::
 ::: {.book-body}
 ### Designing Data-Intensive Applications
 *Martin Kleppmann*
 
-**Why I liked it:** ...
+I started reading this book when I wanted to dive deeper into the world of big data several years ago. Kleppmann does a fantastic job explaining complex data systems in a practical and understandable way. It helped me see how databases, distributed systems, pipelines, and system architecture fit together. I especially appreciated how the book compares different design choices and explains the tradeoffs behind them not simply describing them.
+:::
+:::
 
-**Summary:** ...
+::: {.book}
+::: {.book-cover}
+[![Understanding Architecture](/images/books/understanding-architecture.jpg)](https://www.amazon.com/Understanding-Architecture-Elements-History-Meaning/dp/0813349036){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Understanding Architecture
+*Leland M. Roth & Amanda C. Roth Clark*
+
 :::
 :::
 
@@ -33,15 +47,52 @@ A running list of books I keep coming back to — covers link out to where you c
 
 ::: {.book}
 ::: {.book-cover}
-[![Cover of Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555){target="_blank" rel="noopener"}
+[![Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555){target="_blank" rel="noopener"}
 :::
 ::: {.book-body}
 ### Thinking, Fast and Slow
 *Daniel Kahneman*
 
-**Why I liked it:** ...
+I enjoyed this book because it helped me better understand how people make decisions and how easily our thinking can be influenced by biases. I found the contrast between fast, intuitive thinking and slow, deliberate thinking especially useful. The book made me reflect more carefully on my own judgments and decision-making habits.
+:::
+:::
 
-**Summary:** ...
+::: {.book}
+::: {.book-cover}
+[![The Daily Stoic](/images/books/daily-stoic.jpg)](https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Daily Stoic
+*Ryan Holiday & Stephen Hanselman*
+
+
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Grit: The Power of Passion and Perseverance](/images/books/grit.jpg)](https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Grit: The Power of Passion and Perseverance
+*Angela Duckworth*
+
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![The Brain That Changes Itself](/images/books/brain-that-changes-itself.jpg)](https://www.amazon.com/Brain-That-Changes-Itself-Frontiers/dp/0143113100){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Brain That Changes Itself
+*Norman Doidge*
+
+
 :::
 :::
 
@@ -49,15 +100,113 @@ A running list of books I keep coming back to — covers link out to where you c
 
 ::: {.book}
 ::: {.book-cover}
-[![Cover of The Pragmatic Programmer](/images/books/pragmatic-programmer.jpg)](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X){target="_blank" rel="noopener"}
+[![The Pragmatic Programmer](/images/books/pragmatic-programmer.jpg)](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X){target="_blank" rel="noopener"}
 :::
 ::: {.book-body}
 ### The Pragmatic Programmer
 *David Thomas & Andrew Hunt*
 
-**Why I liked it:** ...
+This one is a classic! I picked this up about 1-2 years into my career and found it to be a great resource for developing into a better software engineer. 
+:::
+:::
 
-**Summary:** ...
+::: {.book}
+::: {.book-cover}
+[![The Secret Life of Programs](/images/books/secret-life-of-programs.png)](https://www.amazon.com/Secret-Life-Programs-Understand-Computers/dp/1593279701){target="_blank" rel="noopener"}
+:::
+::: {.book-body}
+### The Secret Life of Programs
+*Jonathan E. Steinhart*
+
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![The Master Algorithm](/images/books/master-algorithm.jpg)](https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Master Algorithm
+
+*Pedro Domingos*
+
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Code](/images/books/code.jpg)](https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0137909101){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Code
+*Charles Petzold*
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![The DevOps Handbook](/images/books/devops-handbook.jpg)](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The DevOps Handbook
+*Gene Kim, Jez Humble, Patrick Debois, John Willis & Nicole Forsgren*
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![The Phoenix Project](/images/books/phoenix-project.jpg)](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Phoenix Project
+*Gene Kim, Kevin Behr & George Spafford*
+
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![Linux Command Line and Shell Scripting Bible](/images/books/linux-command-line-and-shell-scripting-bible.jpg)](https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/1119700914){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Linux Command Line and Shell Scripting Bible
+*Richard Blum & Christine Bresnahan*
+
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![Computer Systems: A Programmer's Perspective](/images/books/computer-systems-programmers-perspective.jpg)](https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Computer Systems: A Programmer's Perspective
+*Randal E. Bryant & David R. O'Hallaron*
+
+:::
+::: 
+
+::: {.book}
+::: {.book-cover}
+[![LLMs in Production](/images/books/llms-in-production.png)](https://www.amazon.com/LLMs-Production-language-successful-products/dp/1633437205){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### LLMs in Production
+*Christopher Brousseau & Matt Sharp*
+
+
 :::
 :::
 

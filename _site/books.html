@@ -127,10 +127,21 @@ cookieconsent.run({
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./books.html">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./research/index.html"> 
 <span class="menu-text">Research</span></a>
@@ -217,7 +228,9 @@ cookieconsent.run({
 </header>
 
 
-<p>A running list of books I keep coming back to — covers link out to where you can buy them.</p>
+<p>I absolutely love reading! I became a voracious reader around the age of twelve discovering their power of unlocking the world. I probably buy more books than I will ever have time to finish, but I love learning from other people, discovering new perspectives, and exploring unfamiliar ideas.</p>
+<p>Below are some of my favorite books—ones that have shaped how I think, work, and build.</p>
+<p>I also have a slightly unusual habit: whenever I see someone’s bookshelf, I can spend ten or twenty minutes studying what they have chosen to read. Sometimes I even take a picture so I can look up the titles later.</p>
 <div class="book-list">
 <section id="systems-architecture-design" class="level2">
 <h2 class="anchored" data-anchor-id="systems-architecture-design">Systems, Architecture &amp; Design</h2>
@@ -227,15 +240,28 @@ cookieconsent.run({
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321" target="_blank" rel="noopener"><img src="./images/books/designing-data-intensive-applications.jpg" class="img-fluid figure-img"></a></p>
-<figcaption>Cover of Designing Data-Intensive Applications</figcaption>
+<figcaption>Designing Data-Intensive Applications</figcaption>
 </figure>
 </div>
 </div>
 <section id="designing-data-intensive-applications" class="level3 book-body">
 <h3 class="anchored" data-anchor-id="designing-data-intensive-applications">Designing Data-Intensive Applications</h3>
 <p><em>Martin Kleppmann</em></p>
-<p><strong>Why I liked it:</strong> …</p>
-<p><strong>Summary:</strong> …</p>
+<p>I started reading this book when I wanted to dive deeper into the world of big data several years ago. Kleppmann does a fantastic job explaining complex data systems in a practical and understandable way. It helped me see how databases, distributed systems, pipelines, and system architecture fit together. I especially appreciated how the book compares different design choices and explains the tradeoffs behind them not simply describing them.</p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Understanding-Architecture-Elements-History-Meaning/dp/0813349036" target="_blank" rel="noopener"><img src="./images/books/understanding-architecture.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>Understanding Architecture</figcaption>
+</figure>
+</div>
+</div>
+<section id="understanding-architecture" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="understanding-architecture">Understanding Architecture</h3>
+<p><em>Leland M. Roth &amp; Amanda C. Roth Clark</em></p>
 </section>
 </div>
 </div>
@@ -247,15 +273,56 @@ cookieconsent.run({
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" target="_blank" rel="noopener"><img src="./images/books/thinking-fast-and-slow.jpg" class="img-fluid figure-img"></a></p>
-<figcaption>Cover of Thinking, Fast and Slow</figcaption>
+<figcaption>Thinking, Fast and Slow</figcaption>
 </figure>
 </div>
 </div>
 <section id="thinking-fast-and-slow" class="level3 book-body">
 <h3 class="anchored" data-anchor-id="thinking-fast-and-slow">Thinking, Fast and Slow</h3>
 <p><em>Daniel Kahneman</em></p>
-<p><strong>Why I liked it:</strong> …</p>
-<p><strong>Summary:</strong> …</p>
+<p>I enjoyed this book because it helped me better understand how people make decisions and how easily our thinking can be influenced by biases. I found the contrast between fast, intuitive thinking and slow, deliberate thinking especially useful. The book made me reflect more carefully on my own judgments and decision-making habits.</p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736" target="_blank" rel="noopener"><img src="./images/books/daily-stoic.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>The Daily Stoic</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-daily-stoic" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-daily-stoic">The Daily Stoic</h3>
+<p><em>Ryan Holiday &amp; Stephen Hanselman</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116" target="_blank" rel="noopener"><img src="./images/books/grit.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>Grit: The Power of Passion and Perseverance</figcaption>
+</figure>
+</div>
+</div>
+<section id="grit-the-power-of-passion-and-perseverance" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="grit-the-power-of-passion-and-perseverance">Grit: The Power of Passion and Perseverance</h3>
+<p><em>Angela Duckworth</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Brain-That-Changes-Itself-Frontiers/dp/0143113100" target="_blank" rel="noopener"><img src="./images/books/brain-that-changes-itself.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>The Brain That Changes Itself</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-brain-that-changes-itself" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-brain-that-changes-itself">The Brain That Changes Itself</h3>
+<p><em>Norman Doidge</em></p>
 </section>
 </div>
 </section>
@@ -266,15 +333,126 @@ cookieconsent.run({
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" target="_blank" rel="noopener"><img src="./images/books/pragmatic-programmer.jpg" class="img-fluid figure-img"></a></p>
-<figcaption>Cover of The Pragmatic Programmer</figcaption>
+<figcaption>The Pragmatic Programmer</figcaption>
 </figure>
 </div>
 </div>
 <section id="the-pragmatic-programmer" class="level3 book-body">
 <h3 class="anchored" data-anchor-id="the-pragmatic-programmer">The Pragmatic Programmer</h3>
 <p><em>David Thomas &amp; Andrew Hunt</em></p>
-<p><strong>Why I liked it:</strong> …</p>
-<p><strong>Summary:</strong> …</p>
+<p>This one is a classic! I picked this up about 1-2 years into my career and found it to be a great resource for developing into a better software engineer.</p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Secret-Life-Programs-Understand-Computers/dp/1593279701" target="_blank" rel="noopener"><img src="./images/books/secret-life-of-programs.png" class="img-fluid figure-img"></a></p>
+<figcaption>The Secret Life of Programs</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-secret-life-of-programs" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-secret-life-of-programs">The Secret Life of Programs</h3>
+<p><em>Jonathan E. Steinhart</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465094279" target="_blank" rel="noopener"><img src="./images/books/master-algorithm.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>The Master Algorithm</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-master-algorithm" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-master-algorithm">The Master Algorithm</h3>
+<p><em>Pedro Domingos</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0137909101" target="_blank" rel="noopener"><img src="./images/books/code.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>Code</figcaption>
+</figure>
+</div>
+</div>
+<section id="code" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p><em>Charles Petzold</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404" target="_blank" rel="noopener"><img src="./images/books/devops-handbook.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>The DevOps Handbook</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-devops-handbook" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-devops-handbook">The DevOps Handbook</h3>
+<p><em>Gene Kim, Jez Humble, Patrick Debois, John Willis &amp; Nicole Forsgren</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290" target="_blank" rel="noopener"><img src="./images/books/phoenix-project.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>The Phoenix Project</figcaption>
+</figure>
+</div>
+</div>
+<section id="the-phoenix-project" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="the-phoenix-project">The Phoenix Project</h3>
+<p><em>Gene Kim, Kevin Behr &amp; George Spafford</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/1119700914" target="_blank" rel="noopener"><img src="./images/books/linux-command-line-and-shell-scripting-bible.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>Linux Command Line and Shell Scripting Bible</figcaption>
+</figure>
+</div>
+</div>
+<section id="linux-command-line-and-shell-scripting-bible" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="linux-command-line-and-shell-scripting-bible">Linux Command Line and Shell Scripting Bible</h3>
+<p><em>Richard Blum &amp; Christine Bresnahan</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X" target="_blank" rel="noopener"><img src="./images/books/computer-systems-programmers-perspective.jpg" class="img-fluid figure-img"></a></p>
+<figcaption>Computer Systems: A Programmer’s Perspective</figcaption>
+</figure>
+</div>
+</div>
+<section id="computer-systems-a-programmers-perspective" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="computer-systems-a-programmers-perspective">Computer Systems: A Programmer’s Perspective</h3>
+<p><em>Randal E. Bryant &amp; David R. O’Hallaron</em></p>
+</section>
+</div>
+<div class="book">
+<div class="book-cover">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.amazon.com/LLMs-Production-language-successful-products/dp/1633437205" target="_blank" rel="noopener"><img src="./images/books/llms-in-production.png" class="img-fluid figure-img"></a></p>
+<figcaption>LLMs in Production</figcaption>
+</figure>
+</div>
+</div>
+<section id="llms-in-production" class="level3 book-body">
+<h3 class="anchored" data-anchor-id="llms-in-production">LLMs in Production</h3>
+<p><em>Christopher Brousseau &amp; Matt Sharp</em></p>
 </section>
 </div>
 </section>

@@ -29,6 +29,10 @@ I build **intelligent systems** connecting the physical and digital worlds toget
 
 Engineer building data and AI systems for the physical world.
 
+## Purpose of this Site
+
+This site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. I use it to share my work, research, ideas, and anything else that captures my interest, while also reflecting on what I am learning along the way. In that sense, it is inspired by Leonardo da Vinci’s approach to his notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished.
+
 :::
 
 ---
