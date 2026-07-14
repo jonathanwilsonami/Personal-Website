@@ -1,0 +1,184 @@
+---
+title: "Understanding the Hadoop Ecosystem: A Concept Map for Big Data Architecture"
+author: "Jonathan Wilson"
+date: 2026-07-12
+categories: [tech, hadoop, big data, data architecture]
+image: /images/blog/tech/hadoop/aeroflux-hadoop-data-flow.png
+# format:
+#   docx:
+#     reference-doc: hadoop-reference.docx
+#     toc: false
+#     number-sections: false
+#     fig-cap-location: bottom
+  # pdf:
+  #   toc: false
+  #   number-sections: false
+  #   fig-cap-location: bottom
+  #   include-in-header:
+  #     text: |
+  #       \usepackage{fancyhdr}
+  #       \pagestyle{fancy}
+  #       \fancyhf{}
+  #       \fancyhead[L]{Jonathan Wilson}
+  #       \fancyhead[R]{\thepage}
+  #       \renewcommand{\headrulewidth}{0pt}
+  #       \fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+bibliography: references.bib
+csl: apa.csl
+link-citations: true
+lightbox: true
+---
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+# Introduction
+
+## Big Data and Why Hadoop
+
+In 2006, British mathematician Clive Humby coined the phrase, “Data is the new oil,” and today it seems more relevant than ever [@universitySheffieldCliveHumby]. In 2002, about 5 exabytes of new information were stored worldwide, while IDC projected that the global datasphere would reach 175 zettabytes by 2025 [@lyman2003; @reinsel2018]. If data is the oil, then what are the refineries? What systems can process these enormous amounts of data and turn them into useful products?
+
+Organizations need ways to store and process data beyond the limits of a single server and many traditional databases. Instead of relying on one increasingly powerful machine, distributed systems divide the work across many computers. As Grace Hopper explained through her oxen analogy, when one ox cannot move a heavy load, you add more oxen rather than trying to build a larger one [@hopper1982]. Hadoop follows this same idea by allowing clusters of computers to store and process data together.
+
+## What is Hadoop
+
+Apache Hadoop is best understood as an open-source big data ecosystem rather than a single tool. It provides a framework for storing and processing large datasets across clusters of computers. Its four core modules—Hadoop Common, HDFS, YARN, and MapReduce—support distributed storage, resource management, and parallel processing, while related projects extend Hadoop into areas such as querying, analytics, governance, and data management. Unlike a traditional database, Hadoop is designed to scale from a single machine to thousands of computers working together [@apacheHadoop].
+
+## Origins of Hadoop
+
+Hadoop was born from two key developments that happened around the same time in the early 2000s, when web search and large-scale data processing were becoming increasingly difficult to manage with traditional systems. One major development was Google’s work on web-scale search. PageRank, created by Larry Page and Sergey Brin, helped make Google successful by ranking web pages based on link relationships across the web [@brinPage1998]. As Google grew, it also needed a better way to process massive amounts of web data across many machines, which led Jeffrey Dean and Sanjay Ghemawat to publish the influential MapReduce paper [@deanGhemawat2004]. Around the same time, Doug Cutting, the creator of Apache Lucene, was working on Apache Nutch, an open-source web search project that needed scalable storage and processing. Hadoop grew out of this work as part of the Lucene/Nutch ecosystem, and its interesting name famously came from Cutting’s child’s stuffed toy elephant. The combination of Google’s MapReduce ideas, the needs of open-source web search, and the work being done in Nutch eventually led to the creation of Hadoop as a framework for distributed storage and parallel computation [@white2015, pp. 12--16].
+
+With a brief introduction and background laid out, the next section explores the Hadoop ecosystem in more depth using principally a concept map along with some other supporting diagrams. 
+
+# Hadoop Concept Map
+
+**Note:** The diagrams/images are large but they have been inserted into this document to allow zooming without reduction in the resolution/quality. 
+
+To better organize concepts within the Hadoop ecosystem, I've organized the material into the following:
+
+**Core Hadoop** — The core of Hadoop refers to the essential components that make Hadoop what it is. Think of the core as the foundation, or kernel, of the larger ecosystem. The functional layers around it depend on these core services for distributed storage, resource management, and parallel processing. Although the requirement of Hadoop core components is becoming less and less of a requirement as more modern tools are developed [@verbraeken2020], the core is still important to understand because it is the foundation of Hadoop and many of the ecosystem tools depend on it [@dolev2019].
+
+**Seven Functional Layers** — The seven functional layers represent the major pluggable areas of the Hadoop ecosystem. These layers interact with the core Hadoop components, but they can also interact with each other through their own interfaces. This demonstrates Hadoop as an ecosystem of connected services that support storage, processing, querying, ingestion, coordination, security, governance, and analytics.
+
+![Hadoop ecosystem concept map.](/images/blog/tech/hadoop/hadoop-ecosystem-concept-map.svg){#fig-hadoop-concept-map .lightbox fig-alt="Hadoop ecosystem concept map centered on AeroFlux and Hadoop ecosystem relationships."}
+
+As shown in @fig-hadoop-concept-map, I made this mind map specific to a particular use case: AeroFlux. The reason for this is to try and ground all our discussion of Hadoop in the real world and not get overwhelmed with all the information that’s out there because you could easily spend your entire life learning this stuff and still not grasp it all before the next big thing comes along.
+
+In @fig-layered-hadoop-ecosystem I provided a layered ecosystem of Hadoop to show a sample of the available open source technologies. Most of which are supported by the same Apache Software Foundation that supports Hadoop. 
+
+![Layered ecosystem of Hadoop.](/images/blog/tech/hadoop/layered-hadoop-ecosystem.svg){#fig-layered-hadoop-ecosystem .lightbox fig-alt="Layered Hadoop ecosystem diagram showing core Hadoop and functional layers."}
+
+@fig-aeroflux-data-flow shows a data flow diagram of the AeroFlux project in the context of a hypothetical Hadoop ecosystem. The prupose of this diagram is to support the concept map in @fig-hadoop-concept-map by showing a more linear flow of data through the functional layers. The diagram is not meant to be a complete representation of all the possible paths through the ecosystem, but rather a sample path that shows how data could flow from ingestion to storage, processing, analytics, and governance.
+
+![AeroFlux data flow diagram with Hadoop.](/images/blog/tech/hadoop/aeroflux-hadoop-data-flow.svg){#fig-aeroflux-data-flow .lightbox fig-alt="AeroFlux data flow diagram showing ingestion, storage, processing, analytics, and governance components."}
+
+# Core Hadoop
+
+## The Big Four
+
+The foundation of Hadoop is built around four core modules: Hadoop Common, HDFS, YARN, and MapReduce. Together, these components form the original foundation of Hadoop’s big data architecture and work together [@apacheHadoop].
+
+## HDFS as the Foundation of Hadoop
+
+Hadoop’s HDFS (Hadoop Distributed File System) is the main data storage mechanism in the Hadoop architecture. I call it the foundation of Hadoop. HDFS provides distributed storage by splitting large files into blocks and storing those blocks across multiple machines in a cluster. It’s data agnostic as it can handle all types of data: structured, semi-structured or unstructured data [@apacheHdfs2023].
+
+HDFS is designed around a master-worker architecture. The NameNode acts as the master service that manages file system metadata. It keeps track of the directory structure, which blocks make up each file, and where those blocks are located across the cluster. The DataNodes are the worker machines that store the actual data blocks and serve read and write requests. When a large file is written to HDFS, it is divided into blocks, commonly 128 MB in many modern Hadoop configurations, although the block size is configurable. Each block is then distributed across DataNodes and replicated for fault tolerance. A common default replication factor is three, meaning each block is copied to three different locations so that the data remains available even if a machine fails. This design allows HDFS to store very large files reliably across clusters of commodity hardware [@apacheHdfs2023].
+
+One of the most important ideas behind HDFS is data locality, often summarized by the Hadoop design principle that “moving computation is cheaper than moving data” [@apacheHdfs2023]. The HDFS architecture guide explains that when datasets are very large, it is usually more efficient to run computation near the data instead of moving huge amounts of data across the network to a separate processing machine. This reduces network congestion and increases overall throughput. For example, if a company stores several terabytes of web server logs in HDFS, it would be inefficient to copy all of those logs to one server for analysis. Instead, Hadoop can send processing tasks to the nodes where the log blocks already exist. This is also why HDFS is optimized for streaming reads and large sequential file access rather than low-latency random access. It is very good at scanning large files from beginning to end, such as reading years of transaction logs for batch analysis, but it is not ideal when an application needs to quickly retrieve and update individual records like a traditional transactional database [@apacheHdfs2023].
+
+## Hadoop Common
+
+Hadoop Common contains the shared libraries, utilities, and basic services that support the other Hadoop modules. It provides the Java abstractions over the underlying operating system and filesystem that HDFS, YARN, and MapReduce all build upon, along with the launch scripts, configuration handling, and JAR files needed to run a Hadoop cluster [@apacheHadoop].
+
+## YARN the Manager
+
+YARN manages cluster resources and job scheduling and monitoring. YARN completes the foundation by separating resource management from the processing model. In earlier Hadoop designs, MapReduce was tightly connected to cluster resource management. YARN made Hadoop more flexible by allowing different processing engines to share the same cluster resources. In YARN, the ResourceManager arbitrates resources across applications, while NodeManagers run on individual machines and monitor resource usage such as CPU, memory, disk, and network. This means MapReduce jobs, Spark applications, Tez jobs, and other distributed applications can run on the same Hadoop cluster while requesting resources through YARN. To better visualize these relationships consider this: HDFS stores distributed data, YARN allocates and monitors compute resources, and MapReduce uses those resources to perform parallel batch processing over the data stored in HDFS [@apacheYarn2026].
+
+## MapReduce the Data Processing Engine
+
+MapReduce is the core data processing engine. A MapReduce job breaks a large task into smaller tasks that can run in parallel across the cluster. The map phase processes small portions of the input data and produces intermediate key-value pairs. The shuffle and sort phase groups all intermediate values with the same key and sends them to the appropriate reducer. The reduce phase then combines or summarizes those grouped values to produce the final output. This model gives programmers a clean abstraction for distributed processing because the framework handles task distribution, parallelization, data movement between map and reduce stages, and fault tolerance when tasks or nodes fail [@apacheMapReduce2026; @deanGhemawat2004]. Although using MapReduce directly can be cumbersome, hence why why Pig, Hive, and other higher-level tools were developed to provide SQL-like interface that is more user-friendly. Those will be talked about later. 
+
+Beyond these four core components, the Hadoop ecosystem extends into additional functional layers made up of many open-source projects which is what we will explore in the following section. For a sample of what is available, see the layered Hadoop ecosystem in @fig-layered-hadoop-ecosystem.
+
+# Exploring the Hadoop Ecosystem
+
+For the following section, we will use the concept map in @fig-hadoop-concept-map and the AeroFlux project as a hypothetical use case. The goal is to explore the Hadoop ecosystem by tracing an end-to-end data path through the core and functional layers and showing how the different open-source projects relate to one another.
+
+For context, AeroFlux is a proposed aviation intelligence platform that combines historical flight data, live flight streams, weather data, and airport metadata to analyze delays and operational patterns. In the context of Hadoop, AeroFlux serves as an example of how a big data architecture could ingest, store, process, query, and model large-scale aviation data for decision support. For more information on the AeroFlux project, see [AeroFlux](https://jonathanwilsonami.github.io/OR568_ML_Project/aero-flux.html).
+
+## Seven Functional Layers Overview
+
+**Hadoop Core** — The foundation of the Hadoop ecosystem. Already discussed in the previous section.
+
+**Ingestion** — The data on-ramp that moves external data sources such as flight streams, weather feeds, etc. into the big data environment.
+
+**Storage** — The layer that stores raw, curated, and operational data using systems such as HDFS, Parquet, HBase, MongoDB, Neo4j, and Elasticsearch.
+
+**Processing** — The compute layer that transforms, cleans, enriches, and analyzes data using engines such as MapReduce, Spark, Flink, Tez, and Pig.
+
+**Data Access** — The query and scripting layer that allows users and applications to interact with stored data through tools such as Hive, Trino, Pig, and Elasticsearch.
+
+**AI/ML and Analytics** — The layer that uses processed and feature-engineered data for machine learning, prediction, statistical analysis, and decision support.
+
+**Security, Governance, and Operations** — The cross-cutting layer that secures, manages, automates, monitors, and documents the platform through tools such as Ranger, Knox, Atlas, Kerberos, Airflow, Ansible, Ambari, and Cloudera Manager.
+
+## The AeroFlux Path Through the Layers
+
+### Data Sources enter the system.
+
+AeroFlux begins with external aviation data sources, including flight messages, weather data, airport metadata, and historical flight records. These sources represent the raw material that the rest of the architecture is designed to capture, organize, and analyze. In a real system, examples could include FAA SWIM feeds, ADS-B or OpenSky-style aircraft position data, NOAA weather data, BTS historical flight data, and airport reference data. This part of the path sits just before the ingestion layer because these systems exist outside Hadoop but feed into the big data architecture [@faaSwim; @openskyData; @btsOnTime; @nwsAviation].
+
+### [Ingestion Layer] Streaming and batch data are ingested into the platform.
+
+AeroFlux separates ingestion into two paths: streaming ingestion and batch ingestion. For live sources such as FAA SWIM messages, AeroFlux uses Apache Kafka as the streaming backbone because the data arrives continuously and needs to be captured as events are produced. Kafka runs in KRaft mode, which means it manages Kafka metadata internally through a quorum of controller nodes instead of depending on ZooKeeper for coordination [@apacheKafka2026; @ongaroOusterhout2014]. For scheduled or batch-oriented sources such as historical flight data, airport metadata, or periodic weather files, the system can use Airflow to schedule jobs that load data into HDFS or another storage layer. Other available ingestion tools in the Hadoop ecosystem include Sqoop for relational database imports, Flume for log and event collection, and NiFi for visual dataflow automation and routing [@apacheAirflow; @apacheSqoop2019; @apacheFlume2022; @apacheNifi].
+
+### [Orchestration] Workflow orchestration controls when jobs run.
+
+This step belongs to the Security, Governance, and Operations layer, although it supports the ingestion and processing layers directly. AeroFlux uses Airflow to do more than just handle data ingestion—it sequences job tasking to run Spark jobs and trigger downstream analytics. This is different from Kafka’s internal coordination. Kafka/KRaft manages the streaming system itself, while Airflow manages pipeline workflows across systems as DAGs. In a more traditional Hadoop environment, Oozie could be used as the Hadoop-native workflow scheduler, while tools such as Luigi, Azkaban, Dagster, and Prefect are other available orchestration options [@apacheAirflow; @apacheKafka2026; @apacheOozie2021].
+
+### [Data Processing] Real-time events are processed before landing.
+
+After streaming data enters Kafka, AeroFlux can use Apache Flink to process events in real time. Flink is useful for transformations such as filtering invalid messages, enriching events with airport metadata, calculating rolling airport activity, or detecting early indicators of delay propagation. This real-time processing path sits beside the batch Hadoop path but still feeds the larger data platform. Spark could also support micro-batch or structured streaming workloads, while MapReduce represents the older batch processing model. Tez and Storm are additional available processing options, with Tez commonly used under Hive and Storm representing an earlier generation of streaming technology [@apacheFlink; @apacheSpark; @apacheTez; @apacheStorm; @deanGhemawat2004].
+
+### [Hadoop Core & Storage] Raw data lands in HDFS.
+
+HDFS is the foundation where AeroFlux can store raw data at scale. The raw landing zone preserves data in its original or lightly transformed form so that it can be reprocessed later if the schema changes, new features are needed, or a processing error is discovered. This is one of the reasons Hadoop-style architectures are useful for data lake patterns: they allow large volumes of raw data to be stored first and interpreted later by processing and query tools [@apacheHdfs2023].
+
+### [Storage] Curated analytical data is stored in Parquet.
+
+Once raw data is cleaned and transformed, AeroFlux stores curated analytical datasets in Parquet. Parquet is a columnar file format, which makes it useful for scan-heavy analytics where only certain columns need to be read across millions of records. For example, a delay analysis query may only need flight date, origin airport, destination airport, departure delay, arrival delay, weather conditions, and carrier. Reading only the needed columns can make analytical workloads more efficient. Other available formats include ORC, which is another columnar format often associated with Hive, and Avro, which is row-oriented and useful for record-based data exchange and schema evolution [@apacheParquet2025; @zeng2023].
+
+### [Data Processing] Batch analytics and feature engineering run on Spark.
+
+AeroFlux uses Apache Spark for batch analytics, feature engineering, and large-scale transformations over historical and curated data. Spark can read from HDFS, process data in memory, and write results back to HDFS in formats such as Parquet. In the Hadoop ecosystem, Spark jobs can request cluster resources through YARN, while MapReduce remains the original Hadoop processing model. For AeroFlux, Spark is more useful than traditional MapReduce because it supports faster iterative analytics, machine learning workflows, and more flexible data processing [@apacheSpark; @apacheHdfs2023; @apacheYarn2026; @zaharia2016].
+
+### [Data Access] Analysts and applications query the data through Hive and Trino.
+
+Hive provides a SQL-like interface over data stored in HDFS and other distributed storage systems [@apacheHive]. It was originally developed as a SQL layer over Hadoop MapReduce, allowing users to perform ETL, batch reporting, and large-scale analysis without writing low-level MapReduce programs [@camacho2019]. Over time, Hive evolved into a more complete data warehousing system by improving SQL support, query optimization, and compatibility with faster engines such as Tez and Spark [@camacho2019]. Hive also uses the Hive Metastore to maintain information about tables, schemas, partitions, and data locations, while the underlying data can remain in HDFS, cloud object storage, or systems such as HBase [@apacheHbase]. Trino, a relatively modern technology, adds another access path by providing fast, federated SQL across multiple data sources, which makes it useful for interactive analysis across HDFS, Hive tables, and other connected systems [@trinoConcepts].
+
+### [AI/ML and Analytics layer] Machine learning models predict delays.
+
+After the data has been cleaned, joined, and feature-engineered, AeroFlux can use Spark MLlib for delay prediction. This layer connects to the processing output rather than directly to raw HDFS files, because machine learning works best when the data has already been transformed into reliable features. Mahout is an available legacy alternative in the Hadoop ecosystem, but Spark MLlib is a more natural fit for a modern Spark-based architecture [@meng2016].
+
+### [Storage and AI/ML and Analytics]  propagation is modeled as a graph.
+
+AeroFlux can use Neo4j to model network relationships i.e. propagation networks. This is useful because aviation delays are not isolated events. A graph database makes these relationships easier to explore than a flat table alone. Other graph-oriented options exist, such as JanusGraph, while HBase can support large-scale point lookups and MongoDB can store flexible document-style operational records [@neo4j; @apacheHbase; @mongodbModeling].
+
+### [Data Access] Search and event exploration use Elasticsearch.
+
+Here we can use Elasticsearch for fast search and exploration of flight events, logs, message contents, and operational anomalies. This is different from Hive or Trino because Elasticsearch is optimized for search-style access rather than large SQL-based analytical scans. For example, an analyst might search for all events related to a specific flight number, airport, message type, or operational disruption. Solr is an available alternative in this part of the ecosystem [@elasticElasticsearch; @apacheSolr].
+
+### [Security, Governance, and Operations] Security, governance, and operations wrap the whole path.
+
+Last but not lease we have security, governance, and operations. These tools do not sit in one single place in the data path because they support the entire platform. YARN allocates compute resources across jobs and applications. Ranger centralizes authorization and access policies. Knox provides a perimeter security gateway for accessing Hadoop services. Atlas manages metadata and data lineage across the stack. Kerberos handles authentication. Airflow schedules recurring workflows, while Ansible helps provision and configure machines. Ambari or Cloudera Manager could be used for cluster management and monitoring in a more traditional Hadoop environment. In the AeroFlux architecture, these supporting components make the platform manageable, secure, and explainable rather than just technically functional [@apacheYarn2026; @apacheRanger; @apacheKnox; @apacheAtlas; @mitKerberos; @apacheAirflow; @ansibleDocs; @apacheAmbari; @clouderaManager].
+
+{{< pagebreak >}}
+
+# References
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+

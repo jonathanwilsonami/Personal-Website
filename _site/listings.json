@@ -13,30 +13,21 @@
     "items": []
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/blog/tech.html",
     "items": [
-      "/projects/data-viz/index.html",
-      "/projects/ai-ml/index.html",
-      "/projects/tech/index.html",
-      "/projects/construction/index.html"
+      "/blog/posts/tech/hadoop/hadoop-ecosystem-paper.html"
     ]
   },
   {
-    "listing": "/projects/tech/index.html",
+    "listing": "/blog/travel.html",
     "items": [
-      "/projects/tech/first-cad.html",
-      "/projects/tech/first-computer-build.html"
+      "/blog/posts/travel/peru.html"
     ]
   },
   {
-    "listing": "/projects/misc/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/ai-ml/index.html",
+    "listing": "/projects/data-viz/index.html",
     "items": [
-      "/projects/ai-ml/aero-flux.html",
-      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
+      "/projects/data-viz/crime-viz.html"
     ]
   },
   {
@@ -62,20 +53,36 @@
     ]
   },
   {
-    "listing": "/projects/data-viz/index.html",
+    "listing": "/projects/ai-ml/index.html",
     "items": [
-      "/projects/data-viz/crime-viz.html"
+      "/projects/ai-ml/aero-flux.html",
+      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
     ]
   },
   {
-    "listing": "/blog/travel.html",
+    "listing": "/projects/misc/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/tech/index.html",
     "items": [
-      "/blog/posts/travel/peru.html"
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/data-viz/index.html",
+      "/projects/ai-ml/index.html",
+      "/projects/tech/index.html",
+      "/projects/construction/index.html"
     ]
   },
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/tech/hadoop/hadoop-ecosystem-paper.html",
       "/blog/posts/travel/peru.html"
     ]
   }

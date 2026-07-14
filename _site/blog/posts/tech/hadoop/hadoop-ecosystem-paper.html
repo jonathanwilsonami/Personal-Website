@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jonathan Wilson">
+<meta name="dcterms.date" content="2026-07-12">
+
+<title>Understanding the Hadoop Ecosystem: A Concept Map for Big Data Architecture – Jonathan Wilson</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../images/about/favicon.ico" rel="icon">
+<script src="../../../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-57REGYTJNR"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-57REGYTJNR', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":"",
+"website_privacy_policy_url":"/privacy.html"
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Jonathan Wilson</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../../../about.html">
+ <span class="dropdown-text">About</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../books.html">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../../../projects/index.html">
+ <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../projects/data-viz/index.html">
+ <span class="dropdown-text">Data Viz</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../projects/ai-ml/index.html">
+ <span class="dropdown-text">Intelligent Systems &amp; Decision Modeling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../projects/tech/index.html">
+ <span class="dropdown-text">Tech</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../projects/construction/index.html">
+ <span class="dropdown-text">Construction</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blog" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blog</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
+        <li>
+    <a class="dropdown-item" href="../../../../blog/index.html">
+ <span class="dropdown-text">All Posts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../blog/travel.html">
+ <span class="dropdown-text">Travel</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../blog/tech.html">
+ <span class="dropdown-text">Tech</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#big-data-and-why-hadoop" id="toc-big-data-and-why-hadoop" class="nav-link" data-scroll-target="#big-data-and-why-hadoop">Big Data and Why Hadoop</a></li>
+  <li><a href="#what-is-hadoop" id="toc-what-is-hadoop" class="nav-link" data-scroll-target="#what-is-hadoop">What is Hadoop</a></li>
+  <li><a href="#origins-of-hadoop" id="toc-origins-of-hadoop" class="nav-link" data-scroll-target="#origins-of-hadoop">Origins of Hadoop</a></li>
+  </ul></li>
+  <li><a href="#hadoop-concept-map" id="toc-hadoop-concept-map" class="nav-link" data-scroll-target="#hadoop-concept-map">Hadoop Concept Map</a></li>
+  <li><a href="#core-hadoop" id="toc-core-hadoop" class="nav-link" data-scroll-target="#core-hadoop">Core Hadoop</a>
+  <ul class="collapse">
+  <li><a href="#the-big-four" id="toc-the-big-four" class="nav-link" data-scroll-target="#the-big-four">The Big Four</a></li>
+  <li><a href="#hdfs-as-the-foundation-of-hadoop" id="toc-hdfs-as-the-foundation-of-hadoop" class="nav-link" data-scroll-target="#hdfs-as-the-foundation-of-hadoop">HDFS as the Foundation of Hadoop</a></li>
+  <li><a href="#hadoop-common" id="toc-hadoop-common" class="nav-link" data-scroll-target="#hadoop-common">Hadoop Common</a></li>
+  <li><a href="#yarn-the-manager" id="toc-yarn-the-manager" class="nav-link" data-scroll-target="#yarn-the-manager">YARN the Manager</a></li>
+  <li><a href="#mapreduce-the-data-processing-engine" id="toc-mapreduce-the-data-processing-engine" class="nav-link" data-scroll-target="#mapreduce-the-data-processing-engine">MapReduce the Data Processing Engine</a></li>
+  </ul></li>
+  <li><a href="#exploring-the-hadoop-ecosystem" id="toc-exploring-the-hadoop-ecosystem" class="nav-link" data-scroll-target="#exploring-the-hadoop-ecosystem">Exploring the Hadoop Ecosystem</a>
+  <ul class="collapse">
+  <li><a href="#seven-functional-layers-overview" id="toc-seven-functional-layers-overview" class="nav-link" data-scroll-target="#seven-functional-layers-overview">Seven Functional Layers Overview</a></li>
+  <li><a href="#the-aeroflux-path-through-the-layers" id="toc-the-aeroflux-path-through-the-layers" class="nav-link" data-scroll-target="#the-aeroflux-path-through-the-layers">The AeroFlux Path Through the Layers</a>
+  <ul class="collapse">
+  <li><a href="#data-sources-enter-the-system." id="toc-data-sources-enter-the-system." class="nav-link" data-scroll-target="#data-sources-enter-the-system.">Data Sources enter the system.</a></li>
+  <li><a href="#ingestion-layer-streaming-and-batch-data-are-ingested-into-the-platform." id="toc-ingestion-layer-streaming-and-batch-data-are-ingested-into-the-platform." class="nav-link" data-scroll-target="#ingestion-layer-streaming-and-batch-data-are-ingested-into-the-platform.">[Ingestion Layer] Streaming and batch data are ingested into the platform.</a></li>
+  <li><a href="#orchestration-workflow-orchestration-controls-when-jobs-run." id="toc-orchestration-workflow-orchestration-controls-when-jobs-run." class="nav-link" data-scroll-target="#orchestration-workflow-orchestration-controls-when-jobs-run.">[Orchestration] Workflow orchestration controls when jobs run.</a></li>
+  <li><a href="#data-processing-real-time-events-are-processed-before-landing." id="toc-data-processing-real-time-events-are-processed-before-landing." class="nav-link" data-scroll-target="#data-processing-real-time-events-are-processed-before-landing.">[Data Processing] Real-time events are processed before landing.</a></li>
+  <li><a href="#hadoop-core-storage-raw-data-lands-in-hdfs." id="toc-hadoop-core-storage-raw-data-lands-in-hdfs." class="nav-link" data-scroll-target="#hadoop-core-storage-raw-data-lands-in-hdfs.">[Hadoop Core &amp; Storage] Raw data lands in HDFS.</a></li>
+  <li><a href="#storage-curated-analytical-data-is-stored-in-parquet." id="toc-storage-curated-analytical-data-is-stored-in-parquet." class="nav-link" data-scroll-target="#storage-curated-analytical-data-is-stored-in-parquet.">[Storage] Curated analytical data is stored in Parquet.</a></li>
+  <li><a href="#data-processing-batch-analytics-and-feature-engineering-run-on-spark." id="toc-data-processing-batch-analytics-and-feature-engineering-run-on-spark." class="nav-link" data-scroll-target="#data-processing-batch-analytics-and-feature-engineering-run-on-spark.">[Data Processing] Batch analytics and feature engineering run on Spark.</a></li>
+  <li><a href="#data-access-analysts-and-applications-query-the-data-through-hive-and-trino." id="toc-data-access-analysts-and-applications-query-the-data-through-hive-and-trino." class="nav-link" data-scroll-target="#data-access-analysts-and-applications-query-the-data-through-hive-and-trino.">[Data Access] Analysts and applications query the data through Hive and Trino.</a></li>
+  <li><a href="#aiml-and-analytics-layer-machine-learning-models-predict-delays." id="toc-aiml-and-analytics-layer-machine-learning-models-predict-delays." class="nav-link" data-scroll-target="#aiml-and-analytics-layer-machine-learning-models-predict-delays.">[AI/ML and Analytics layer] Machine learning models predict delays.</a></li>
+  <li><a href="#storage-and-aiml-and-analytics-propagation-is-modeled-as-a-graph." id="toc-storage-and-aiml-and-analytics-propagation-is-modeled-as-a-graph." class="nav-link" data-scroll-target="#storage-and-aiml-and-analytics-propagation-is-modeled-as-a-graph.">[Storage and AI/ML and Analytics] propagation is modeled as a graph.</a></li>
+  <li><a href="#data-access-search-and-event-exploration-use-elasticsearch." id="toc-data-access-search-and-event-exploration-use-elasticsearch." class="nav-link" data-scroll-target="#data-access-search-and-event-exploration-use-elasticsearch.">[Data Access] Search and event exploration use Elasticsearch.</a></li>
+  <li><a href="#security-governance-and-operations-security-governance-and-operations-wrap-the-whole-path." id="toc-security-governance-and-operations-security-governance-and-operations-wrap-the-whole-path." class="nav-link" data-scroll-target="#security-governance-and-operations-security-governance-and-operations-wrap-the-whole-path.">[Security, Governance, and Operations] Security, governance, and operations wrap the whole path.</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Understanding the Hadoop Ecosystem: A Concept Map for Big Data Architecture</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">tech</div>
+    <div class="quarto-category">hadoop</div>
+    <div class="quarto-category">big data</div>
+    <div class="quarto-category">data architecture</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jonathan Wilson </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 12, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="big-data-and-why-hadoop" class="level2">
+<h2 class="anchored" data-anchor-id="big-data-and-why-hadoop">Big Data and Why Hadoop</h2>
+<p>In 2006, British mathematician Clive Humby coined the phrase, “Data is the new oil,” and today it seems more relevant than ever <span class="citation" data-cites="universitySheffieldCliveHumby">(<a href="#ref-universitySheffieldCliveHumby" role="doc-biblioref">University of Sheffield, n.d.</a>)</span>. In 2002, about 5 exabytes of new information were stored worldwide, while IDC projected that the global datasphere would reach 175 zettabytes by 2025 <span class="citation" data-cites="lyman2003 reinsel2018">(<a href="#ref-lyman2003" role="doc-biblioref">Lyman &amp; Varian, 2003</a>; <a href="#ref-reinsel2018" role="doc-biblioref">Reinsel et al., 2018</a>)</span>. If data is the oil, then what are the refineries? What systems can process these enormous amounts of data and turn them into useful products?</p>
+<p>Organizations need ways to store and process data beyond the limits of a single server and many traditional databases. Instead of relying on one increasingly powerful machine, distributed systems divide the work across many computers. As Grace Hopper explained through her oxen analogy, when one ox cannot move a heavy load, you add more oxen rather than trying to build a larger one <span class="citation" data-cites="hopper1982">(<a href="#ref-hopper1982" role="doc-biblioref">Hopper, 1982</a>)</span>. Hadoop follows this same idea by allowing clusters of computers to store and process data together.</p>
+</section>
+<section id="what-is-hadoop" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-hadoop">What is Hadoop</h2>
+<p>Apache Hadoop is best understood as an open-source big data ecosystem rather than a single tool. It provides a framework for storing and processing large datasets across clusters of computers. Its four core modules—Hadoop Common, HDFS, YARN, and MapReduce—support distributed storage, resource management, and parallel processing, while related projects extend Hadoop into areas such as querying, analytics, governance, and data management. Unlike a traditional database, Hadoop is designed to scale from a single machine to thousands of computers working together <span class="citation" data-cites="apacheHadoop">(<a href="#ref-apacheHadoop" role="doc-biblioref">Apache Hadoop Project, n.d.</a>)</span>.</p>
+</section>
+<section id="origins-of-hadoop" class="level2">
+<h2 class="anchored" data-anchor-id="origins-of-hadoop">Origins of Hadoop</h2>
+<p>Hadoop was born from two key developments that happened around the same time in the early 2000s, when web search and large-scale data processing were becoming increasingly difficult to manage with traditional systems. One major development was Google’s work on web-scale search. PageRank, created by Larry Page and Sergey Brin, helped make Google successful by ranking web pages based on link relationships across the web <span class="citation" data-cites="brinPage1998">(<a href="#ref-brinPage1998" role="doc-biblioref">Brin &amp; Page, 1998</a>)</span>. As Google grew, it also needed a better way to process massive amounts of web data across many machines, which led Jeffrey Dean and Sanjay Ghemawat to publish the influential MapReduce paper <span class="citation" data-cites="deanGhemawat2004">(<a href="#ref-deanGhemawat2004" role="doc-biblioref">Dean &amp; Ghemawat, 2004</a>)</span>. Around the same time, Doug Cutting, the creator of Apache Lucene, was working on Apache Nutch, an open-source web search project that needed scalable storage and processing. Hadoop grew out of this work as part of the Lucene/Nutch ecosystem, and its interesting name famously came from Cutting’s child’s stuffed toy elephant. The combination of Google’s MapReduce ideas, the needs of open-source web search, and the work being done in Nutch eventually led to the creation of Hadoop as a framework for distributed storage and parallel computation <span class="citation" data-cites="white2015">(<a href="#ref-white2015" role="doc-biblioref">White, 2015, pp. 12–16</a>)</span>.</p>
+<p>With a brief introduction and background laid out, the next section explores the Hadoop ecosystem in more depth using principally a concept map along with some other supporting diagrams.</p>
+</section>
+</section>
+<section id="hadoop-concept-map" class="level1">
+<h1>Hadoop Concept Map</h1>
+<p><strong>Note:</strong> The diagrams/images are large but they have been inserted into this document to allow zooming without reduction in the resolution/quality.</p>
+<p>To better organize concepts within the Hadoop ecosystem, I’ve organized the material into the following:</p>
+<p><strong>Core Hadoop</strong> — The core of Hadoop refers to the essential components that make Hadoop what it is. Think of the core as the foundation, or kernel, of the larger ecosystem. The functional layers around it depend on these core services for distributed storage, resource management, and parallel processing. Although the requirement of Hadoop core components is becoming less and less of a requirement as more modern tools are developed <span class="citation" data-cites="verbraeken2020">(<a href="#ref-verbraeken2020" role="doc-biblioref">Verbraeken et al., 2020</a>)</span>, the core is still important to understand because it is the foundation of Hadoop and many of the ecosystem tools depend on it <span class="citation" data-cites="dolev2019">(<a href="#ref-dolev2019" role="doc-biblioref">Dolev et al., 2019</a>)</span>.</p>
+<p><strong>Seven Functional Layers</strong> — The seven functional layers represent the major pluggable areas of the Hadoop ecosystem. These layers interact with the core Hadoop components, but they can also interact with each other through their own interfaces. This demonstrates Hadoop as an ecosystem of connected services that support storage, processing, querying, ingestion, coordination, security, governance, and analytics.</p>
+<div id="fig-hadoop-concept-map" class="lightbox quarto-float quarto-figure quarto-figure-center anchored" alt="Hadoop ecosystem concept map centered on AeroFlux and Hadoop ecosystem relationships.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hadoop-concept-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../../../images/blog/tech/hadoop/hadoop-ecosystem-concept-map.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Hadoop ecosystem concept map."><img src="../../../../images/blog/tech/hadoop/hadoop-ecosystem-concept-map.svg" class="img-fluid figure-img" alt="Hadoop ecosystem concept map centered on AeroFlux and Hadoop ecosystem relationships."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hadoop-concept-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Hadoop ecosystem concept map.
+</figcaption>
+</figure>
+</div>
+<p>As shown in <a href="#fig-hadoop-concept-map" class="quarto-xref">Figure&nbsp;1</a>, I made this mind map specific to a particular use case: AeroFlux. The reason for this is to try and ground all our discussion of Hadoop in the real world and not get overwhelmed with all the information that’s out there because you could easily spend your entire life learning this stuff and still not grasp it all before the next big thing comes along.</p>
+<p>In <a href="#fig-layered-hadoop-ecosystem" class="quarto-xref">Figure&nbsp;2</a> I provided a layered ecosystem of Hadoop to show a sample of the available open source technologies. Most of which are supported by the same Apache Software Foundation that supports Hadoop.</p>
+<div id="fig-layered-hadoop-ecosystem" class="lightbox quarto-float quarto-figure quarto-figure-center anchored" alt="Layered Hadoop ecosystem diagram showing core Hadoop and functional layers.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-layered-hadoop-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../../../images/blog/tech/hadoop/layered-hadoop-ecosystem.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Layered ecosystem of Hadoop."><img src="../../../../images/blog/tech/hadoop/layered-hadoop-ecosystem.svg" class="img-fluid figure-img" alt="Layered Hadoop ecosystem diagram showing core Hadoop and functional layers."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-layered-hadoop-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Layered ecosystem of Hadoop.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-aeroflux-data-flow" class="quarto-xref">Figure&nbsp;3</a> shows a data flow diagram of the AeroFlux project in the context of a hypothetical Hadoop ecosystem. The prupose of this diagram is to support the concept map in <a href="#fig-hadoop-concept-map" class="quarto-xref">Figure&nbsp;1</a> by showing a more linear flow of data through the functional layers. The diagram is not meant to be a complete representation of all the possible paths through the ecosystem, but rather a sample path that shows how data could flow from ingestion to storage, processing, analytics, and governance.</p>
+<div id="fig-aeroflux-data-flow" class="lightbox quarto-float quarto-figure quarto-figure-center anchored" alt="AeroFlux data flow diagram showing ingestion, storage, processing, analytics, and governance components.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aeroflux-data-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../../../images/blog/tech/hadoop/aeroflux-hadoop-data-flow.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: AeroFlux data flow diagram with Hadoop."><img src="../../../../images/blog/tech/hadoop/aeroflux-hadoop-data-flow.svg" class="img-fluid figure-img" alt="AeroFlux data flow diagram showing ingestion, storage, processing, analytics, and governance components."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aeroflux-data-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: AeroFlux data flow diagram with Hadoop.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="core-hadoop" class="level1">
+<h1>Core Hadoop</h1>
+<section id="the-big-four" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-four">The Big Four</h2>
+<p>The foundation of Hadoop is built around four core modules: Hadoop Common, HDFS, YARN, and MapReduce. Together, these components form the original foundation of Hadoop’s big data architecture and work together <span class="citation" data-cites="apacheHadoop">(<a href="#ref-apacheHadoop" role="doc-biblioref">Apache Hadoop Project, n.d.</a>)</span>.</p>
+</section>
+<section id="hdfs-as-the-foundation-of-hadoop" class="level2">
+<h2 class="anchored" data-anchor-id="hdfs-as-the-foundation-of-hadoop">HDFS as the Foundation of Hadoop</h2>
+<p>Hadoop’s HDFS (Hadoop Distributed File System) is the main data storage mechanism in the Hadoop architecture. I call it the foundation of Hadoop. HDFS provides distributed storage by splitting large files into blocks and storing those blocks across multiple machines in a cluster. It’s data agnostic as it can handle all types of data: structured, semi-structured or unstructured data <span class="citation" data-cites="apacheHdfs2023">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>)</span>.</p>
+<p>HDFS is designed around a master-worker architecture. The NameNode acts as the master service that manages file system metadata. It keeps track of the directory structure, which blocks make up each file, and where those blocks are located across the cluster. The DataNodes are the worker machines that store the actual data blocks and serve read and write requests. When a large file is written to HDFS, it is divided into blocks, commonly 128 MB in many modern Hadoop configurations, although the block size is configurable. Each block is then distributed across DataNodes and replicated for fault tolerance. A common default replication factor is three, meaning each block is copied to three different locations so that the data remains available even if a machine fails. This design allows HDFS to store very large files reliably across clusters of commodity hardware <span class="citation" data-cites="apacheHdfs2023">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>)</span>.</p>
+<p>One of the most important ideas behind HDFS is data locality, often summarized by the Hadoop design principle that “moving computation is cheaper than moving data” <span class="citation" data-cites="apacheHdfs2023">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>)</span>. The HDFS architecture guide explains that when datasets are very large, it is usually more efficient to run computation near the data instead of moving huge amounts of data across the network to a separate processing machine. This reduces network congestion and increases overall throughput. For example, if a company stores several terabytes of web server logs in HDFS, it would be inefficient to copy all of those logs to one server for analysis. Instead, Hadoop can send processing tasks to the nodes where the log blocks already exist. This is also why HDFS is optimized for streaming reads and large sequential file access rather than low-latency random access. It is very good at scanning large files from beginning to end, such as reading years of transaction logs for batch analysis, but it is not ideal when an application needs to quickly retrieve and update individual records like a traditional transactional database <span class="citation" data-cites="apacheHdfs2023">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>)</span>.</p>
+</section>
+<section id="hadoop-common" class="level2">
+<h2 class="anchored" data-anchor-id="hadoop-common">Hadoop Common</h2>
+<p>Hadoop Common contains the shared libraries, utilities, and basic services that support the other Hadoop modules. It provides the Java abstractions over the underlying operating system and filesystem that HDFS, YARN, and MapReduce all build upon, along with the launch scripts, configuration handling, and JAR files needed to run a Hadoop cluster <span class="citation" data-cites="apacheHadoop">(<a href="#ref-apacheHadoop" role="doc-biblioref">Apache Hadoop Project, n.d.</a>)</span>.</p>
+</section>
+<section id="yarn-the-manager" class="level2">
+<h2 class="anchored" data-anchor-id="yarn-the-manager">YARN the Manager</h2>
+<p>YARN manages cluster resources and job scheduling and monitoring. YARN completes the foundation by separating resource management from the processing model. In earlier Hadoop designs, MapReduce was tightly connected to cluster resource management. YARN made Hadoop more flexible by allowing different processing engines to share the same cluster resources. In YARN, the ResourceManager arbitrates resources across applications, while NodeManagers run on individual machines and monitor resource usage such as CPU, memory, disk, and network. This means MapReduce jobs, Spark applications, Tez jobs, and other distributed applications can run on the same Hadoop cluster while requesting resources through YARN. To better visualize these relationships consider this: HDFS stores distributed data, YARN allocates and monitors compute resources, and MapReduce uses those resources to perform parallel batch processing over the data stored in HDFS <span class="citation" data-cites="apacheYarn2026">(<a href="#ref-apacheYarn2026" role="doc-biblioref">Apache Hadoop Project, 2026a</a>)</span>.</p>
+</section>
+<section id="mapreduce-the-data-processing-engine" class="level2">
+<h2 class="anchored" data-anchor-id="mapreduce-the-data-processing-engine">MapReduce the Data Processing Engine</h2>
+<p>MapReduce is the core data processing engine. A MapReduce job breaks a large task into smaller tasks that can run in parallel across the cluster. The map phase processes small portions of the input data and produces intermediate key-value pairs. The shuffle and sort phase groups all intermediate values with the same key and sends them to the appropriate reducer. The reduce phase then combines or summarizes those grouped values to produce the final output. This model gives programmers a clean abstraction for distributed processing because the framework handles task distribution, parallelization, data movement between map and reduce stages, and fault tolerance when tasks or nodes fail <span class="citation" data-cites="apacheMapReduce2026 deanGhemawat2004">(<a href="#ref-apacheMapReduce2026" role="doc-biblioref">Apache Hadoop Project, 2026b</a>; <a href="#ref-deanGhemawat2004" role="doc-biblioref">Dean &amp; Ghemawat, 2004</a>)</span>. Although using MapReduce directly can be cumbersome, hence why why Pig, Hive, and other higher-level tools were developed to provide SQL-like interface that is more user-friendly. Those will be talked about later.</p>
+<p>Beyond these four core components, the Hadoop ecosystem extends into additional functional layers made up of many open-source projects which is what we will explore in the following section. For a sample of what is available, see the layered Hadoop ecosystem in <a href="#fig-layered-hadoop-ecosystem" class="quarto-xref">Figure&nbsp;2</a>.</p>
+</section>
+</section>
+<section id="exploring-the-hadoop-ecosystem" class="level1">
+<h1>Exploring the Hadoop Ecosystem</h1>
+<p>For the following section, we will use the concept map in <a href="#fig-hadoop-concept-map" class="quarto-xref">Figure&nbsp;1</a> and the AeroFlux project as a hypothetical use case. The goal is to explore the Hadoop ecosystem by tracing an end-to-end data path through the core and functional layers and showing how the different open-source projects relate to one another.</p>
+<p>For context, AeroFlux is a proposed aviation intelligence platform that combines historical flight data, live flight streams, weather data, and airport metadata to analyze delays and operational patterns. In the context of Hadoop, AeroFlux serves as an example of how a big data architecture could ingest, store, process, query, and model large-scale aviation data for decision support. For more information on the AeroFlux project, see <a href="https://jonathanwilsonami.github.io/OR568_ML_Project/aero-flux.html">AeroFlux</a>.</p>
+<section id="seven-functional-layers-overview" class="level2">
+<h2 class="anchored" data-anchor-id="seven-functional-layers-overview">Seven Functional Layers Overview</h2>
+<p><strong>Hadoop Core</strong> — The foundation of the Hadoop ecosystem. Already discussed in the previous section.</p>
+<p><strong>Ingestion</strong> — The data on-ramp that moves external data sources such as flight streams, weather feeds, etc. into the big data environment.</p>
+<p><strong>Storage</strong> — The layer that stores raw, curated, and operational data using systems such as HDFS, Parquet, HBase, MongoDB, Neo4j, and Elasticsearch.</p>
+<p><strong>Processing</strong> — The compute layer that transforms, cleans, enriches, and analyzes data using engines such as MapReduce, Spark, Flink, Tez, and Pig.</p>
+<p><strong>Data Access</strong> — The query and scripting layer that allows users and applications to interact with stored data through tools such as Hive, Trino, Pig, and Elasticsearch.</p>
+<p><strong>AI/ML and Analytics</strong> — The layer that uses processed and feature-engineered data for machine learning, prediction, statistical analysis, and decision support.</p>
+<p><strong>Security, Governance, and Operations</strong> — The cross-cutting layer that secures, manages, automates, monitors, and documents the platform through tools such as Ranger, Knox, Atlas, Kerberos, Airflow, Ansible, Ambari, and Cloudera Manager.</p>
+</section>
+<section id="the-aeroflux-path-through-the-layers" class="level2">
+<h2 class="anchored" data-anchor-id="the-aeroflux-path-through-the-layers">The AeroFlux Path Through the Layers</h2>
+<section id="data-sources-enter-the-system." class="level3">
+<h3 class="anchored" data-anchor-id="data-sources-enter-the-system.">Data Sources enter the system.</h3>
+<p>AeroFlux begins with external aviation data sources, including flight messages, weather data, airport metadata, and historical flight records. These sources represent the raw material that the rest of the architecture is designed to capture, organize, and analyze. In a real system, examples could include FAA SWIM feeds, ADS-B or OpenSky-style aircraft position data, NOAA weather data, BTS historical flight data, and airport reference data. This part of the path sits just before the ingestion layer because these systems exist outside Hadoop but feed into the big data architecture <span class="citation" data-cites="faaSwim openskyData btsOnTime nwsAviation">(<a href="#ref-btsOnTime" role="doc-biblioref">Bureau of Transportation Statistics, n.d.</a>; <a href="#ref-faaSwim" role="doc-biblioref">Federal Aviation Administration, n.d.</a>; <a href="#ref-nwsAviation" role="doc-biblioref">National Weather Service, n.d.</a>; <a href="#ref-openskyData" role="doc-biblioref">OpenSky Network, n.d.</a>)</span>.</p>
+</section>
+<section id="ingestion-layer-streaming-and-batch-data-are-ingested-into-the-platform." class="level3">
+<h3 class="anchored" data-anchor-id="ingestion-layer-streaming-and-batch-data-are-ingested-into-the-platform.">[Ingestion Layer] Streaming and batch data are ingested into the platform.</h3>
+<p>AeroFlux separates ingestion into two paths: streaming ingestion and batch ingestion. For live sources such as FAA SWIM messages, AeroFlux uses Apache Kafka as the streaming backbone because the data arrives continuously and needs to be captured as events are produced. Kafka runs in KRaft mode, which means it manages Kafka metadata internally through a quorum of controller nodes instead of depending on ZooKeeper for coordination <span class="citation" data-cites="apacheKafka2026 ongaroOusterhout2014">(<a href="#ref-apacheKafka2026" role="doc-biblioref">Apache Kafka Project, 2026</a>; <a href="#ref-ongaroOusterhout2014" role="doc-biblioref">Ongaro &amp; Ousterhout, 2014</a>)</span>. For scheduled or batch-oriented sources such as historical flight data, airport metadata, or periodic weather files, the system can use Airflow to schedule jobs that load data into HDFS or another storage layer. Other available ingestion tools in the Hadoop ecosystem include Sqoop for relational database imports, Flume for log and event collection, and NiFi for visual dataflow automation and routing <span class="citation" data-cites="apacheAirflow apacheSqoop2019 apacheFlume2022 apacheNifi">(<a href="#ref-apacheAirflow" role="doc-biblioref">Apache Airflow Project, n.d.</a>; <a href="#ref-apacheFlume2022" role="doc-biblioref">Apache Flume Project, 2022</a>; <a href="#ref-apacheNifi" role="doc-biblioref">Apache NiFi Project, n.d.</a>; <a href="#ref-apacheSqoop2019" role="doc-biblioref">Apache Sqoop Project, 2019</a>)</span>.</p>
+</section>
+<section id="orchestration-workflow-orchestration-controls-when-jobs-run." class="level3">
+<h3 class="anchored" data-anchor-id="orchestration-workflow-orchestration-controls-when-jobs-run.">[Orchestration] Workflow orchestration controls when jobs run.</h3>
+<p>This step belongs to the Security, Governance, and Operations layer, although it supports the ingestion and processing layers directly. AeroFlux uses Airflow to do more than just handle data ingestion—it sequences job tasking to run Spark jobs and trigger downstream analytics. This is different from Kafka’s internal coordination. Kafka/KRaft manages the streaming system itself, while Airflow manages pipeline workflows across systems as DAGs. In a more traditional Hadoop environment, Oozie could be used as the Hadoop-native workflow scheduler, while tools such as Luigi, Azkaban, Dagster, and Prefect are other available orchestration options <span class="citation" data-cites="apacheAirflow apacheKafka2026 apacheOozie2021">(<a href="#ref-apacheAirflow" role="doc-biblioref">Apache Airflow Project, n.d.</a>; <a href="#ref-apacheKafka2026" role="doc-biblioref">Apache Kafka Project, 2026</a>; <a href="#ref-apacheOozie2021" role="doc-biblioref">Apache Oozie Project, 2021</a>)</span>.</p>
+</section>
+<section id="data-processing-real-time-events-are-processed-before-landing." class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-real-time-events-are-processed-before-landing.">[Data Processing] Real-time events are processed before landing.</h3>
+<p>After streaming data enters Kafka, AeroFlux can use Apache Flink to process events in real time. Flink is useful for transformations such as filtering invalid messages, enriching events with airport metadata, calculating rolling airport activity, or detecting early indicators of delay propagation. This real-time processing path sits beside the batch Hadoop path but still feeds the larger data platform. Spark could also support micro-batch or structured streaming workloads, while MapReduce represents the older batch processing model. Tez and Storm are additional available processing options, with Tez commonly used under Hive and Storm representing an earlier generation of streaming technology <span class="citation" data-cites="apacheFlink apacheSpark apacheTez apacheStorm deanGhemawat2004">(<a href="#ref-apacheFlink" role="doc-biblioref">Apache Flink Project, n.d.</a>; <a href="#ref-apacheSpark" role="doc-biblioref">Apache Spark Project, n.d.</a>; <a href="#ref-apacheStorm" role="doc-biblioref">Apache Storm Project, n.d.</a>; <a href="#ref-apacheTez" role="doc-biblioref">Apache Tez Project, n.d.</a>; <a href="#ref-deanGhemawat2004" role="doc-biblioref">Dean &amp; Ghemawat, 2004</a>)</span>.</p>
+</section>
+<section id="hadoop-core-storage-raw-data-lands-in-hdfs." class="level3">
+<h3 class="anchored" data-anchor-id="hadoop-core-storage-raw-data-lands-in-hdfs.">[Hadoop Core &amp; Storage] Raw data lands in HDFS.</h3>
+<p>HDFS is the foundation where AeroFlux can store raw data at scale. The raw landing zone preserves data in its original or lightly transformed form so that it can be reprocessed later if the schema changes, new features are needed, or a processing error is discovered. This is one of the reasons Hadoop-style architectures are useful for data lake patterns: they allow large volumes of raw data to be stored first and interpreted later by processing and query tools <span class="citation" data-cites="apacheHdfs2023">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>)</span>.</p>
+</section>
+<section id="storage-curated-analytical-data-is-stored-in-parquet." class="level3">
+<h3 class="anchored" data-anchor-id="storage-curated-analytical-data-is-stored-in-parquet.">[Storage] Curated analytical data is stored in Parquet.</h3>
+<p>Once raw data is cleaned and transformed, AeroFlux stores curated analytical datasets in Parquet. Parquet is a columnar file format, which makes it useful for scan-heavy analytics where only certain columns need to be read across millions of records. For example, a delay analysis query may only need flight date, origin airport, destination airport, departure delay, arrival delay, weather conditions, and carrier. Reading only the needed columns can make analytical workloads more efficient. Other available formats include ORC, which is another columnar format often associated with Hive, and Avro, which is row-oriented and useful for record-based data exchange and schema evolution <span class="citation" data-cites="apacheParquet2025 zeng2023">(<a href="#ref-apacheParquet2025" role="doc-biblioref">Apache Parquet Project, 2025</a>; <a href="#ref-zeng2023" role="doc-biblioref">Zeng et al., 2023</a>)</span>.</p>
+</section>
+<section id="data-processing-batch-analytics-and-feature-engineering-run-on-spark." class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-batch-analytics-and-feature-engineering-run-on-spark.">[Data Processing] Batch analytics and feature engineering run on Spark.</h3>
+<p>AeroFlux uses Apache Spark for batch analytics, feature engineering, and large-scale transformations over historical and curated data. Spark can read from HDFS, process data in memory, and write results back to HDFS in formats such as Parquet. In the Hadoop ecosystem, Spark jobs can request cluster resources through YARN, while MapReduce remains the original Hadoop processing model. For AeroFlux, Spark is more useful than traditional MapReduce because it supports faster iterative analytics, machine learning workflows, and more flexible data processing <span class="citation" data-cites="apacheSpark apacheHdfs2023 apacheYarn2026 zaharia2016">(<a href="#ref-apacheHdfs2023" role="doc-biblioref">Apache Hadoop Project, 2023</a>, <a href="#ref-apacheYarn2026" role="doc-biblioref">2026a</a>; <a href="#ref-apacheSpark" role="doc-biblioref">Apache Spark Project, n.d.</a>; <a href="#ref-zaharia2016" role="doc-biblioref">Zaharia et al., 2016</a>)</span>.</p>
+</section>
+<section id="data-access-analysts-and-applications-query-the-data-through-hive-and-trino." class="level3">
+<h3 class="anchored" data-anchor-id="data-access-analysts-and-applications-query-the-data-through-hive-and-trino.">[Data Access] Analysts and applications query the data through Hive and Trino.</h3>
+<p>Hive provides a SQL-like interface over data stored in HDFS and other distributed storage systems <span class="citation" data-cites="apacheHive">(<a href="#ref-apacheHive" role="doc-biblioref">Apache Hive Project, n.d.</a>)</span>. It was originally developed as a SQL layer over Hadoop MapReduce, allowing users to perform ETL, batch reporting, and large-scale analysis without writing low-level MapReduce programs <span class="citation" data-cites="camacho2019">(<a href="#ref-camacho2019" role="doc-biblioref">Camacho-Rodríguez et al., 2019</a>)</span>. Over time, Hive evolved into a more complete data warehousing system by improving SQL support, query optimization, and compatibility with faster engines such as Tez and Spark <span class="citation" data-cites="camacho2019">(<a href="#ref-camacho2019" role="doc-biblioref">Camacho-Rodríguez et al., 2019</a>)</span>. Hive also uses the Hive Metastore to maintain information about tables, schemas, partitions, and data locations, while the underlying data can remain in HDFS, cloud object storage, or systems such as HBase <span class="citation" data-cites="apacheHbase">(<a href="#ref-apacheHbase" role="doc-biblioref">Apache HBase Project, n.d.</a>)</span>. Trino, a relatively modern technology, adds another access path by providing fast, federated SQL across multiple data sources, which makes it useful for interactive analysis across HDFS, Hive tables, and other connected systems <span class="citation" data-cites="trinoConcepts">(<a href="#ref-trinoConcepts" role="doc-biblioref">Trino Software Foundation, n.d.</a>)</span>.</p>
+</section>
+<section id="aiml-and-analytics-layer-machine-learning-models-predict-delays." class="level3">
+<h3 class="anchored" data-anchor-id="aiml-and-analytics-layer-machine-learning-models-predict-delays.">[AI/ML and Analytics layer] Machine learning models predict delays.</h3>
+<p>After the data has been cleaned, joined, and feature-engineered, AeroFlux can use Spark MLlib for delay prediction. This layer connects to the processing output rather than directly to raw HDFS files, because machine learning works best when the data has already been transformed into reliable features. Mahout is an available legacy alternative in the Hadoop ecosystem, but Spark MLlib is a more natural fit for a modern Spark-based architecture <span class="citation" data-cites="meng2016">(<a href="#ref-meng2016" role="doc-biblioref">Meng et al., 2016</a>)</span>.</p>
+</section>
+<section id="storage-and-aiml-and-analytics-propagation-is-modeled-as-a-graph." class="level3">
+<h3 class="anchored" data-anchor-id="storage-and-aiml-and-analytics-propagation-is-modeled-as-a-graph.">[Storage and AI/ML and Analytics] propagation is modeled as a graph.</h3>
+<p>AeroFlux can use Neo4j to model network relationships i.e.&nbsp;propagation networks. This is useful because aviation delays are not isolated events. A graph database makes these relationships easier to explore than a flat table alone. Other graph-oriented options exist, such as JanusGraph, while HBase can support large-scale point lookups and MongoDB can store flexible document-style operational records <span class="citation" data-cites="neo4j apacheHbase mongodbModeling">(<a href="#ref-apacheHbase" role="doc-biblioref">Apache HBase Project, n.d.</a>; <a href="#ref-mongodbModeling" role="doc-biblioref">MongoDB, n.d.</a>; <a href="#ref-neo4j" role="doc-biblioref">Neo4j, n.d.</a>)</span>.</p>
+</section>
+<section id="data-access-search-and-event-exploration-use-elasticsearch." class="level3">
+<h3 class="anchored" data-anchor-id="data-access-search-and-event-exploration-use-elasticsearch.">[Data Access] Search and event exploration use Elasticsearch.</h3>
+<p>Here we can use Elasticsearch for fast search and exploration of flight events, logs, message contents, and operational anomalies. This is different from Hive or Trino because Elasticsearch is optimized for search-style access rather than large SQL-based analytical scans. For example, an analyst might search for all events related to a specific flight number, airport, message type, or operational disruption. Solr is an available alternative in this part of the ecosystem <span class="citation" data-cites="elasticElasticsearch apacheSolr">(<a href="#ref-apacheSolr" role="doc-biblioref">Apache Solr Project, n.d.</a>; <a href="#ref-elasticElasticsearch" role="doc-biblioref">Elastic, n.d.</a>)</span>.</p>
+</section>
+<section id="security-governance-and-operations-security-governance-and-operations-wrap-the-whole-path." class="level3">
+<h3 class="anchored" data-anchor-id="security-governance-and-operations-security-governance-and-operations-wrap-the-whole-path.">[Security, Governance, and Operations] Security, governance, and operations wrap the whole path.</h3>
+<p>Last but not lease we have security, governance, and operations. These tools do not sit in one single place in the data path because they support the entire platform. YARN allocates compute resources across jobs and applications. Ranger centralizes authorization and access policies. Knox provides a perimeter security gateway for accessing Hadoop services. Atlas manages metadata and data lineage across the stack. Kerberos handles authentication. Airflow schedules recurring workflows, while Ansible helps provision and configure machines. Ambari or Cloudera Manager could be used for cluster management and monitoring in a more traditional Hadoop environment. In the AeroFlux architecture, these supporting components make the platform manageable, secure, and explainable rather than just technically functional <span class="citation" data-cites="apacheYarn2026 apacheRanger apacheKnox apacheAtlas mitKerberos apacheAirflow ansibleDocs apacheAmbari clouderaManager">(<a href="#ref-ansibleDocs" role="doc-biblioref">Ansible Community, n.d.</a>; <a href="#ref-apacheAirflow" role="doc-biblioref">Apache Airflow Project, n.d.</a>; <a href="#ref-apacheAmbari" role="doc-biblioref">Apache Ambari Project, n.d.</a>; <a href="#ref-apacheAtlas" role="doc-biblioref">Apache Atlas Project, n.d.</a>; <a href="#ref-apacheYarn2026" role="doc-biblioref">Apache Hadoop Project, 2026a</a>; <a href="#ref-apacheKnox" role="doc-biblioref">Apache Knox Project, n.d.</a>; <a href="#ref-apacheRanger" role="doc-biblioref">Apache Ranger Project, n.d.</a>; <a href="#ref-clouderaManager" role="doc-biblioref">Cloudera, n.d.</a>; <a href="#ref-mitKerberos" role="doc-biblioref">MIT Kerberos Consortium, n.d.</a>)</span>.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ansibleDocs" class="csl-entry" role="listitem">
+Ansible Community. (n.d.). <em>Ansible community documentation</em>. Retrieved July 12, 2026, from <a href="https://docs.ansible.com/">https://docs.ansible.com/</a>
+</div>
+<div id="ref-apacheAirflow" class="csl-entry" role="listitem">
+Apache Airflow Project. (n.d.). <em>What is airflow?</em> Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://airflow.apache.org/docs/apache-airflow/stable/index.html">https://airflow.apache.org/docs/apache-airflow/stable/index.html</a>
+</div>
+<div id="ref-apacheAmbari" class="csl-entry" role="listitem">
+Apache Ambari Project. (n.d.). <em>Apache ambari</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://ambari.apache.org/">https://ambari.apache.org/</a>
+</div>
+<div id="ref-apacheAtlas" class="csl-entry" role="listitem">
+Apache Atlas Project. (n.d.). <em>Apache atlas: Data governance and metadata framework for hadoop</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://atlas.apache.org/">https://atlas.apache.org/</a>
+</div>
+<div id="ref-apacheFlink" class="csl-entry" role="listitem">
+Apache Flink Project. (n.d.). <em>Apache flink: Stateful computations over data streams</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://flink.apache.org/">https://flink.apache.org/</a>
+</div>
+<div id="ref-apacheFlume2022" class="csl-entry" role="listitem">
+Apache Flume Project. (2022). <em>Welcome to apache flume</em>. Apache Software Foundation. <a href="https://flume.apache.org/">https://flume.apache.org/</a>
+</div>
+<div id="ref-apacheHadoop" class="csl-entry" role="listitem">
+Apache Hadoop Project. (n.d.). <em>Apache hadoop</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://hadoop.apache.org/">https://hadoop.apache.org/</a>
+</div>
+<div id="ref-apacheHdfs2023" class="csl-entry" role="listitem">
+Apache Hadoop Project. (2023). <em>Apache hadoop 3.3.5: HDFS architecture</em>. Apache Software Foundation. <a href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html">https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html</a>
+</div>
+<div id="ref-apacheYarn2026" class="csl-entry" role="listitem">
+Apache Hadoop Project. (2026a). <em>Apache hadoop 3.5.0: Apache hadoop YARN</em>. Apache Software Foundation. <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html">https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html</a>
+</div>
+<div id="ref-apacheMapReduce2026" class="csl-entry" role="listitem">
+Apache Hadoop Project. (2026b). <em>Apache hadoop 3.5.0: MapReduce tutorial</em>. Apache Software Foundation. <a href="https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html">https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html</a>
+</div>
+<div id="ref-apacheHbase" class="csl-entry" role="listitem">
+Apache HBase Project. (n.d.). <em>Apache HBase reference guide</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://hbase.apache.org/book.html">https://hbase.apache.org/book.html</a>
+</div>
+<div id="ref-apacheHive" class="csl-entry" role="listitem">
+Apache Hive Project. (n.d.). <em>Apache hive</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://hive.apache.org/">https://hive.apache.org/</a>
+</div>
+<div id="ref-apacheKafka2026" class="csl-entry" role="listitem">
+Apache Kafka Project. (2026). <em>KRaft vs ZooKeeper</em>. Apache Software Foundation. <a href="https://kafka.apache.org/40/getting-started/zk2kraft/">https://kafka.apache.org/40/getting-started/zk2kraft/</a>
+</div>
+<div id="ref-apacheKnox" class="csl-entry" role="listitem">
+Apache Knox Project. (n.d.). <em>Apache knox gateway user guide</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://knox.apache.org/books/knox-2-1-0/user-guide.html">https://knox.apache.org/books/knox-2-1-0/user-guide.html</a>
+</div>
+<div id="ref-apacheNifi" class="csl-entry" role="listitem">
+Apache NiFi Project. (n.d.). <em>Apache NiFi overview</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://nifi.apache.org/docs/nifi-docs/html/overview.html">https://nifi.apache.org/docs/nifi-docs/html/overview.html</a>
+</div>
+<div id="ref-apacheOozie2021" class="csl-entry" role="listitem">
+Apache Oozie Project. (2021). <em>Apache oozie workflow scheduler for hadoop</em>. Apache Software Foundation. <a href="https://oozie.apache.org/">https://oozie.apache.org/</a>
+</div>
+<div id="ref-apacheParquet2025" class="csl-entry" role="listitem">
+Apache Parquet Project. (2025). <em>Overview</em>. Apache Software Foundation. <a href="https://parquet.apache.org/docs/overview/">https://parquet.apache.org/docs/overview/</a>
+</div>
+<div id="ref-apacheRanger" class="csl-entry" role="listitem">
+Apache Ranger Project. (n.d.). <em>Apache ranger introduction</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://ranger.apache.org/">https://ranger.apache.org/</a>
+</div>
+<div id="ref-apacheSolr" class="csl-entry" role="listitem">
+Apache Solr Project. (n.d.). <em>Welcome to apache solr</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://solr.apache.org/">https://solr.apache.org/</a>
+</div>
+<div id="ref-apacheSpark" class="csl-entry" role="listitem">
+Apache Spark Project. (n.d.). <em>Apache spark</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://spark.apache.org/">https://spark.apache.org/</a>
+</div>
+<div id="ref-apacheSqoop2019" class="csl-entry" role="listitem">
+Apache Sqoop Project. (2019). <em>Apache sqoop</em>. Apache Software Foundation. <a href="https://sqoop.apache.org/">https://sqoop.apache.org/</a>
+</div>
+<div id="ref-apacheStorm" class="csl-entry" role="listitem">
+Apache Storm Project. (n.d.). <em>Apache storm</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://storm.apache.org/">https://storm.apache.org/</a>
+</div>
+<div id="ref-apacheTez" class="csl-entry" role="listitem">
+Apache Tez Project. (n.d.). <em>Welcome to apache tez</em>. Apache Software Foundation. Retrieved July 12, 2026, from <a href="https://tez.apache.org/">https://tez.apache.org/</a>
+</div>
+<div id="ref-brinPage1998" class="csl-entry" role="listitem">
+Brin, S., &amp; Page, L. (1998). The anatomy of a large-scale hypertextual web search engine. <em>Computer Networks and ISDN Systems</em>, <em>30</em>(1–7), 107–117. <a href="https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/">https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/</a>
+</div>
+<div id="ref-btsOnTime" class="csl-entry" role="listitem">
+Bureau of Transportation Statistics. (n.d.). <em>Airline on-time performance data</em>. U.S. Department of Transportation. Retrieved July 12, 2026, from <a href="https://transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD">https://transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD</a>
+</div>
+<div id="ref-camacho2019" class="csl-entry" role="listitem">
+Camacho-Rodríguez, J., Chauhan, A., Gates, A., Koifman, E., O’Malley, O., Garg, V., Haindrich, Z., Shelukhin, S., Jayachandran, P., Seth, S., Jaiswal, D., Bouguerra, S., Bangarwa, N., Hariappan, S., Agarwal, A., Dere, J., Dai, D., Nair, T., Dembla, N., &amp; Vijayaraghavan, G. (2019). <em>Apache hive: From MapReduce to enterprise-grade big data warehousing</em>. <a href="https://arxiv.org/abs/1903.10970">https://arxiv.org/abs/1903.10970</a>
+</div>
+<div id="ref-clouderaManager" class="csl-entry" role="listitem">
+Cloudera. (n.d.). <em>Monitoring a cluster using cloudera manager</em>. Retrieved July 12, 2026, from <a href="https://docs.cloudera.com/cdp-private-cloud-base/7.1.8/concepts/topics/cm-introduction-to-monitoring.html">https://docs.cloudera.com/cdp-private-cloud-base/7.1.8/concepts/topics/cm-introduction-to-monitoring.html</a>
+</div>
+<div id="ref-deanGhemawat2004" class="csl-entry" role="listitem">
+Dean, J., &amp; Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. <em>Proceedings of the 6th Symposium on Operating Systems Design and Implementation</em>, 137–150. <a href="https://www.usenix.org/conference/osdi-04/mapreduce-simplified-data-processing-large-clusters">https://www.usenix.org/conference/osdi-04/mapreduce-simplified-data-processing-large-clusters</a>
+</div>
+<div id="ref-dolev2019" class="csl-entry" role="listitem">
+Dolev, S., Florissi, P., Gudes, E., Sharma, S., &amp; Singer, I. (2019). A survey on geographically distributed big-data processing using <span>MapReduce</span>. <em>IEEE Transactions on Big Data</em>, <em>5</em>(1), 60–80. <a href="https://doi.org/10.1109/TBDATA.2017.2723473">https://doi.org/10.1109/TBDATA.2017.2723473</a>
+</div>
+<div id="ref-elasticElasticsearch" class="csl-entry" role="listitem">
+Elastic. (n.d.). <em>Elasticsearch: The official distributed search and analytics engine</em>. Retrieved July 12, 2026, from <a href="https://www.elastic.co/elasticsearch">https://www.elastic.co/elasticsearch</a>
+</div>
+<div id="ref-faaSwim" class="csl-entry" role="listitem">
+Federal Aviation Administration. (n.d.). <em>System wide information management (SWIM)</em>. Retrieved July 12, 2026, from <a href="https://www.faa.gov/air_traffic/technology/swim">https://www.faa.gov/air_traffic/technology/swim</a>
+</div>
+<div id="ref-hopper1982" class="csl-entry" role="listitem">
+Hopper, G. M. (1982). <em>Future possibilities: Data, hardware, software, and people</em> [Lecture transcript]. National Security Agency. <a href="https://media.defense.gov/2024/Nov/25/2003593626/-1/-1/0/PART%20ONE%20FUTURE%20POSSIBILITIES%20GRACE%20HOPPER%20TRANSCRIPT%20NO%20SUCH%20PODCAST%20NSA.PDF">https://media.defense.gov/2024/Nov/25/2003593626/-1/-1/0/PART%20ONE%20FUTURE%20POSSIBILITIES%20GRACE%20HOPPER%20TRANSCRIPT%20NO%20SUCH%20PODCAST%20NSA.PDF</a>
+</div>
+<div id="ref-lyman2003" class="csl-entry" role="listitem">
+Lyman, P., &amp; Varian, H. R. (2003). <em>How much information? 2003</em>. University of California, Berkeley, School of Information Management; Systems. <a href="https://www.ischool.berkeley.edu/research/publications/2003/how-much-information-2003">https://www.ischool.berkeley.edu/research/publications/2003/how-much-information-2003</a>
+</div>
+<div id="ref-meng2016" class="csl-entry" role="listitem">
+Meng, X., Bradley, J., Yavuz, B., Sparks, E., Venkataraman, S., Liu, D., Freeman, J., Tsai, D. B., Amde, M., Owen, S., Xin, D., Xin, R., Franklin, M. J., Zadeh, R., Zaharia, M., &amp; Talwalkar, A. (2016). MLlib: Machine learning in apache spark. <em>Journal of Machine Learning Research</em>, <em>17</em>(34), 1–7. <a href="https://www.jmlr.org/papers/v17/15-237.html">https://www.jmlr.org/papers/v17/15-237.html</a>
+</div>
+<div id="ref-mitKerberos" class="csl-entry" role="listitem">
+MIT Kerberos Consortium. (n.d.). <em>Kerberos: The network authentication protocol</em>. Massachusetts Institute of Technology. Retrieved July 12, 2026, from <a href="https://web.mit.edu/kerberos/">https://web.mit.edu/kerberos/</a>
+</div>
+<div id="ref-mongodbModeling" class="csl-entry" role="listitem">
+MongoDB. (n.d.). <em>Data modeling in MongoDB</em>. Retrieved July 12, 2026, from <a href="https://www.mongodb.com/docs/manual/data-modeling/">https://www.mongodb.com/docs/manual/data-modeling/</a>
+</div>
+<div id="ref-nwsAviation" class="csl-entry" role="listitem">
+National Weather Service. (n.d.). <em>Aviation weather center</em>. National Oceanic; Atmospheric Administration. Retrieved July 12, 2026, from <a href="https://aviationweather.gov/">https://aviationweather.gov/</a>
+</div>
+<div id="ref-neo4j" class="csl-entry" role="listitem">
+Neo4j. (n.d.). <em>Neo4j graph intelligence platform</em>. Retrieved July 12, 2026, from <a href="https://neo4j.com/">https://neo4j.com/</a>
+</div>
+<div id="ref-ongaroOusterhout2014" class="csl-entry" role="listitem">
+Ongaro, D., &amp; Ousterhout, J. (2014). In search of an understandable consensus algorithm. <em>Proceedings of the 2014 USENIX Annual Technical Conference</em>, 305–319. <a href="https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro">https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro</a>
+</div>
+<div id="ref-openskyData" class="csl-entry" role="listitem">
+OpenSky Network. (n.d.). <em>OpenSky network data</em>. Retrieved July 12, 2026, from <a href="https://opensky-network.org/data">https://opensky-network.org/data</a>
+</div>
+<div id="ref-reinsel2018" class="csl-entry" role="listitem">
+Reinsel, D., Gantz, J., &amp; Rydning, J. (2018). <em>The digitization of the world from edge to core</em>. International Data Corporation. <a href="https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf">https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf</a>
+</div>
+<div id="ref-trinoConcepts" class="csl-entry" role="listitem">
+Trino Software Foundation. (n.d.). <em>Trino concepts</em>. Retrieved July 12, 2026, from <a href="https://trino.io/docs/current/overview/concepts.html">https://trino.io/docs/current/overview/concepts.html</a>
+</div>
+<div id="ref-universitySheffieldCliveHumby" class="csl-entry" role="listitem">
+University of Sheffield. (n.d.). <em>Clive humby</em>. Retrieved July 12, 2026, from <a href="https://sheffield.ac.uk/cs/people/academic-visitors/clive-humby">https://sheffield.ac.uk/cs/people/academic-visitors/clive-humby</a>
+</div>
+<div id="ref-verbraeken2020" class="csl-entry" role="listitem">
+Verbraeken, J., Wolting, M., Katzy, J., Kloppenburg, J., Verbelen, T., &amp; Rellermeyer, J. S. (2020). A survey on distributed machine learning. <em>ACM Computing Surveys</em>, <em>53</em>(2). <a href="https://doi.org/10.1145/3377454">https://doi.org/10.1145/3377454</a>
+</div>
+<div id="ref-white2015" class="csl-entry" role="listitem">
+White, T. (2015). <em>Hadoop: The definitive guide</em> (4th ed.). O’Reilly Media.
+</div>
+<div id="ref-zaharia2016" class="csl-entry" role="listitem">
+Zaharia, M., Xin, R. S., Wendell, P., Das, T., Armbrust, M., Dave, A., Meng, X., Rosen, J., Venkataraman, S., Franklin, M. J., Ghodsi, A., Gonzalez, J., Shenker, S., &amp; Stoica, I. (2016). Apache spark: A unified engine for big data processing. <em>Communications of the ACM</em>, <em>59</em>(11), 56–65. <a href="https://doi.org/10.1145/2934664">https://doi.org/10.1145/2934664</a>
+</div>
+<div id="ref-zeng2023" class="csl-entry" role="listitem">
+Zeng, X., Hui, Y., Shen, J., Pavlo, A., McKinney, W., &amp; Zhang, H. (2023). <em>An empirical evaluation of columnar storage formats</em>. <a href="https://arxiv.org/abs/2304.05028">https://arxiv.org/abs/2304.05028</a>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jonathanwil\.com");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2026 Jonathan Wilson
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jonathanwilsonami/">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jonathanwil/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:jonwilami@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
+    <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie settings</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

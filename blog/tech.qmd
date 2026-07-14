@@ -1,0 +1,10 @@
+---
+title: "Technology"
+listing:
+  contents: posts/tech
+  sort: "date desc"
+  type: default
+  feed: true
+---
+
+Things I'm learning about technology, programming, and software development. I write about what I learn to help me remember it and to share it with others. None of my writings I would ever consider complete I'm always improving them the more I learn and find out. 
