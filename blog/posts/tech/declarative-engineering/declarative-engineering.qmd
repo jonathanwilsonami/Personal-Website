@@ -1,0 +1,32 @@
+---
+title: "Declarative Engineering"
+author: "Jonathan Wilson"
+date: 2026-09-18
+categories: [tech, yaml, declarative, IaC]
+image: /images/blog/tech/declarative-engineering/sample-yaml.png
+bibliography: references.bib
+link-citations: true
+---
+
+# Introduction
+Back in 2016, when I was just getting into tech, I was introduced to Ansible, which we used as our infrastructure-as-code tool. At the time, I don't think I fully appreciated just how capable it was.
+
+Then, in 2020, while developing image-processing software, I started using Ansible heavily to build and manage our CI/CD pipelines. This was when I really began to appreciate what it could do.
+
+If you're not familiar with Ansible, at its core it uses a human-readable configuration language called YAML. But perhaps even more interesting is the templating engine behind it: Jinja2.
+
+It was this combination of declarative configuration and powerful templating that really caught my attention—and ultimately changed the way I started thinking about building software and infrastructure.
+
+
+```yaml
+application:
+  name: my-app
+  environment: production
+```
+
+# References
+
+::: {#refs}
+:::
+
+

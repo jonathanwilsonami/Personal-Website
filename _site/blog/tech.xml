@@ -10,7 +10,67 @@
 <atom:link href="https://jonathanwil.com/blog/tech.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Sun, 12 Jul 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 18 Sep 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Declarative Engineering</title>
+  <dc:creator>Jonathan Wilson</dc:creator>
+  <link>https://jonathanwil.com/blog/posts/tech/declarative-engineering/declarative-engineering.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Back in 2016, when I was just getting into tech, I was introduced to Ansible, which we used as our infrastructure-as-code tool. At the time, I don’t think I fully appreciated just how capable it was.</p>
+<p>Then, in 2020, while developing image-processing software, I started using Ansible heavily to build and manage our CI/CD pipelines. This was when I really began to appreciate what it could do.</p>
+<p>If you’re not familiar with Ansible, at its core it uses a human-readable configuration language called YAML. But perhaps even more interesting is the templating engine behind it: Jinja2.</p>
+<p>It was this combination of declarative configuration and powerful templating that really caught my attention—and ultimately changed the way I started thinking about building software and infrastructure.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">application</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">name</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> my-app</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">environment</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> production</span></span></code></pre></div></div>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs">
+
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>tech</category>
+  <category>yaml</category>
+  <category>declarative</category>
+  <category>IaC</category>
+  <guid>https://jonathanwil.com/blog/posts/tech/declarative-engineering/declarative-engineering.html</guid>
+  <pubDate>Fri, 18 Sep 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://jonathanwil.com/images/blog/tech/declarative-engineering/sample-yaml.png" medium="image" type="image/png" height="156" width="144"/>
+</item>
 <item>
   <title>Understanding the Hadoop Ecosystem: A Concept Map for Big Data Architecture</title>
   <dc:creator>Jonathan Wilson</dc:creator>

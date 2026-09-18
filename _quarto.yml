@@ -23,6 +23,8 @@ website:
         menu:
           - text: All Projects
             href: projects/index.qmd
+          - text: AeroFlux
+            href: projects/aero-flux/index.qmd
           - text: Data Viz
             href: projects/data-viz/index.qmd
           - text: Intelligent Systems & Decision Modeling

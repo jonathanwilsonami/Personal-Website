@@ -45,6 +45,6 @@ Working as a **systems engineer at Peraton building data pipelines, warehouse, a
 
 ## Passion Project: AeroFlux
 
-**[AeroFlux](projects/ai-ml/aero-flux.html)** is a predictive intelligence platform for U.S. domestic flight delays — and the seed of a broader **cyber-physical intelligence layer** for networks of interdependent agents moving through shared physical space.
+**[AeroFlux](projects/aero-flux/index.qmd)** is an R&D sandbox for cyber-physical intelligence — working out how networks of interdependent agents moving through shared physical space can perceive distributed state, anticipate how disturbances propagate, and act before the decision window closes. U.S. domestic flight delay is the proving ground: measurable, tractable, and richly instrumented enough to build against for real. The architecture is the point — the same loop is what drone fleets, autonomous ground systems, and distributed sensor networks need, where the state is physical, the coupling is tighter, and the consequences are kinetic rather than schedule-based.
 
 ---

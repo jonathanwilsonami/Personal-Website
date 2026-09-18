@@ -1,0 +1,149 @@
+---
+title: "AeroFlux: Stage 2 — Real-Time Inference"
+format: html
+---
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-integrated-demo-v2.mp4" type="video/mp4">
+</video>
+
+*AeroFlux: Fuse. Predict. Explain.*
+
+A **live streaming inference and explanation layer** that carries the Stage 1 model into production: FAA SWIM position feeds stream through Kafka into a continuously updated state store, active flights are scored as their upstream state changes, and results surface through a web interface backed by an LLM agent that explains *why* a delay is propagating — not just that it is.
+
+**Core technical components:**
+
+- **SWIM → Kafka ingestion** — FAA SWIM flight messages parsed and published to `swim.raw.flight` (Kafka in KRaft mode), decoupling feed volatility from downstream consumers
+- **Streaming fusion layer** — raw messages normalized and joined against airport metadata and prior-leg aircraft state in Postgres, reconstructing the rotation features the Stage 1 model depends on in real time
+- **Live inference service** — the trained XGBoost model scored against current flight state on a rolling cycle, producing continuously refreshed delay risk rather than one-shot predictions
+- **LangGraph explanation agent** — retrieval-augmented reasoning over pgvector, turning a model score into an operational explanation of which upstream conditions are driving it
+- **Dash/Plotly interface** — live flight map, risk surfacing, and agent interaction in a single view
+- **Containerized deployment** — `aeroflux-ui`, `aeroflux-agent`, `aeroflux-agent-pgvector`, and `aeroflux-caddy` under Docker Compose on AWS Lightsail, fronted by Caddy with automatic TLS
+
+## From Batch to Stream
+
+Stage 1 proved the signal exists; Stage 2 proves it can be delivered **while the decision window is still open**. The hard problem shifts from model accuracy to **state freshness**: the prior-leg feature that carries 51% of model importance is only useful if upstream state is current. The system is therefore built around continuous reconstruction of aircraft rotation state, not periodic retraining.
+
+## The Explanation Layer
+
+A risk score alone doesn't change a decision. The agent layer answers the operational question — *what is driving this, and what is downstream of it?* — grounding responses in retrieved flight and airport context rather than free-form generation. This is the piece that turns a prediction into an **awareness layer**.
+
+## Mini Demos
+
+Walkthroughs of each part of AeroFlux, from the interface down to on-prem operations.
+
+### AeroFlux Dashboard View
+
+The main application surface — navigation, layout, and how the pieces fit together.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-app-demo.mp4" type="video/mp4">
+</video>
+
+### Live Flight Map & Network Overview
+
+Active flights streaming in from SWIM, rendered against the national airport network.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-live-network-map-demo.mp4" type="video/mp4">
+</video>
+
+### Live Inference
+
+Delay risk scored continuously against current aircraft state, refreshing as upstream conditions change.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-live-inference-demo.mp4" type="video/mp4">
+</video>
+
+### Model Performance Page
+
+Stage 1 validation results surfaced in-app — metrics, feature importance, and holdout behavior.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-model-performance-demo.mp4" type="video/mp4">
+</video>
+
+### Full Integration
+
+End-to-end: ingestion through fusion, inference, and agent explanation in a single pass.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-integrated-demo-v2.mp4" type="video/mp4">
+</video>
+
+### Cloud Monitoring & Observability
+
+Container health, resource utilization, and pipeline metrics for the deployed system.
+
+![AWS CloudWatch Dashboard](/images/projects/aero-flux/stage-2/aeroflux-cloud-observability.png)
+
+### Operations On-Prem
+
+Local stack operation — Kafka, Postgres, and pgvector running outside the cloud deployment.
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/ops-on-prem-demo.mp4" type="video/mp4">
+</video>
+
+### Project Setup
+
+Coming soon.
+
+## Architecture
+
+![AeroFlux system architecture](/images/projects/aero-flux/stage-2/aeroflux-architecture-final.svg)
+
+## Try It & Read More
+
+**[Open the live system](https://aeroflux.duckdns.org)** — real-time flight map, delay risk, and agent explanations
+
+**[AeroFlux Stage 2 repo on GitHub](https://github.com/jonathanwilsonami/aero-flux-stage2-dev)** — ingestion, fusion, inference, agent, and deployment configuration

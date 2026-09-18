@@ -1,0 +1,50 @@
+---
+title: "AeroFlux: From Flight Delay Prediction to a Cyber-Physical Intelligence System"
+format: html
+---
+
+<video
+    autoplay
+    loop
+    muted
+    controls
+    playsinline
+    style="width: 100%; max-width: 1200px;"
+>
+    <source src="/assets/videos/aeroflux/af-integrated-demo-v2.mp4" type="video/mp4">
+</video>
+
+## What is AeroFlux?
+
+AeroFlux is, on its surface, a real-time flight delay prediction and explainable analytics platform — streaming SWIM/Kafka ingestion, XGBoost over 61M+ BTS records, and an agent layer that explains *why* a delay is propagating rather than just scoring it. But the actual thesis is that aviation is a proving ground: flight delay cascades are a measurable, tractable proxy for the general cyber-physical problem of perceiving distributed system state, anticipating downstream consequences, and acting before the decision window closes. The longer arc pushes that same loop outward — cascade simulation and multi-domain orchestration first, then into sensor fusion, robotics, and autonomous systems where the "sensors" are physical and the consequences are kinetic rather than schedule-based. The Swiss Cheese framing holds throughout: the holes are always moving, so the contribution is an intelligence layer that keeps up with them, not a better model.
+
+## The Problem It Addresses
+
+Complex systems fail through **propagation**, not isolated events. In aviation, a single delayed aircraft cascades across crews, gates, and downstream airports — but each actor sees only its own slice of state, and sees it late. The gap isn't prediction accuracy; it's the absence of a **shared, real-time awareness layer across moving actors operating in a shared environment.**
+
+Without that layer, decisions are made on stale, partial state — reacting to disruption after the window to contain it has already closed. The same gap defines robotics fleets, autonomous vehicles, and distributed sensor networks.
+
+## What's Built Today
+
+### [Stage 1 — Predictive ML Model](aero-flux-stage-1.qmd)
+A production-scale, propagation-aware ML pipeline trained on **61M+ U.S. domestic flight records (2015–2024)** from the Bureau of Transportation Statistics, fused with NOAA hourly weather and airport metadata under strict temporal alignment (no look-ahead bias).
+
+### [Stage 2 — Real-Time Inference](aero-flux-stage-2.qmd)
+A **live streaming inference and explanation layer** that fuses FAA SWIM position feeds through Kafka into a continuously updated state store, scores active flights against the Stage 1 model, and surfaces results through a Dash/Plotly interface backed by a LangGraph agent with pgvector-based retrieval — so the system doesn't just predict a delay, it explains which upstream conditions are driving it. Deployed end-to-end on AWS Lightsail under Docker Compose at [aeroflux.duckdns.org](https://aeroflux.duckdns.org).
+
+*Click on hyperlinks above to explore each stage in detail.*
+
+## Roadmap
+
+AeroFlux is being built in stages, each standing on its own and unlocking the next:
+
+### Completed Stages
+1. **Stage 1 — Predictive ML Model** *(complete)* — Offline gradient-boosted delay predictor on 61M flights with published methodology and reproducible pipeline.
+2. **Stage 2 — Real-Time Inference** *(complete)* — Live data streaming, online serving, agentic copilot, richer feature streams (SWIM, NOTAMs, sentiment).
+
+### Future Stages & Exploration
+3. **Stage 3 — Network Simulation** — Rust-based forward simulator propagating disruptions through rotation chains, gates, crews, and passenger connections.
+4. **Stage 4 — Cyber-Physical Intelligence Platform** — Operational digital twin of the NAS with pre-tactical decision support and conformance monitoring.
+5. **Stage 5 — Multi-Domain Autonomy Layer** — Generalize the platform pattern to UAM, drones, AVs, ports, energy, and other systems of interdependent agents in physical space.
+
+*Propagate. Simulate. Orchestrate.*
