@@ -20,16 +20,29 @@
     ]
   },
   {
-    "listing": "/blog/travel.html",
+    "listing": "/projects/misc/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/tech/index.html",
     "items": [
-      "/blog/posts/travel/peru.html",
-      "/blog/posts/travel/tulum.html"
+      "/projects/tech/first-cad.html",
+      "/projects/tech/first-computer-build.html"
     ]
   },
   {
-    "listing": "/projects/data-viz/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/projects/data-viz/crime-viz.html"
+      "/projects/data-viz/index.html",
+      "/projects/ai-ml/index.html",
+      "/projects/tech/index.html",
+      "/projects/construction/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/ai-ml/index.html",
+    "items": [
+      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
     ]
   },
   {
@@ -55,30 +68,18 @@
     ]
   },
   {
-    "listing": "/projects/ai-ml/index.html",
+    "listing": "/projects/data-viz/index.html",
     "items": [
-      "/projects/ai-ml/gurobipy-transportation-simplex-lp.html"
+      "/projects/data-viz/crime-viz.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/blog/travel.html",
     "items": [
-      "/projects/data-viz/index.html",
-      "/projects/ai-ml/index.html",
-      "/projects/tech/index.html",
-      "/projects/construction/index.html"
+      "/blog/posts/travel/peru.html",
+      "/blog/posts/travel/tulum.html",
+      "/blog/posts/travel/cozumel-diving.html"
     ]
-  },
-  {
-    "listing": "/projects/tech/index.html",
-    "items": [
-      "/projects/tech/first-cad.html",
-      "/projects/tech/first-computer-build.html"
-    ]
-  },
-  {
-    "listing": "/projects/misc/index.html",
-    "items": []
   },
   {
     "listing": "/blog/index.html",
@@ -86,7 +87,8 @@
       "/blog/posts/tech/declarative-engineering/declarative-engineering.html",
       "/blog/posts/tech/hadoop/hadoop-ecosystem-paper.html",
       "/blog/posts/travel/peru.html",
-      "/blog/posts/travel/tulum.html"
+      "/blog/posts/travel/tulum.html",
+      "/blog/posts/travel/cozumel-diving.html"
     ]
   }
 ]
