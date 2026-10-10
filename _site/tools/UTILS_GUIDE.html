@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Systems &amp; software engineer building intelligent, data-driven systems across AI/ML, IoT, and digital twins.">
 
-<title>Welcome! – Jonathan Wilson</title>
+<title>utils_guide – Jonathan Wilson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,29 +20,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/about/favicon.ico" rel="icon">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/about/favicon.ico" rel="icon">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8a18cee56031974d1f8f6eead200d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +137,7 @@ cookieconsent.run({
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -112,7 +147,7 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jonathan Wilson</span>
     </a>
   </div>
@@ -123,7 +158,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -132,17 +167,17 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./about.html">
+    <a class="dropdown-item" href="../about.html">
  <span class="dropdown-text">About</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./books.html">
+    <a class="dropdown-item" href="../books.html">
  <span class="dropdown-text">Books</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./research/index.html"> 
+    <a class="nav-link" href="../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -151,27 +186,27 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects/index.html">
+    <a class="dropdown-item" href="../projects/index.html">
  <span class="dropdown-text">All Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/aero-flux/index.html">
+    <a class="dropdown-item" href="../projects/aero-flux/index.html">
  <span class="dropdown-text">AeroFlux</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/data-viz/index.html">
+    <a class="dropdown-item" href="../projects/data-viz/index.html">
  <span class="dropdown-text">Data Viz</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/ai-ml/index.html">
+    <a class="dropdown-item" href="../projects/ai-ml/index.html">
  <span class="dropdown-text">Intelligent Systems &amp; Decision Modeling</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/tech/index.html">
+    <a class="dropdown-item" href="../projects/tech/index.html">
  <span class="dropdown-text">Tech</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/construction/index.html">
+    <a class="dropdown-item" href="../projects/construction/index.html">
  <span class="dropdown-text">Construction</span></a>
   </li>  
     </ul>
@@ -182,15 +217,15 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
         <li>
-    <a class="dropdown-item" href="./blog/index.html">
+    <a class="dropdown-item" href="../blog/index.html">
  <span class="dropdown-text">All Posts</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog/travel.html">
+    <a class="dropdown-item" href="../blog/travel.html">
  <span class="dropdown-text">Travel</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog/tech.html">
+    <a class="dropdown-item" href="../blog/tech.html">
  <span class="dropdown-text">Tech</span></a>
   </li>  
     </ul>
@@ -203,76 +238,91 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#utilities-guide" id="toc-utilities-guide" class="nav-link active" data-scroll-target="#utilities-guide">Utilities Guide</a>
+  <ul class="collapse">
+  <li><a href="#book-card-generator" id="toc-book-card-generator" class="nav-link" data-scroll-target="#book-card-generator">Book Card Generator</a>
+  <ul class="collapse">
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
+  <li><a href="#options" id="toc-options" class="nav-link" data-scroll-target="#options">Options</a></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/about/profile.jpg" class="about-image
-  rounded " style="width: 70%;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Welcome!</h1>
-</div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="/projects/index.html" class="about-link" rel="" target="">
-    <i class="bi bi-folder"></i>
-     <span class="about-link-text">Projects</span>
-  </a>
-  <a href="/about.html" class="about-link" rel="" target="">
-    <i class="bi bi-person"></i>
-     <span class="about-link-text">About Me</span>
-  </a>
-  <a href="/research/index.html" class="about-link" rel="" target="">
-    <i class="bi bi-journal-text"></i>
-     <span class="about-link-text">Research</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading" class="center">
-<section id="hi-im-jonathan" class="level1">
-<h1>Hi, I’m Jonathan</h1>
-<p>I build <strong>intelligent systems</strong> connecting the physical and digital worlds together — AI platforms, decision intelligence, and digital twins for mission-critical infrastructure.</p>
-<p>Engineer building data and AI systems for the physical world.</p>
-<section id="purpose-of-this-site" class="level2">
-<h2 data-anchor-id="purpose-of-this-site">Purpose of this Site</h2>
-<p>This site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. I use it to share my work, research, ideas, and anything else that captures my interest, while also reflecting on what I am learning along the way. In that sense, it is inspired by Leonardo da Vinci’s approach to his notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished.</p>
+<section id="utilities-guide" class="level1">
+<h1>Utilities Guide</h1>
+<section id="book-card-generator" class="level2">
+<h2 class="anchored" data-anchor-id="book-card-generator">Book Card Generator</h2>
+<p><code>tools/book_cards.py</code> downloads book cover images from Open Library and generates Quarto-formatted book cards.</p>
+<section id="usage" class="level3">
+<h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<p>Generate one or more books:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run tools/book_cards.py <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Thinking, Fast and Slow"</span> <span class="dt">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"The Pragmatic Programmer"</span> <span class="dt">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Designing Data-Intensive Applications"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Write the generated Quarto markup to a file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run tools/book_cards.py <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Thinking, Fast and Slow"</span> <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"The Pragmatic Programmer"</span> <span class="dt">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> generated-books.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Book covers are saved to:</p>
+<pre class="text"><code>images/books/</code></pre>
 </section>
+<section id="options" class="level3">
+<h3 class="anchored" data-anchor-id="options">Options</h3>
+<pre class="text"><code>--image-dir PATH      Set the book cover directory.
+-o, --output FILE     Write generated markup to a file.
+--no-heading TITLE    Omit the ### heading for a specific book.
+--force               Redownload an existing cover.</code></pre>
+<p>View all options:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run tools/book_cards.py <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</div></div>
-</div>
+<section id="output" class="level3">
+<h3 class="anchored" data-anchor-id="output">Output</h3>
+<p>Generated Quarto markup:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>::: {.book}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>::: {.book-cover}</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)</span><span class="co">](https://www.amazon.com/dp/0374533555)</span>{target="_blank" rel="noopener"}</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>::: {.book-body}</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### Thinking, Fast and Slow</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>*Daniel Kahneman*</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The area beneath the author is intentionally left blank for personal commentary.</p>
 
-<hr>
-<section id="what-im-doing-now" class="level2">
-<h2 data-anchor-id="what-im-doing-now">What I’m Doing Now</h2>
-<p>Working at <strong>Peraton</strong> as a systems engineer, combining data engineering, software engineering, and data architecture to develop scalable data and AI infrastructure. My focus is building the foundation for advanced capabilities such as <strong>digital twins, agentic AI, machine learning, and large-scale analytics</strong>.</p>
-<hr>
+
 </section>
-<section id="passion-projects" class="level2">
-<h2 data-anchor-id="passion-projects">Passion Projects</h2>
-<section id="aeroflux" class="level3">
-<h3 data-anchor-id="aeroflux">AeroFlux</h3>
-<p><strong><a href="./projects/aero-flux/index.html">AeroFlux</a></strong> is an R&amp;D sandbox for cyber-physical intelligence — working out how networks of interdependent agents moving through shared physical space can perceive distributed state, anticipate how disturbances propagate, and act before the decision window closes. U.S. domestic flight delay is the proving ground: measurable, tractable, and richly instrumented enough to build against for real. The architecture is the point — the same loop is what drone fleets, autonomous ground systems, and distributed sensor networks need, where the state is physical, the coupling is tighter, and the consequences are kinetic rather than schedule-based.</p>
-<hr>
-
-
-
 </section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

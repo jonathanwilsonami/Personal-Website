@@ -1,126 +1,70 @@
 ---
 title: "Favorite Books"
+
 description-meta: "Books that have shaped how I think and build."
+
 toc: true
-page-layout: full
+
+page-layout: article
+toc-location: right
+toc-depth: 2
+toc-title: "On this page"
 ---
 
-I absolutely love reading! I became a voracious reader around the age of twelve discovering their power of unlocking the world. I probably buy more books than I will ever have time to finish, but I love learning from other people, discovering new perspectives, and exploring unfamiliar ideas.
+I'm obsessed with books! Okay, that's probably an understatement. Perhaps this will help prove my point. Some fellow bibliophiles might relate to my slightly unusual habit of spending ten or twenty minutes just studying the contents of a bookshelf. I'll even take pictures so I can look up the titles later. I simply can't help myself. Whenever I encounter a bookshelf overflowing with books, I feel an almost gravitational pull toward it, as though every cover exerts its own little force of attraction.
 
-Below are some of my favorite books—ones that have shaped how I think, work, and build. 
+But I believe this fascination goes far beyond simply seeking novelty. At my core, I'm insatiably curious. My mind is constantly generating questions, practically minute by minute. Every book represents another opportunity to explore an unfamiliar idea, challenge what I think I know, or discover something I hadn't even thought to question.
 
-I also have a slightly unusual habit: whenever I see someone’s bookshelf, I can spend ten or twenty minutes studying what they have chosen to read. Sometimes I even take a picture so I can look up the titles later.
+![My homemade bookshelf, built to house an ever-growing collection of books.](/images/projects/construction/misc-small/bookshelves/book-shelf.jpg){#fig-bookshelf fig-alt="A bookshelf I built to hold a small subset of my book collection"}
+
+I became a voracious reader around the age of twelve, although my curiosity began long before that. Even in my earliest years, I couldn't stop asking **why**. I recall one particularly amusing, yet humbling, moment during a Sunday school class at church when I asked, "If God is our Father, then who is His father?"
+
+I wanted to understand the origins of God. What was His nature? What does it mean to be dead? What is the purpose of our existence? And perhaps most importantly, how could we possibly know the answers to any of these questions?
+
+I was rarely satisfied with the answers I received from my teachers or scripture. While some provided useful moral constructs for navigating the complexities of human existence, they did little to satisfy my deeper questions about the nature of reality. So I began looking elsewhere, turning to more secular books on evolution, philosophy, psychology, and just about anything else that might offer another piece of the puzzle.
+
+None of this is meant to disparage religion. Even today, I appreciate aspects of religion as a framework for moral reasoning, provided one's interpretation doesn't come at the expense of scientific inquiry or infringe upon the rights and freedoms of others. My point is simply that faith and curiosity need not be mutually exclusive. After all, some of history's greatest religious thinkers, including Thomas Aquinas, devoted their lives to questioning the nature of God, existence, and reality itself. Aquinas understood that asking difficult questions wasn't necessarily an abandonment of faith, but could instead be a means of deepening one's understanding of it. Whether religious or not, I believe we should never stop questioning the things we think we know.
+
+In fact, that's something I appreciated about growing up Mormon: the encouragement, at least in my experience, to ask questions and seek answers for myself. Although I no longer consider myself religious, I still value that early encouragement to seek understanding. Today, I lean on the scientific method as my primary means of investigating the world, grounding my beliefs in evidence, reason, and a willingness to revise them when new information comes to light. Of course, science doesn't necessarily answer every philosophical question about existence, meaning, or morality, but it provides a powerful framework for distinguishing what we know from what we merely believe. Looking back, I think that early desire to understand the world, rather than simply accept it as it was presented to me, helped shape the insatiable curiosity I still carry today.
+
+And perhaps that brings me back to my obsession with books. I probably buy more than I'll ever have time to finish, but that's a problem I'm perfectly happy to live with, although I'm starting to run out of shelf and floor space. Below are some of my favorite books—some that have shaped how I think, work, and build, and others that have simply satisfied my curiosity, a seemingly bottomless ocean whose depths I've barely begun to explore.
+
+<style>
+/* Scoped to this page's book collection; no global theme changes. */
+.book-list { display: flex; flex-direction: column; gap: 1.5rem; }
+.book-list .book {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  column-gap: 1.4rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+}
+.book-list .book-cover { width: 148px; min-width: 0; text-align: center; }
+.book-list .book-cover a {
+  display: flex; align-items: flex-start; justify-content: center;
+  width: 100%; height: 196px;
+}
+.book-list .book-cover img {
+  display: block; width: 100%; height: 100%;
+  object-fit: contain; object-position: top center;
+  margin: 0;
+}
+.book-list .book-body { min-width: 0; }
+.book-list .book-body h3 { margin: 0 0 .35rem; font-size: 1.12rem; }
+.book-list .book-body p { margin: 0 0 .65rem; }
+@media (max-width: 540px) {
+  .book-list .book { grid-template-columns: 100px minmax(0, 1fr); column-gap: .8rem; }
+  .book-list .book-cover { width: 100px; }
+  .book-list .book-cover a { height: 140px; }
+  .book-list .book-body h3 { font-size: 1rem; }
+}
+</style>
+
+
+## Artificial Intelligence, Machine Learning & Data Science
 
 ::: {.book-list}
-
-## Systems, Architecture & Design
-
-::: {.book-list}
-
-::: {.book}
-::: {.book-cover}
-[![Designing Data-Intensive Applications](/images/books/designing-data-intensive-applications.jpg)](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){target="_blank" rel="noopener"}
-:::
-::: {.book-body}
-### Designing Data-Intensive Applications
-*Martin Kleppmann*
-
-I started reading this book when I wanted to dive deeper into the world of big data several years ago. Kleppmann does a fantastic job explaining complex data systems in a practical and understandable way. It helped me see how databases, distributed systems, pipelines, and system architecture fit together. I especially appreciated how the book compares different design choices and explains the tradeoffs behind them not simply describing them.
-:::
-:::
-
-::: {.book}
-::: {.book-cover}
-[![Understanding Architecture](/images/books/understanding-architecture.jpg)](https://www.amazon.com/Understanding-Architecture-Elements-History-Meaning/dp/0813349036){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### Understanding Architecture
-*Leland M. Roth & Amanda C. Roth Clark*
-
-:::
-:::
-
-:::
-
-## Psychology, Decision-Making & Self-Development
-
-::: {.book}
-::: {.book-cover}
-[![Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555){target="_blank" rel="noopener"}
-:::
-::: {.book-body}
-### Thinking, Fast and Slow
-*Daniel Kahneman*
-
-I enjoyed this book because it helped me better understand how people make decisions and how easily our thinking can be influenced by biases. I found the contrast between fast, intuitive thinking and slow, deliberate thinking especially useful. The book made me reflect more carefully on my own judgments and decision-making habits.
-:::
-:::
-
-::: {.book}
-::: {.book-cover}
-[![The Daily Stoic](/images/books/daily-stoic.jpg)](https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### The Daily Stoic
-*Ryan Holiday & Stephen Hanselman*
-
-
-:::
-:::
-
-::: {.book}
-::: {.book-cover}
-[![Grit: The Power of Passion and Perseverance](/images/books/grit.jpg)](https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### Grit: The Power of Passion and Perseverance
-*Angela Duckworth*
-
-
-:::
-::: 
-
-::: {.book}
-::: {.book-cover}
-[![The Brain That Changes Itself](/images/books/brain-that-changes-itself.jpg)](https://www.amazon.com/Brain-That-Changes-Itself-Frontiers/dp/0143113100){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### The Brain That Changes Itself
-*Norman Doidge*
-
-
-:::
-:::
-
-## Technology & Software Engineering
-
-::: {.book}
-::: {.book-cover}
-[![The Pragmatic Programmer](/images/books/pragmatic-programmer.jpg)](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X){target="_blank" rel="noopener"}
-:::
-::: {.book-body}
-### The Pragmatic Programmer
-*David Thomas & Andrew Hunt*
-
-This one is a classic! I picked this up about 1-2 years into my career and found it to be a great resource for developing into a better software engineer. 
-:::
-:::
-
-::: {.book}
-::: {.book-cover}
-[![The Secret Life of Programs](/images/books/secret-life-of-programs.png)](https://www.amazon.com/Secret-Life-Programs-Understand-Computers/dp/1593279701){target="_blank" rel="noopener"}
-:::
-::: {.book-body}
-### The Secret Life of Programs
-*Jonathan E. Steinhart*
-
-
-:::
-::: 
 
 ::: {.book}
 ::: {.book-cover}
@@ -128,10 +72,83 @@ This one is a classic! I picked this up about 1-2 years into my career and found
 :::
 
 ::: {.book-body}
-### The Master Algorithm
+### The Master Algorithm {.unnumbered .unlisted}
 
 *Pedro Domingos*
+:::
+:::
 
+::: {.book}
+::: {.book-cover}
+[![LLMs in Production](/images/books/llms-in-production.png)](https://www.amazon.com/LLMs-Production-language-successful-products/dp/1633437205){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### LLMs in Production {.unnumbered .unlisted}
+
+*Christopher Brousseau & Matt Sharp*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Introduction to Data Mining](/images/books/introduction-to-data-mining.jpg)](https://www.amazon.com/dp/0273769227){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Introduction to Data Mining {.unnumbered .unlisted}
+
+*Pang-Ning Tan, Michael Steinbach, Vipin Kumar*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Design and Analysis of Experiments](/images/books/design-and-analysis-of-experiments.jpg)](https://www.amazon.com/dp/0471614211){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Design and Analysis of Experiments {.unnumbered .unlisted}
+
+*Douglas C. Montgomery*
+:::
+:::
+
+:::
+
+## Software Engineering & Computer Science
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![The Pragmatic Programmer](/images/books/pragmatic-programmer.jpg)](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Pragmatic Programmer {.unnumbered .unlisted}
+
+*David Thomas & Andrew Hunt*
+
+
+
+This one is a classic! I picked this up about 1-2 years into my career and found it to be a great resource for developing into a better software engineer.&#x20;
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Secret Life of Programs](/images/books/secret-life-of-programs.png)](https://www.amazon.com/Secret-Life-Programs-Understand-Computers/dp/1593279701){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Secret Life of Programs {.unnumbered .unlisted}
+
+*Jonathan E. Steinhart*
+
+
+
+****&#x20;
 :::
 :::
 
@@ -141,49 +158,15 @@ This one is a classic! I picked this up about 1-2 years into my career and found
 :::
 
 ::: {.book-body}
-### Code
+### Code {.unnumbered .unlisted}
+
 *Charles Petzold*
 
+
+
+****&#x20;
 :::
-::: 
-
-::: {.book}
-::: {.book-cover}
-[![The DevOps Handbook](/images/books/devops-handbook.jpg)](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404){target="_blank" rel="noopener"}
 :::
-
-::: {.book-body}
-### The DevOps Handbook
-*Gene Kim, Jez Humble, Patrick Debois, John Willis & Nicole Forsgren*
-
-:::
-::: 
-
-::: {.book}
-::: {.book-cover}
-[![The Phoenix Project](/images/books/phoenix-project.jpg)](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### The Phoenix Project
-*Gene Kim, Kevin Behr & George Spafford*
-
-
-:::
-::: 
-
-::: {.book}
-::: {.book-cover}
-[![Linux Command Line and Shell Scripting Bible](/images/books/linux-command-line-and-shell-scripting-bible.jpg)](https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/1119700914){target="_blank" rel="noopener"}
-:::
-
-::: {.book-body}
-### Linux Command Line and Shell Scripting Bible
-*Richard Blum & Christine Bresnahan*
-
-
-:::
-::: 
 
 ::: {.book}
 ::: {.book-cover}
@@ -191,22 +174,481 @@ This one is a classic! I picked this up about 1-2 years into my career and found
 :::
 
 ::: {.book-body}
-### Computer Systems: A Programmer's Perspective
+### Computer Systems: A Programmer's Perspective {.unnumbered .unlisted}
+
 *Randal E. Bryant & David R. O'Hallaron*
 
+
+
+****&#x20;
 :::
-::: 
+:::
 
 ::: {.book}
 ::: {.book-cover}
-[![LLMs in Production](/images/books/llms-in-production.png)](https://www.amazon.com/LLMs-Production-language-successful-products/dp/1633437205){target="_blank" rel="noopener"}
+[![Linux Command Line and Shell Scripting Bible](/images/books/linux-command-line-and-shell-scripting-bible.jpg)](https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/1119700914){target="_blank" rel="noopener"}
 :::
 
 ::: {.book-body}
-### LLMs in Production
-*Christopher Brousseau & Matt Sharp*
+### Linux Command Line and Shell Scripting Bible {.unnumbered .unlisted}
+
+*Richard Blum & Christine Bresnahan*
 
 
+
+****&#x20;
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The C Programming Language](/images/books/the-c-programming-language.jpg)](https://www.amazon.com/dp/013110859X){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The C Programming Language {.unnumbered .unlisted}
+
+*Brian W. Kernighan, Dennis MacAlistair Ritchie*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Grokking Algorithms](/images/books/grokking-algorithms.jpg)](https://www.amazon.com/dp/1617292230){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Grokking Algorithms {.unnumbered .unlisted}
+
+*Aditya Y. Bhargava*
+:::
+:::
+
+:::
+
+## Systems Architecture, Cloud & DevOps
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![Designing Data-Intensive Applications](/images/books/designing-data-intensive-applications.jpg)](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Designing Data-Intensive Applications {.unnumbered .unlisted}
+
+*Martin Kleppmann*
+
+
+
+I started reading this book when I wanted to dive deeper into the world of big data several years ago. Kleppmann does a fantastic job explaining complex data systems in a practical and understandable way. It helped me see how databases, distributed systems, pipelines, and system architecture fit together. I especially appreciated how the book compares different design choices and explains the tradeoffs behind them, rather than simply describing them. Now that I've had several years of experience building data systems, I can better appreciate the insights and real-world applications presented in the book.
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The DevOps Handbook](/images/books/devops-handbook.jpg)](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The DevOps Handbook {.unnumbered .unlisted}
+
+*Gene Kim, Jez Humble, Patrick Debois, John Willis & Nicole Forsgren*
+
+
+
+****&#x20;
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Phoenix Project](/images/books/phoenix-project.jpg)](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Phoenix Project {.unnumbered .unlisted}
+
+*Gene Kim, Kevin Behr & George Spafford*
+
+
+
+****&#x20;
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Solutions Architect's Handbook](/images/books/solutions-architects-handbook.jpg)](https://www.amazon.com/dp/1801819068){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Solutions Architect's Handbook {.unnumbered .unlisted}
+
+*Saurabh Shrivastava, Neelanjali Srivastav, Kamal Arora*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Google Cloud Certified Professional Cloud Architect Study Guide](/images/books/google-cloud-certified-professional-cloud-architect-study-guide.jpg)](https://www.amazon.com/dp/1119871069){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Google Cloud Certified Professional Cloud Architect Study Guide {.unnumbered .unlisted}
+
+*Dan Sullivan*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Web Scalability for Startup Engineers](/images/books/web-scalability-for-startup-engineers.jpg)](https://www.amazon.com/dp/0071843655){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Web Scalability for Startup Engineers {.unnumbered .unlisted}
+
+*Artur Ejsmont*
+:::
+:::
+
+:::
+
+## Engineering, Architecture & Design
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![Understanding Architecture](/images/books/understanding-architecture.jpg)](https://www.amazon.com/Understanding-Architecture-Elements-History-Meaning/dp/0813349036){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Understanding Architecture {.unnumbered .unlisted}
+
+*Leland M. Roth & Amanda C. Roth Clark*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Architecture: Form, Space, and Order](/images/books/architecture-form-space-and-order.jpg)](https://www.amazon.com/dp/1118745086){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Architecture: Form, Space, and Order {.unnumbered .unlisted}
+
+
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Engineering in Plain Sight](/images/books/engineering-in-plain-sight.jpg)](https://www.amazon.com/dp/171850232X){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Engineering in Plain Sight {.unnumbered .unlisted}
+
+*Grady Hillhouse*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Structures: Or Why Things Don't Fall Down](/images/books/structures-or-why-things-dont-fall-down.jpg)](https://www.amazon.com/dp/0306801515){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Structures: Or Why Things Don't Fall Down {.unnumbered .unlisted}
+
+*James Edward Gordon*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Engineering Mechanics: Statics](/images/books/engineering-mechanics-statics.jpg)](https://www.amazon.com/dp/9810681364){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Engineering Mechanics: Statics {.unnumbered .unlisted}
+
+*R. C. Hibbeler*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![How Stuff Works](/images/books/how-stuff-works.jpg)](https://www.amazon.com/dp/0764565184){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### How Stuff Works {.unnumbered .unlisted}
+
+*Marshall Brain, HowStuffWorks.com*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![A Biography of the Pixel](/images/books/a-biography-of-the-pixel.jpg)](https://www.amazon.com/dp/0262542455){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### A Biography of the Pixel {.unnumbered .unlisted}
+
+*Alvy Ray Smith*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Color Bible](/images/books/the-color-bible.jpg)](https://www.amazon.com/dp/3791387898){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Color Bible {.unnumbered .unlisted}
+
+*Laura Perryman*
+:::
+:::
+
+:::
+
+## Psychology, Decision-Making & Personal Growth
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![Thinking, Fast and Slow](/images/books/thinking-fast-and-slow.jpg)](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Thinking, Fast and Slow {.unnumbered .unlisted}
+
+*Daniel Kahneman*
+
+
+
+I enjoyed this book because it helped me better understand how people make decisions and how easily our thinking can be influenced by biases. I found the contrast between fast, intuitive thinking and slow, deliberate thinking especially useful. The book made me reflect more carefully on my own judgments and decision-making habits.
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Righteous Mind](/images/books/the-righteous-mind.jpg)](https://www.amazon.com/dp/172916238X){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Righteous Mind {.unnumbered .unlisted}
+
+*Jonathan Haidt*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Brain That Changes Itself](/images/books/brain-that-changes-itself.jpg)](https://www.amazon.com/Brain-That-Changes-Itself-Frontiers/dp/0143113100){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Brain That Changes Itself {.unnumbered .unlisted}
+
+*Norman Doidge*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Grit: The Power of Passion and Perseverance](/images/books/grit.jpg)](https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Grit: The Power of Passion and Perseverance {.unnumbered .unlisted}
+
+*Angela Duckworth*
+
+
+
+****&#x20;
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Daily Stoic](/images/books/daily-stoic.jpg)](https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Daily Stoic {.unnumbered .unlisted}
+
+*Ryan Holiday & Stephen Hanselman*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Sex at Dawn](/images/books/sex-at-dawn.jpg)](https://www.amazon.com/dp/0062207946){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Sex at Dawn {.unnumbered .unlisted}
+
+*Christopher Ryan, Cacilda Jethá*
+:::
+:::
+
+:::
+
+## Philosophy, History & Society
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![The Philosophy Book](/images/books/the-philosophy-book.jpg)](https://www.amazon.com/dp/0756668611){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Philosophy Book {.unnumbered .unlisted}
+
+*Will Buckingham, DK Publishing*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Essential Gandhi](/images/books/the-essential-gandhi.jpg)](https://www.amazon.com/dp/0394714660){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Essential Gandhi {.unnumbered .unlisted}
+
+*Mohandas Karamchand Gandhi*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Walden](/images/books/walden.jpg)](https://www.amazon.com/dp/1423100387){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Walden {.unnumbered .unlisted}
+
+*Henry David Thoreau*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![A People's History of the United States](/images/books/a-peoples-history-of-the-united-states.jpg)](https://www.amazon.com/dp/4484931036){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### A People's History of the United States {.unnumbered .unlisted}
+
+*Howard Zinn, Kathy Emery, Ellen Reeves, Matt Damon, Howard Zinn*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Art of Mathematics](/images/books/the-art-of-mathematics.jpg)](https://www.amazon.com/dp/0449908356){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Art of Mathematics {.unnumbered .unlisted}
+
+*Jerry P. King*
+:::
+:::
+
+:::
+
+## Business, Creativity & Communication
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![The Personal MBA](/images/books/the-personal-mba.jpg)](https://www.amazon.com/dp/0670919519){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Personal MBA {.unnumbered .unlisted}
+
+*Josh Kaufman*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Inventing For Dummies](/images/books/inventing-for-dummies.jpg)](https://www.amazon.com/dp/1118055667){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Inventing For Dummies {.unnumbered .unlisted}
+
+*Pamela Riddle Bird*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Storytelling with Data](/images/books/storytelling-with-data.jpg)](https://www.amazon.com/dp/1119002060){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Storytelling with Data {.unnumbered .unlisted}
+
+*Cole Nussbaumer Knaflic*
+:::
+:::
+
+:::
+
+## Outdoors, Fitness & Human Performance
+
+::: {.book-list}
+
+::: {.book}
+::: {.book-cover}
+[![Mountaineering: The Freedom of the Hills](/images/books/mountaineering-the-freedom-of-the-hills.jpg)](https://www.amazon.com/s?k=Mountaineering%3A+The+Freedom+of+the+Hills){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Mountaineering: The Freedom of the Hills {.unnumbered .unlisted}
+
+*The Climbing Committee of the Mountaineers*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![The Squat Bible](/images/books/the-squat-bible.jpg)](https://www.amazon.com/dp/1095696955){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### The Squat Bible {.unnumbered .unlisted}
+
+*Dr. Aaron Horschig, Dr. Kevin Sonthana, Travis Neff*
+:::
+:::
+
+::: {.book}
+::: {.book-cover}
+[![Becoming a Supple Leopard](/images/books/becoming-a-supple-leopard.jpg)](https://www.amazon.com/dp/1628600837){target="_blank" rel="noopener"}
+:::
+
+::: {.book-body}
+### Becoming a Supple Leopard {.unnumbered .unlisted}
+
+*Kelly Starrett, Glen Cordoza*
 :::
 :::
 
