@@ -1,0 +1,275 @@
+---
+title: "Tocantins, Brazil"
+date: 2020-10-11
+categories: [travel]
+image: /images/travel/brazil/family-pic-long-road-jalapao-expedition.jpg
+image-alt: "Family pic of Jalapão adventure in Tocantins, Brazil"
+description: "A family trip through Tocantins, Brazil, exploring Jalapão, fervedouros, waterfalls, Brazilian food, family life, and the landscapes of the Cerrado."
+---
+
+# Tocantins, Brazil
+
+Several years ago, my family and I traveled to **Tocantins, Brazil**, after my brother married a Brazilian woman from the state. What started as a trip to meet her family became one of my first opportunities to experience Brazil beyond the places most international travelers immediately think of.
+
+We spent about two weeks meeting family and friends, eating an enormous amount of Brazilian food, practicing Portuguese, and exploring a part of the country I knew very little about beforehand. The centerpiece of the trip was a multi-day expedition through **Jalapão**, where we traveled across long sandy roads, climbed orange dunes, swam beneath waterfalls, and experienced the strange clear-water springs known as *fervedouros*.
+
+More than anything, though, this trip was about people. Because we were visiting family rather than simply passing through as tourists, we were able to spend time in homes, share meals, meet relatives and friends, and see a version of Brazil that felt much more personal.
+
+![](/images/travel/brazil/family-and-new-friends-brazil-flag-jalapao-sand-dune.jpg){fig-alt="Family and new friends holding a Brazilian flag on the sand dunes of Jalapão" fig-cap="Family, new friends, and the Brazilian flag in Jalapão."}
+
+::: {.callout-note}
+## Trip at a Glance
+
+- **Region:** Tocantins, Brazil
+- **Length:** Approximately two weeks
+- **Main experience:** Multi-day Jalapão expedition
+- **Highlights:** Fervedouros, waterfalls, sand dunes, long 4x4 roads, Brazilian fruit, churrasco, family gatherings, and learning about local culture
+- **Landscape:** Primarily Cerrado, with Tocantins also forming part of Brazil's Legal Amazon
+- **Language:** Portuguese, with a little preparation before the trip
+:::
+
+## Why Tocantins?
+
+Tocantins sits in the center-north of Brazil and is one of the country's youngest states, having been created in 1988. Its capital, **Palmas**, is also a relatively young planned city and serves as one of the main gateways for travelers heading into Jalapão. The state's official tourism site is a useful starting point for exploring the region: [Jalapão Tocantins](https://jalapaotocantins.to.gov.br/).
+
+I originally thought of Tocantins simply as part of the Amazon region. That is true in one important administrative sense: **the entire state is part of Brazil's Legal Amazon**. Ecologically, however, the picture is more interesting. Official sources describe Tocantins as approximately **91% Cerrado and 9% Amazon biome**. Jalapão itself is firmly a Cerrado landscape.
+
+The [Amazon Fund's overview of Tocantins](https://www.amazonfund.gov.br/en/projeto/CAR-Lawful-Tocantins/) provides a good explanation of this transition between the two biomes. The [Ministry of Tourism](https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/jalapao-os-encantos-do-deserto-das-aguas-1/) also describes Jalapão as a kind of **"desert of waters"**: a savanna-like landscape filled with rivers, springs, waterfalls, and wetlands.
+
+That contrast became one of the defining features of the trip. The land could look dry and almost desert-like, yet clear water seemed to appear everywhere.
+
+## Meeting Family in Brazil
+
+The reason for the trip was family. My brother had married a Brazilian from Tocantins, and we traveled there to meet her relatives and spend time with them.
+
+That changed the entire character of the trip. Instead of experiencing Brazil only through hotels, restaurants, and tourist attractions, we spent time at our in-laws' home, met extended family members, made new friends, and got a much better feeling for everyday life.
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/our-in-laws-home-in-tocantins.jpg){fig-alt="Our in-laws' home in Tocantins, Brazil"}
+
+![](/images/travel/brazil/our-in-laws-home-in-tocantins-just-hanging-out.jpg){fig-alt="Spending time with family at our in-laws' home in Tocantins"}
+:::
+
+Some of my favorite memories were not necessarily tied to a famous destination. They were simply the meals, conversations, and time spent with people who welcomed us into their homes and lives.
+
+![](/images/travel/brazil/brazilian-family-churrascaria.jpg){fig-alt="Family gathering at a churrascaria in Brazil" fig-cap="One of many meals shared with family in Tocantins."}
+
+## Learning a Little Portuguese
+
+Before the trip, I took a Portuguese class so that I would at least have some basic ability to communicate.
+
+I had already studied Spanish for about two years, and that helped more than I expected. Portuguese and Spanish are closely related Romance languages, so many words and grammatical patterns looked familiar. Reading signs, menus, and simple sentences sometimes felt surprisingly intuitive.
+
+Listening and speaking were another matter.
+
+Brazilian Portuguese has its own pronunciation, rhythm, contractions, and vocabulary, and words that look similar on paper can sound very different when spoken naturally. Spanish gave me a head start, but it definitely did not make Portuguese automatic.
+
+Even knowing a little made the trip better. Being able to attempt a greeting, ask a simple question, or recognize part of a conversation made interactions feel more personal. It also gave me a greater appreciation for how much language shapes the experience of another country.
+
+## Palmas and Life Near the Water
+
+We also spent time around **Palmas**, the capital of Tocantins. One place represented in the photos from the trip is [**Caribe Residence & Resort**](https://www.lnurbanismo.com.br/empreendimentos/caribe-residence-and-resort), a residential development connected to the lake at Palmas with a marina and waterfront areas.
+
+The sunsets over the water were a completely different side of Tocantins from the dusty roads and dunes we would later experience in Jalapão.
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/caribe-residence-resort-big-house.jpg){fig-alt="Large home at Caribe Residence and Resort in Palmas, Tocantins"}
+
+![](/images/travel/brazil/sunset-caribe-residence-resort.jpg){fig-alt="Sunset over the water at Caribe Residence and Resort in Palmas"}
+:::
+
+![](/images/travel/brazil/me-watching-sunset-on-dock-caribe-residence-resort.jpg){fig-alt="Watching the sunset from a dock at Caribe Residence and Resort" fig-cap="Watching the sunset over the lake in Palmas."}
+
+## Brazilian Food
+
+Food became one of the easiest ways to experience the culture.
+
+Brazil is enormous, and its cuisine changes dramatically from one region to another. The country's Ministry of Tourism describes Brazilian gastronomy as a reflection of both its cultural diversity and biodiversity, with strong regional identities rather than one single national style. The government's [gastronomic tourism program](https://www.gov.br/turismo/pt-br/acesso-a-informacao/acoes-e-programas/acoes-programas-e-eventos-encerrados-concluidos/programa-nacional-de-turismo-gastronomico/programa-nacional-de-turismo-gastronomico) is a good introduction to that diversity.
+
+### Churrascaria
+
+We ate a lot of meat, especially at **churrascarias**.
+
+I had been to Brazilian steakhouses in the United States before, but eating churrasco in Brazil felt like the real thing. The experience was not simply about eating as much meat as possible. Different cuts arrived continuously, often sliced directly at the table, and the meal became a long social event shared with family.
+
+The familiar *rodízio* style—servers circulating with different meats until you tell them to stop—exists in the United States, but experiencing it in Brazil felt completely different because it was embedded in the food culture around us rather than presented as an exotic restaurant concept.
+
+### Fruit Everywhere
+
+Another thing that stood out was the variety of fruit.
+
+Brazil is one of the most biodiverse countries on Earth, and that diversity is reflected in what grows there. Research published through Brazil's conservation agencies estimates that the **Brazilian Amazon alone contains more than 200 species of plants producing edible fruit**. The Cerrado has its own remarkable native fruits, including **pequi, buriti, cagaita, araticum, mangaba, and native cashews**.
+
+[Embrapa's work on Brazilian tropical fruit](https://www.embrapa.br/en/portfolio/fruticultura-tropical) and its research on [native fruits of the Cerrado](https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/547096/potencial-frutifero-de-algumas-especies-frutiferas-nativas-dos-cerrados) give some sense of how much diversity exists.
+
+![](/images/travel/brazil/fruit-of-brazil.jpg){fig-alt="A variety of Brazilian fruit" fig-cap="One of the things that surprised me was the diversity of fruit available in Brazil."}
+
+We tried fruit and flavors that were much less common back home. Even something like **açaí**, which is now easy to find in the United States, felt different when it was simply part of the local food landscape rather than a novelty.
+
+![](/images/travel/brazil/family-getting-acai-bowls.jpg){fig-alt="Family getting açaí bowls in Brazil" fig-cap="Getting açaí with the family."}
+
+### Sugar Cane
+
+We also got to see fresh sugar cane being processed.
+
+Sugar cane has played a major role in Brazilian agriculture and history for centuries. Seeing it handled directly made it feel less like an abstract ingredient and more like the plant that sits behind sugar, *caldo de cana* or fresh sugar-cane juice, and many other parts of Brazilian food culture.
+
+![](/images/travel/brazil/making-real-sugar-cane.jpg){fig-alt="Processing fresh sugar cane in Brazil" fig-cap="Seeing fresh sugar cane being processed."}
+
+## The Jalapão Expedition
+
+The most adventurous part of the trip was a several-day expedition through [**Jalapão**](https://jalapaotocantins.to.gov.br/).
+
+Jalapão is not a single attraction. It is a huge region of protected Cerrado landscape containing dunes, rivers, waterfalls, sandstone formations, springs, and small communities. Many of its best-known attractions are around **Mateiros**, where the municipality maintains an official [Jalapão tourism site](https://turismo.mateiros.to.gov.br/).
+
+Getting around is part of the adventure.
+
+Large portions of the region are connected by long dirt and sand roads, and the Brazilian Ministry of Tourism recommends experienced guides and four-wheel-drive vehicles for many routes. Multi-day expeditions can cover hundreds of miles over rough roads.
+
+![](/images/travel/brazil/jalapao-expedition.jpg.jpg){fig-alt="Vehicle during our multi-day Jalapão expedition" fig-cap="Our Jalapão expedition took us deep into the Cerrado."}
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/jalapao-expedition-pit-stop-on-way.jpg){fig-alt="Stopping along the road during the Jalapão expedition"}
+
+![](/images/travel/brazil/long-road-jalapao-expedition.jpg){fig-alt="Long dirt road stretching through Jalapão"}
+:::
+
+The distances sometimes felt endless. We would spend long stretches driving through open landscape with very little around us, stop somewhere completely isolated, and then continue toward the next waterfall, spring, or set of dunes.
+
+![](/images/travel/brazil/family-pic-long-road-jalapao-expedition.jpg){fig-alt="Family standing along a long road during the Jalapão expedition"}
+
+### Getting Stuck Was Part of the Adventure
+
+The roads were not always cooperative.
+
+Deep sand is one of the reasons 4x4 vehicles and experienced drivers matter in Jalapão. At one point, we got stuck in the sand and had to work our way out.
+
+It became one of those travel moments that is frustrating for a few minutes and funny almost immediately afterward.
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/getting-stuck-in-sand-jalapao-expedition.jpg){fig-alt="Our vehicle stuck in deep sand during the Jalapão expedition"}
+
+![](/images/travel/brazil/getting-stuck-in-sand-jalapao-expedition2.jpg){fig-alt="Working to free the vehicle from sand in Jalapão"}
+:::
+
+![](/images/travel/brazil/getting-stuck-in-sand-still-having-good-time-jalapao-expedition.jpg){fig-alt="Family still having a good time after getting stuck in the sand" fig-cap="Getting stuck was apparently just another part of the expedition."}
+
+## The Fervedouros
+
+The strangest natural feature we experienced in Jalapão was the **fervedouro**.
+
+A *fervedouro* looks like a small pool of exceptionally clear water surrounded by vegetation. Underneath, groundwater rises through fine sand with enough pressure to keep the bottom in constant motion. When you step into the pool, the water and sand push upward around you.
+
+The sensation is difficult to describe. The sand seems to **envelop your feet and body without trapping you**, while the upward flow makes it extremely difficult to sink normally. It almost feels as if gravity has been reduced.
+
+The state tourism site describes the experience as floating above springs where high-pressure groundwater rises from the water table. A Tocantins environmental management document explains that individual fervedouros vary in the strength of the upwelling water, their sand, shape, and resulting buoyancy.
+
+[Explore Jalapão's official fervedouro guide](https://jalapaotocantins.to.gov.br/) or see the [fervedouros around Mateiros](https://turismo.mateiros.to.gov.br/atrativos/).
+
+The other striking thing was the clarity of the water. Against the surrounding dry Cerrado, these blue and green pools looked almost unreal.
+
+![](/images/travel/brazil/clear-waters-jalapao-expedition.jpg){fig-alt="Clear water during our Jalapão expedition" fig-cap="The clear water of Jalapão was a dramatic contrast with the surrounding Cerrado."}
+
+## Waterfalls
+
+Water was everywhere throughout the expedition.
+
+Jalapão contains rivers, natural pools, springs, and numerous waterfalls. One of the region's best-known is [**Cachoeira do Formiga**](https://turismo.mateiros.to.gov.br/atrativos/), near Mateiros, which is known for its unusually clear green water. Another major landmark is **Cachoeira da Velha**, a broad horseshoe-shaped waterfall on the Rio Novo.
+
+The [Ministry of Tourism's Jalapão guide](https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/jalapao-e-capim-dourado-tesouros-naturais-do-coracao-do-brasil) is useful for learning more about the waterfalls, dunes, fervedouros, and other major sites in the region.
+
+![](/images/travel/brazil/waterfalls.jpg){fig-alt="Waterfalls visited during the trip through Tocantins" fig-cap="We explored several waterfalls during the trip."}
+
+## The Dunes of Jalapão
+
+The [**Dunas do Jalapão**](https://turismo.mateiros.to.gov.br/atrativos/dunas/) were one of the most beautiful places on the trip.
+
+Huge orange-gold dunes rise unexpectedly out of the Cerrado beside rivers and vegetation. According to Tocantins tourism authorities, the dunes formed as wind carried eroded particles of sandstone from the nearby **Serra do Espírito Santo**. Some dunes reach roughly 40 meters in height.
+
+The combination feels almost impossible: dunes, green vegetation, rivers, and distant plateaus all in the same view.
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/sand-dunes-jalapao-expedition.jpg){fig-alt="Golden sand dunes in Jalapão"}
+
+![](/images/travel/brazil/sand-dunes-jalapao-expedition2.jpg){fig-alt="Sand dunes surrounded by Cerrado vegetation in Jalapão"}
+:::
+
+Sunset was the best time to see them. As the sun dropped, the sand shifted from orange to gold and the shadows made the shapes of the dunes much more pronounced.
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/me-looking-over-sand-dunes-sunset-jalapao-expedition.jpg){fig-alt="Looking across the Jalapão dunes at sunset"}
+
+![](/images/travel/brazil/me-looking-over-sand-dunes-sunset-jalapao-expedition2.jpg.jpg){fig-alt="Watching sunset over the dunes of Jalapão"}
+:::
+
+![](/images/travel/brazil/family-stopping-by-sand-dunes-jalapao-expedition.jpg){fig-alt="Family stopping at the sand dunes during the Jalapão expedition"}
+
+Near the dunes, water again appeared where I would not have expected it.
+
+![](/images/travel/brazil/river-by-sand-dune-jalapao-expedition.jpg){fig-alt="River running near the sand dunes of Jalapão" fig-cap="The mix of sand, water, and vegetation is part of what makes Jalapão so unusual."}
+
+## Life on the Expedition
+
+The expedition itself was as memorable as the individual destinations.
+
+Traveling through Jalapão meant early mornings, meals on the road, long drives, unexpected stops, and spending several days together as a group. It felt much more like a real expedition than a series of separate sightseeing tours.
+
+![](/images/travel/brazil/breakfast-jalapao-expedition.jpg){fig-alt="Breakfast during the Jalapão expedition" fig-cap="Breakfast before another day on the road."}
+
+::: {layout-ncol=2}
+![](/images/travel/brazil/tour-jalapao-expedition.jpg){fig-alt="Tour group during the Jalapão expedition"}
+
+![](/images/travel/brazil/family-photo-jalapao-expedition.jpg){fig-alt="Family photo during our Jalapão expedition"}
+:::
+
+There was also a sense that the roads themselves were part of the destination. The remote stretches between stops gave us time to see how large and sparsely developed the region really is.
+
+## The Cerrado and Capim Dourado
+
+One thing I did not fully understand before visiting was the ecological importance of the **Cerrado**.
+
+It can look dry and open compared with the Amazon rainforest, but it is an extraordinarily biodiverse savanna ecosystem. The landscape contains grasslands, woodlands, gallery forests, wetlands, rivers, and plants adapted to seasonal drought and fire.
+
+One of the plants most closely associated with Jalapão is **capim dourado**, or "golden grass." Communities in the region—especially the quilombola community of **Mumbuca**—use its naturally golden stems to create jewelry, baskets, bags, and decorative objects. The state regulates harvesting and the movement of raw material to help protect the plant and sustain the local craft tradition.
+
+The Brazilian Ministry of Tourism has a good overview of [Jalapão and capim dourado](https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/jalapao-e-capim-dourado-tesouros-naturais-do-coracao-do-brasil).
+
+## What I Remember Most
+
+The scenery was spectacular, but what I remember most is how varied the experience was.
+
+In the same trip, we could be sitting around a family home, eating meat at a churrascaria, trying fruit I had rarely seen before, watching sugar cane being processed, driving for hours through the Cerrado, getting stuck in sand, floating in a fervedouro, standing beneath a waterfall, and watching the sun disappear behind the dunes.
+
+Tocantins also showed me a version of Brazil that is easy to miss if you only think of Rio de Janeiro, São Paulo, or the Amazon rainforest.
+
+It was family, Portuguese conversations I could only partly follow, long roads, open landscapes, strange springs, unfamiliar fruit, and an entirely new group of people who made us feel welcome.
+
+## Useful Links & Sources
+
+For anyone interested in visiting Tocantins or learning more about the places and topics mentioned here:
+
+- **Tocantins and Jalapão:** [Official Tocantins/Jalapão tourism site](https://jalapaotocantins.to.gov.br/)
+- **Mateiros and Jalapão attractions:** [Turismo Mateiros](https://turismo.mateiros.to.gov.br/)
+- **Jalapão travel overview:** [Brazilian Ministry of Tourism](https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/jalapao-os-encantos-do-deserto-das-aguas-1/)
+- **Dunes:** [Dunas do Jalapão — Turismo Mateiros](https://turismo.mateiros.to.gov.br/atrativos/dunas/)
+- **Fervedouros and waterfalls:** [Jalapão attractions — Turismo Mateiros](https://turismo.mateiros.to.gov.br/atrativos/)
+- **Cerrado / Amazon transition in Tocantins:** [Amazon Fund — Tocantins](https://www.amazonfund.gov.br/en/projeto/CAR-Lawful-Tocantins/)
+- **Capim dourado:** [Ministry of Tourism — Jalapão and Golden Grass](https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/jalapao-e-capim-dourado-tesouros-naturais-do-coracao-do-brasil)
+- **Brazilian fruit diversity:** [Embrapa — Tropical Fruit Farming](https://www.embrapa.br/en/portfolio/fruticultura-tropical)
+- **Native Cerrado fruits:** [Embrapa — Native Fruit Species of the Cerrado](https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/547096/potencial-frutifero-de-algumas-especies-frutiferas-nativas-dos-cerrados)
+- **Brazilian gastronomy:** [Ministry of Tourism — Gastronomic Tourism](https://www.gov.br/turismo/pt-br/acesso-a-informacao/acoes-e-programas/acoes-programas-e-eventos-encerrados-concluidos/programa-nacional-de-turismo-gastronomico/programa-nacional-de-turismo-gastronomico)
+- **Caribe Residence & Resort:** [LN Urbanismo](https://www.lnurbanismo.com.br/empreendimentos/caribe-residence-and-resort)
+
+## Final Thoughts
+
+Tocantins was one of those trips where the place and the reason for being there became inseparable.
+
+Jalapão was extraordinary on its own. The fervedouros were unlike anything I had experienced, the dunes looked almost unreal at sunset, and the long roads made reaching each destination feel earned.
+
+But I do not think I would remember the trip in the same way if we had simply flown in, taken a tour, and left.
+
+We were there because of family.
+
+That gave us the chance to meet people, spend time in their homes, try to communicate in another language, share food, and experience a part of Brazil through people who actually lived there.
+
+The landscapes were what made Tocantins visually unforgettable. The people were what made the trip meaningful.
