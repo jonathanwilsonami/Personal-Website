@@ -963,28 +963,28 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Projects\n  \n  \n    \n     About Me\n  \n  \n    \n     Research\n  \n\n  \n  \n\n\nI build intelligent systems connecting the physical and digital worlds together — AI platforms, decision intelligence, and digital twins for mission-critical infrastructure.\nEngineer building data and AI systems for the physical world.\n\n\nThis site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. I use it to share my work, research, ideas, and anything else that captures my interest, while also reflecting on what I am learning along the way. In that sense, it is inspired by Leonardo da Vinci’s approach to his notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished."
+    "text": "Projects\n  \n  \n    \n     About Me\n  \n  \n    \n     Research\n  \n\n  \n  \n\n\nI’m a curious engineer who loves exploring, learning, and understanding how complex systems work.\nI build intelligent systems that connect the physical and digital worlds, combining software, data, AI, and engineering to enable decision intelligence, digital twins, and smarter infrastructure.\nA question at the heart of my long-term interests in robotics and AI is: How can autonomous systems recognize, reason about, and adapt to the unexpected while remaining safe under uncertainty?\n\n\nThis site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. It’s where I share my projects, research, ideas, and whatever else captures my curiosity.\nI’m inspired by Leonardo da Vinci’s notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished. I see this site in much the same way—a place to explore, document what I’m learning, and connect ideas across disciplines."
   },
   {
     "objectID": "index.html#purpose-of-this-site",
     "href": "index.html#purpose-of-this-site",
     "title": "Welcome!",
     "section": "",
-    "text": "This site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. I use it to share my work, research, ideas, and anything else that captures my interest, while also reflecting on what I am learning along the way. In that sense, it is inspired by Leonardo da Vinci’s approach to his notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished."
+    "text": "This site is a constant work in progress—part portfolio, part notebook, and part personal knowledge base. It’s where I share my projects, research, ideas, and whatever else captures my curiosity.\nI’m inspired by Leonardo da Vinci’s notebooks: an evolving collection of observations, questions, experiments, and ideas that was never truly finished. I see this site in much the same way—a place to explore, document what I’m learning, and connect ideas across disciplines."
   },
   {
     "objectID": "index.html#what-im-doing-now",
     "href": "index.html#what-im-doing-now",
     "title": "Welcome!",
     "section": "What I’m Doing Now",
-    "text": "What I’m Doing Now\nWorking at Peraton as a systems engineer, combining data engineering, software engineering, and data architecture to develop scalable data and AI infrastructure. My focus is building the foundation for advanced capabilities such as digital twins, agentic AI, machine learning, and large-scale analytics."
+    "text": "What I’m Doing Now\nI work at Peraton as a systems engineer, combining data engineering, software engineering, and data architecture to build scalable data and AI infrastructure. My focus is laying the groundwork for capabilities such as digital twins, agentic AI, machine learning, and large-scale real-time analytics.\nOutside of work, I’m diving deeper into robotics, control theory, and autonomous systems. I’m building my foundations in the mathematics and engineering behind intelligent machines, with a particular interest in drones, robotics, and how AI can safely interact with the physical world."
   },
   {
-    "objectID": "index.html#passion-projects",
-    "href": "index.html#passion-projects",
+    "objectID": "index.html#projects-explorations",
+    "href": "index.html#projects-explorations",
     "title": "Welcome!",
-    "section": "Passion Projects",
-    "text": "Passion Projects\n\nAeroFlux\nAeroFlux is an R&D sandbox for cyber-physical intelligence — working out how networks of interdependent agents moving through shared physical space can perceive distributed state, anticipate how disturbances propagate, and act before the decision window closes. U.S. domestic flight delay is the proving ground: measurable, tractable, and richly instrumented enough to build against for real. The architecture is the point — the same loop is what drone fleets, autonomous ground systems, and distributed sensor networks need, where the state is physical, the coupling is tighter, and the consequences are kinetic rather than schedule-based."
+    "section": "Projects & Explorations",
+    "text": "Projects & Explorations\nI’m always exploring new ideas, experimenting with technologies, and building things along the way. Some projects grow into larger systems, while others are simply opportunities to learn something new.\n\nAeroFlux — Cyber-Physical Intelligence\nAeroFlux began as an aviation intelligence platform focused on predicting flight delays and understanding how disruptions propagate through complex networks.\nIt’s also become a broader R&D sandbox for exploring decision intelligence, distributed systems, and cyber-physical autonomy. The underlying ideas extend beyond aviation to robotics, drone fleets, and other interconnected physical systems that need to perceive, predict, and adapt under uncertainty.\nThe application isn’t currently hosted, but the research, experiments, and ideas continue to evolve as my interests expand into robotics and autonomous systems."
   },
   {
     "objectID": "research/byu-security-study.html",
